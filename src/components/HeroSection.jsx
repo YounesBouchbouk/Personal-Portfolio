@@ -7,7 +7,10 @@ import node from "../images/node.png"
 import SectionTitle from "./SectionTitle"
 const HeroSection = () => {
   return (
-    <div className="w-full transition-all duration-500 ease-out lg:h-screen dark:bg-black-p bg-slate-50 flex flex-col-reverse lg:flex-row items-center justify-center ">
+    <div
+      id="Welcome"
+      className="w-full transition-all duration-500 ease-out lg:h-screen dark:bg-black-p bg-slate-50 flex flex-col-reverse lg:flex-row items-center justify-center "
+    >
       <div className="w-full px-12   lg:px-3  lg:w-1/2 p-4  ">
         <div className=" w-1/2 lg:w-1/3 flex flex-col justify-center items-center ">
           <p className="font-Ubuntu text-text-sm   lg:text-lg font-bold text-black-s">

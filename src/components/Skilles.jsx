@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import {
   SiJavascript,
   SiCsswizardry,
@@ -16,6 +16,9 @@ import { DiNodejsSmall } from "react-icons/di"
 import { GrGatsbyjs } from "react-icons/gr"
 
 import SectionTitle from "./SectionTitle"
+import { motion, useAnimation } from "framer-motion"
+import { useInView } from "react-intersection-observer"
+import SkillesItem from "./SkillesItem"
 
 const SkillesData = [
   {
@@ -92,32 +95,13 @@ const SkillesData = [
 
 const Skilles = () => {
   return (
-    <div className="w-full lg:h-screen  flex justify-center items-center">
+    <div
+      id="MySkilles"
+      className="w-full lg:h-screen  flex justify-center items-center"
+    >
       <div className="p-4  flex flex-wrap justify-around ">
         {SkillesData.map(item => {
-          return (
-            <div className="lg:w-3/12 md:w-1/2 w-10/12 m-2 relative group transition-all duration-300 hover:bg-black lg:hover:w-1/3  bg-black-p-l rounded-md shadow-sm flex flex-row items-center justify-around p-4">
-              <div className="w-10/12 flex flex-col  p-2">
-                <div className="w-full font-Ubuntu text-white text-sm mb-2 font-bold uppercase">
-                  {item.tech}
-                </div>
-                <div className="w-full bg-black-p rounded-md">
-                  <div
-                    className="w-full h-2 rounded-md bg-orange-400 shadow-sm shadow-black"
-                    style={{
-                      width: `${item.AVG}%`,
-                    }}
-                  ></div>
-                </div>
-              </div>
-              <div className="absolute top-0 hidden right-0 w-full h-full bg-white/50 rounded-md text-white group-hover:flex item-center justify-center">
-                <p className="font-Merriweather  text-center text-xl font-bold flex items-center justify-centers ">
-                  {item.AVG} %
-                </p>
-              </div>
-              <div className="w-auto">{item.icon}</div>
-            </div>
-          )
+          return <SkillesItem item={item} />
         })}
       </div>
     </div>
