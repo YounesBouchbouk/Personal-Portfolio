@@ -1,6 +1,8 @@
 import Me from "../../images/Me2.png"
 import React, { useRef, useEffect, useState } from "react"
 import { motion } from "framer-motion"
+import { BsGithub } from "react-icons/bs"
+import { Link } from "gatsby"
 function useOutsideAlerter(ref, setPopUp) {
   useEffect(() => {
     /**
@@ -79,7 +81,7 @@ const ProjectPopUp = ({ setPopUp, popup, item }) => {
           >
             b
           </button>
-          <img src={item.images[i]} alt="" className="w-full h-full" />
+          <img src={item.images[i]} alt="Img" className="w-full h-full " />
           <div className="w-4 bg-white/60 hover:bg-white/40 h-full absolute top-0 right-0">
             <button
               onClick={() => {
@@ -111,6 +113,14 @@ const ProjectPopUp = ({ setPopUp, popup, item }) => {
                   </div>
                 )
               })}
+            </div>
+
+            <div className="w-full h-0.5 bg-white  mb-4"></div>
+
+            <div className="w-full flex item-center justify-center">
+              <Link to={item.github} className="p-2 ">
+                <BsGithub className=" text-6xl text-orange-400 hover:text-white  " />
+              </Link>
             </div>
           </div>
         </div>

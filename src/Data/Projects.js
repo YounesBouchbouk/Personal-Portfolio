@@ -10,13 +10,13 @@ import EcommF2 from "../images/EcommF2.png"
 import EcommF3 from "../images/EcommF3.png"
 import EcommF4 from "../images/EcommF4.png"
 import EcommF5 from "../images/EcommF5.png"
-// import part0 from "../images/part0.JPG"
-// import part1 from "../images/part1.JPG"
-// import part2 from "../images/part2.JPG"
-// import part3 from "../images/part3.JPG"
-// import part4 from "../images/part4.JPG"
-// import part5 from "../images/part5.JPG"
-// import part6 from "../images/part6.JPG"
+import part0 from "../images/part0.png"
+import part1 from "../images/part1.png"
+import part2 from "../images/part2.png"
+import part3 from "../images/part3.png"
+import part4 from "../images/part4.png"
+import part5 from "../images/part5.png"
+import part6 from "../images/part6.png"
 import Tempaltemobile from "../images/Tempaltemobile.png"
 import phpecom1 from "../images/phpecom1.png"
 import phpecom2 from "../images/phpecom2.png"
@@ -33,6 +33,48 @@ import jfx3 from "../images/jfx3.png"
 import jfx4 from "../images/jfx4.png"
 import TemplateJava from "../images/TemplateJava.png"
 
+import portfolio from "../images/portfolio.png"
+import postman from "../images/postman.png"
+
+import factoryIt from "../images/factoryIt.png"
+import factoryIt1 from "../images/factoryIt1.png"
+import factoryIt2 from "../images/factoryIt2.png"
+import factoryIt3 from "../images/factoryIt3.png"
+import factoryIt4 from "../images/factoryIt4.png"
+import factoryIt5 from "../images/factoryIt5.png"
+import factoryIt6 from "../images/factoryIt6.png"
+
+import houssna from "../images/houssna.png"
+import houssna2 from "../images/houssna2.png"
+import houssna3 from "../images/houssna3.png"
+import houssna4 from "../images/houssna4.png"
+import houssna5 from "../images/houssna5.png"
+import houssna6 from "../images/houssna6.png"
+
+import anty1 from "../images/anty1.png"
+import anty2 from "../images/anty2.png"
+import anty3 from "../images/anty3.png"
+import anty4 from "../images/anty4.png"
+import anty5 from "../images/anty5.png"
+import anty6 from "../images/anty6.png"
+import anty7 from "../images/anty7.png"
+import anty8 from "../images/anty8.png"
+
+import jee from "../images/jee.png"
+import jee3 from "../images/jee3.png"
+import jee2 from "../images/jee2.png"
+import jee4 from "../images/jee4.png"
+import jee5 from "../images/jee5.png"
+import jee6 from "../images/jee6.png"
+
+import pfeSchema from "../images/pfeSchema.png"
+
+import pfe1 from "../images/pfe1.png"
+import pfe2 from "../images/pfe2.png"
+import pfe3 from "../images/pfe3.png"
+import pfe4 from "../images/pfe4.png"
+import pfe5 from "../images/pfe5.png"
+
 export const ProjectsData = [
   {
     title: "Weather App",
@@ -42,6 +84,8 @@ export const ProjectsData = [
     images: [weather1, wheather2, weather3],
     whatfor: "",
     context: "Self-Learning",
+    github:
+      "https://github.com/YounesBouchbouk/WeatherAPP-With-ReactJs-MUI-and-API",
   },
   {
     title: "Covid Tracker",
@@ -51,6 +95,8 @@ export const ProjectsData = [
     images: [covide1, covide2, covide3],
     whatfor: "",
     context: "Self-Learning",
+    github:
+      "https://github.com/YounesBouchbouk/CovidTracker-Application-With-ReactJs",
   },
   {
     title: "Reminder App",
@@ -59,25 +105,9 @@ export const ProjectsData = [
     images: [reminder],
     whatfor: "",
     context: "Self-Learning",
+    github: "",
   },
-  {
-    title: "Natours ReastFull APi",
-    description:
-      "RestFull Api for  Natours Website includes : Tours , Revieus , Users , JWT , Security , Authentication and autorition",
-    technologies: ["NodeJS", "ExpressJS", "MongoDb"],
-    images: [],
-    whatfor: "",
-    context: "Self-Learning",
-  },
-  {
-    title: "ECommerce Shopping API",
-    description:
-      "RestFull Api for Ecommerce Website includes : Users, Products , Orders , Revieus , Categories , JWT , Security , Authentication and autorition",
-    technologies: ["NodeJS", "ExpressJS", "MongoDb"],
-    images: [],
-    whatfor: "",
-    context: "Self-Learning",
-  },
+
   {
     title: "ECommerce FrontEnd",
     description: "Ecommerce UI with ReactJs and MaterialUI",
@@ -85,22 +115,16 @@ export const ProjectsData = [
     images: [EcommF1, EcommF2, EcommF3, EcommF4, EcommF5],
     whatfor: "",
     context: "Self-Learning",
-  },
-  {
-    title: "Full Stack Authentication Application",
-    description: "MERN stack Authentication app JWT",
-    technologies: ["ReactJs", "TailwindCSS", "NodeJS", "ExpressJS", "MongoDb"],
-    images: [],
-    whatfor: "",
-    context: "Self-Learning",
+    github: "https://github.com/YounesBouchbouk/Ecommerce-View",
   },
   {
     title: "AntySemsar , Full Stack Mobile Application with ReactNative",
     description: "Own Idea Mobile App with React NAtive",
     technologies: ["ReactNAtive", "CSS", "NodeJS", "ExpressJS", "MongoDb"],
-    images: [],
+    images: [anty1, anty2, anty3, anty4, anty5, anty6, anty7, anty8],
     whatfor: "",
     context: "Self-Learning",
+    github: "https://github.com/YounesBouchbouk/AntySemsara",
   },
   {
     title: "NextFActoryIt portfolio with React , gatsby , TailwindCss ",
@@ -113,8 +137,17 @@ export const ProjectsData = [
       "GraphQL",
       "makerdown",
     ],
-    images: [],
+    images: [
+      factoryIt,
+      factoryIt1,
+      factoryIt2,
+      factoryIt3,
+      factoryIt4,
+      factoryIt5,
+      factoryIt6,
+    ],
     whatfor: "",
+    github: "",
     context: "Internships",
   },
   {
@@ -136,6 +169,7 @@ export const ProjectsData = [
     images: [],
     whatfor: "",
     context: "Internships",
+    github: "",
   },
   {
     title: "YounesBouchbouk portfolio with React , gatsby , TailwindCss ",
@@ -148,9 +182,10 @@ export const ProjectsData = [
       "GraphQL",
       "makerdown",
     ],
-    images: [],
+    images: [portfolio],
     whatfor: "",
     context: "Self-Learning",
+    github: "",
   },
 
   // for University
@@ -159,17 +194,19 @@ export const ProjectsData = [
     title: "Machine Learning : person re-identification",
     description: "",
     technologies: ["Python", "Opencv", "Tkinter", "YoloV3"],
-    images: [],
+    images: [pfe1, pfe2, pfe3, pfe4, pfe5, pfeSchema],
     whatfor: "",
     context: "Internships",
+    github: "https://github.com/YounesBouchbouk/Re-identification-GUI",
   },
   {
     title: "Kids School Managment System ",
     description: "School managment System  ",
     technologies: ["HTML", "CSS", "BOOTSTRAP", "PHP", "MYSQL"],
-    images: [],
+    images: [houssna, houssna2, houssna3, houssna4, houssna5, houssna6],
     whatfor: "",
     context: "Internships",
+    github: "",
   },
   {
     title: "Full stack Ecommerce Website",
@@ -188,6 +225,7 @@ export const ProjectsData = [
     ],
     whatfor: "",
     context: "Internships",
+    github: "",
   },
   {
     title: "Projects Managments Desktop Application ",
@@ -196,22 +234,45 @@ export const ProjectsData = [
     images: [TemplateJava, jfx, jfx2, jfx3, jfx4],
     whatfor: "",
     context: "University",
+    github: "https://github.com/YounesBouchbouk/ProjectsManager-JAVAFX",
+  },
+  {
+    title: "Natours ReastFull APi",
+    description:
+      "RestFull Api for  Natours Website includes : Tours , Revieus , Users , JWT , Security , Authentication and autorition",
+    technologies: ["NodeJS", "ExpressJS", "MongoDb"],
+    images: [postman],
+    whatfor: "",
+    context: "Self-Learning",
+    github: "",
+  },
+  {
+    title: "ECommerce Shopping API",
+    description:
+      "RestFull Api for Ecommerce Website includes : Users, Products , Orders , Revieus , Categories , JWT , Security , Authentication and autorition",
+    technologies: ["NodeJS", "ExpressJS", "MongoDb"],
+    images: [postman],
+    whatfor: "",
+    context: "Self-Learning",
+    github: "",
   },
   {
     title: "JAYBY , mobile Application  ",
     description: " Gestion Of budget mobile Application Named JAYBY",
     technologies: ["Android", "JAVA", "firebase"],
-    images: [Tempaltemobile],
-    // part0, part1, part2, part3, part4, part5, part6k
+    images: [Tempaltemobile, part0, part1, part2, part3, part4, part5, part6],
     whatfor: "",
     context: "University",
+    github: "https://github.com/Houssineyahia/android_Gestion-of-Budget-App",
   },
   {
     title: "Informatique Club Managment System ",
     description: "Informatique Club Managment Systemn Hybernet ",
     technologies: ["JEE", "CSS", "EclipceLink", "MYSQL"],
-    images: [],
+    images: [jee, jee2, jee3, jee4, jee5, jee6],
     whatfor: "",
     context: "University",
+    github:
+      "https://github.com/YounesBouchbouk/gestion_club_informatique_JEE_MYSQL_HIBERNATE",
   },
 ]
