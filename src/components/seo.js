@@ -26,15 +26,14 @@ function Seo({ description, lang, meta, title }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
-  const defaultTitle = site.siteMetadata?.title
+  // const defaultTitle = site.siteMetadata?.title
 
   return (
     <Helmet
       htmlAttributes={{
-        lang,
+        lang: "en",
       }}
       title={title}
-      titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
       meta={[
         {
           name: `description`,
@@ -50,7 +49,7 @@ function Seo({ description, lang, meta, title }) {
         },
         {
           property: `og:type`,
-          content: `website`,
+          content: `Portfolio`,
         },
         {
           name: `twitter:card`,
@@ -58,7 +57,7 @@ function Seo({ description, lang, meta, title }) {
         },
         {
           name: `twitter:creator`,
-          content: site.siteMetadata?.author || ``,
+          content: "Younes Bouchbouk",
         },
         {
           name: `twitter:title`,
@@ -66,7 +65,8 @@ function Seo({ description, lang, meta, title }) {
         },
         {
           name: `twitter:description`,
-          content: metaDescription,
+          content:
+            "Younes Bouchbouk Javascript developer , twitter account younesbouchbouk.py@gmail.com",
         },
       ].concat(meta)}
     />

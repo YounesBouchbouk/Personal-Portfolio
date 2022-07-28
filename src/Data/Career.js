@@ -59,12 +59,6 @@ export const Certificat = [
   },
   {
     year: "2022",
-    title: "Learn Solidity with Blockchain and Ethereum Essentials",
-    description: "Learn Solidity with Blockchain and Ethereum Essentials",
-    provider: "Udemy ",
-  },
-  {
-    year: "2022",
     title: "  Learn Gatsby JS and React with Projects Experience",
     description: "GatsbyJs ReactJs TailwindCss",
     provider: "Udemy ",
@@ -73,6 +67,12 @@ export const Certificat = [
     year: "2022",
     title: " NestJS Zero to Hero - Modern TypeScript Back-end Development",
     description: "NestJS TypeScript GraphQl API",
+    provider: "Udemy ",
+  },
+  {
+    year: "2022",
+    title: "NextJS & React - The Complete Guide",
+    description: "NextJs basics , Static Generation  , Server-side Rendering",
     provider: "Udemy ",
   },
 ]

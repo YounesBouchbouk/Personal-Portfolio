@@ -17,13 +17,16 @@ import ProjectPopUp from "../components/Cards/ProjectPopUp"
 import ContactBar from "../components/ContactBar"
 import { motion, AnimatePresence } from "framer-motion"
 import Contact from "../components/Contact"
-
+import { Helmet } from "react-helmet"
 const IndexPage = () => {
   const [popup, setpopup] = React.useState(false)
   const [item, setItem] = React.useState({})
   return (
     <div className="bg-slate-50 dark:bg-black-p relative">
-      <Seo title="Home" />
+      <Seo
+        title="Younes Bouchbouk - Home"
+        description="Full stack javascript developer , ReactJs front end developer , nodejs backend developer , junior developer , Mern stack student developer , young software engineer "
+      />
       <ThemeProvider>
         <div className={`${popup ? "blur-sm" : ""}`}>
           <Header />
@@ -40,7 +43,7 @@ const IndexPage = () => {
           <TimeLine Data={Certificat} type={"education"} />
           <Projects setPopUp={setpopup} popUp={popup} setItem={setItem} />
         </div>
-        <Contact />
+        {/* <Contact /> */}
 
         <AnimatePresence>
           {popup && (

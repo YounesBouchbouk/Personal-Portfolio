@@ -3,6 +3,8 @@ import React, { useRef, useEffect, useState } from "react"
 import { motion } from "framer-motion"
 import { BsGithub } from "react-icons/bs"
 import { Link } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
+
 function useOutsideAlerter(ref, setPopUp) {
   useEffect(() => {
     /**
