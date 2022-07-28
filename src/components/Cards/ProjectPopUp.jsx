@@ -15,11 +15,19 @@ function useOutsideAlerter(ref, setPopUp) {
         setPopUp(false)
       }
     }
+	if(window !== "undefined"){
+   // your document or window manipulation
+       document.addEventListener("mousedown", handleClickOutside)
+
+	}
     // Bind the event listener
-    document.addEventListener("mousedown", handleClickOutside)
     return () => {
+		if(window !== "undefined"){
+   // your document or window manipulation
+		document.removeEventListener("mousedown", handleClickOutside)
+		}
       // Unbind the event listener on clean up
-      document.removeEventListener("mousedown", handleClickOutside)
+      
     }
   }, [ref])
 }
