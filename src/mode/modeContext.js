@@ -18,12 +18,9 @@ export const ThemeContext = React.createContext()
 export const ThemeProvider = ({ initialTheme, children }) => {
   const [theme, setTheme] = React.useState(getInitialTheme)
   
-  if(window !== "undefined"){
-   // your document or window manipulation
- }
+
 
   const checkTheme = existing => {
-	  if(window !== "undefined"){
    // your document or window manipulation
    const root = window.document.documentElement
     const isDark = existing === "dark"
@@ -32,7 +29,6 @@ export const ThemeProvider = ({ initialTheme, children }) => {
     root.classList.add(existing)
 
     localStorage.setItem("current-theme", existing)
-	}
     
   }
 
