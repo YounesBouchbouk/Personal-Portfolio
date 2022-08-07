@@ -2,7 +2,8 @@ import React, { useContext } from "react"
 import { ThemeContext } from "../mode/modeContext"
 
 const Toggle = () => {
-  const { theme, setTheme } = useContext(ThemeContext || {})
+  // const { theme, setTheme } = useContext(ThemeContext || {})
+  const theme = "dark";
   return (
     <div>
       {theme === "dark" ? (
@@ -27,7 +28,7 @@ const Toggle = () => {
         </button>
       ) : (
         <button
-          onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+          // onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
           className="text-gray-500 dark:text-gray-400 bg-white focus:outline-none shadow-none p-2 text-lg rounded-full outline-none ring-transparent cursor-pointer"
         >
           <svg
