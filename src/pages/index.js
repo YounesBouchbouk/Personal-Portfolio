@@ -17,7 +17,6 @@ import ProjectPopUp from "../components/Cards/ProjectPopUp"
 import ContactBar from "../components/ContactBar"
 import { motion, AnimatePresence } from "framer-motion"
 import Contact from "../components/Contact"
-import { Helmet } from "react-helmet"
 const IndexPage = () => {
   const [popup, setpopup] = React.useState(false)
   const [item, setItem] = React.useState({})
