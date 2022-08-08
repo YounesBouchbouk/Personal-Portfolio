@@ -5,7 +5,7 @@ import { motion, useAnimation } from "framer-motion"
 import { Link } from "react-scroll"
 import Upbutton from "./UpButton"
 
-const Header = () => {
+const Header = ({theme , setTheme}) => {
   const [showbar, setShowbar] = useState(false)
   const controls = useAnimation()
 
@@ -113,7 +113,7 @@ const Header = () => {
         transition={{ delay: 1.5, duration: 2 }}
         className="rounder-full  p-2 w-28 flex justify-center items-center "
       >
-        <Toggle />
+        <Toggle theme={theme} setTheme={setTheme} />
       </motion.div>
       <div className="items-center flex md:hidden mr-4  ">
         <button

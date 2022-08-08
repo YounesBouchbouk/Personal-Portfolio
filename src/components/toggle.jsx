@@ -1,14 +1,19 @@
 import React, { useContext } from "react"
 import { ThemeContext } from "../mode/modeContext"
 
-const Toggle = () => {
-  const { theme, setTheme } = useContext(ThemeContext || {})
+const Toggle = ({theme , setTheme}) => {
+  // const { theme, setTheme } = useContext(ThemeContext || {})
   // const theme = "dark";
+
+  console.log("from tototo");
+  console.log(theme + "hada hwa");
   return (
     <div>
       {theme === "dark" ? (
         <button
-          onClick={() => setTheme(theme === "dark " ? "light" : "dark")}
+          onClick={() => {
+            setTheme(theme === "dark" ? "light" : "dark")
+          }}
           className="text-gray-400 dark:text-gray-400 bg-white shadow-none p-2 focus:outline-none text-lg rounded-full outline-none ring-transparent cursor-pointer"
         >
           <svg
