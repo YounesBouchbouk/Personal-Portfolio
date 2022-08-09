@@ -33,7 +33,7 @@ const AboutMe = () => {
         <p>
           Hi ! I'm{" "}
           <span className="px-2 text-xl text-orange-300 font-Ubuntu">
-            Younes BouchboukKK
+            Younes BouchboukKKKKKKKKKKKK
           </span>{" "}
           <span>
             <br /> i have 21 yeas old . Full-stack javascript developer adated
