@@ -79,33 +79,36 @@ export const ProjectsData = [
   {
     title: "Weather App",
     description:
-      "This is a weather App connected with external Api provided By  ",
+      "My journey with reactJs start's with this small weather application to track weather of many countries and theire cities , the api was provided by ",
     technologies: ["ReacJS", "Redux", "Material Ui"],
     images: [weather1, wheather2, weather3],
     whatfor: "",
     context: "Self-Learning",
     github:
       "https://github.com/YounesBouchbouk/WeatherAPP-With-ReactJs-MUI-and-API",
+    link : ""
   },
   {
     title: "Covid Tracker",
     description:
-      "This is a covid Tracker APP conected with external API provided By ",
+      "My journey with reactJs start's with this small covid Tracker APP conected with external API provided By ",
     technologies: ["ReacJS", "ReactCharts", "Material Ui"],
     images: [covide1, covide2, covide3],
     whatfor: "",
-    context: "Self-Learning",
+    context: ["Self-Learning"],
     github:
       "https://github.com/YounesBouchbouk/CovidTracker-Application-With-ReactJs",
+      link : ""
   },
   {
-    title: "Reminder App",
+    title: "My journey with reactJs start's with this small Reminder App",
     description: "Todo List with React Redux",
-    technologies: ["ReactJs", "ReactNative", "Material UI"],
+    technologies: ["ReactJs", "Material UI"],
     images: [reminder],
     whatfor: "",
-    context: "Self-Learning",
+    context: ["Self-Learning"],
     github: "",
+    link : ""
   },
 
   {
@@ -114,21 +117,23 @@ export const ProjectsData = [
     technologies: ["ReactJs", "Material UI"],
     images: [EcommF1, EcommF2, EcommF3, EcommF4, EcommF5],
     whatfor: "",
-    context: "Self-Learning",
+    context: ["Self-Learning"],
     github: "https://github.com/YounesBouchbouk/Ecommerce-View",
+    link : ""
   },
   {
     title: "AntySemsar , Full Stack Mobile Application with ReactNative",
-    description: "Own Idea Mobile App with React NAtive",
+    description: "antysemsar is a mobile cross platform application developed with react native and node js , it help student who are going to continu their education in a defirent city to find where to live with ather student's who already find a local , so any one who already found a place can share it in the app with the price and pictures and more informaion ",
     technologies: ["ReactNAtive", "CSS", "NodeJS", "ExpressJS", "MongoDb"],
     images: [anty1, anty2, anty3, anty4, anty5, anty6, anty7, anty8],
     whatfor: "",
-    context: "Self-Learning",
+    context: ["Self-Learning" , "top"],
     github: "https://github.com/YounesBouchbouk/AntySemsara",
+    link : ""
   },
   {
     title: "NextFActoryIt portfolio with React , gatsby , TailwindCss ",
-    description: "Own Idea Mobile App with React NAtive",
+    description: "This is a portfolio for nextFactory IT company , developed with react , gatsby , tailwindcss ",
     technologies: [
       "ReactJS",
       "FramerMotion",
@@ -148,12 +153,13 @@ export const ProjectsData = [
     ],
     whatfor: "",
     github: "",
-    context: "Internships",
+    context: ["Internships","top"],
+    link : ""
   },
   {
     title: "Full Stack Delivery Network Application",
     description:
-      "Advenced MERN stack Project For Eternship with ReactJs ReactNative Hooks Security more ...",
+      "Advenced MERN stack Project For internship  with ReactJs , Hooks , Neo4j , NodeJs ,  ...",
     technologies: [
       "ReactJs",
       "reactNative",
@@ -168,12 +174,13 @@ export const ProjectsData = [
     ],
     images: [],
     whatfor: "",
-    context: "Internships",
+    context: ["Internships","top"],
     github: "",
+    link : ""
   },
   {
     title: "YounesBouchbouk portfolio with React , gatsby , TailwindCss ",
-    description: "Own Idea Mobile App with React NAtive",
+    description: "My own protfolio , you are visiting it now ",
     technologies: [
       "ReactJS",
       "FramerMotion",
@@ -184,8 +191,9 @@ export const ProjectsData = [
     ],
     images: [portfolio],
     whatfor: "",
-    context: "Self-Learning",
+    context: ["Self-Learning", "top"],
     github: "",
+    link : ""
   },
 
   // for University
@@ -198,6 +206,7 @@ export const ProjectsData = [
     whatfor: "",
     context: "Internships",
     github: "https://github.com/YounesBouchbouk/Re-identification-GUI",
+    link : ""
   },
   {
     title: "Kids School Managment System ",
@@ -205,8 +214,9 @@ export const ProjectsData = [
     technologies: ["HTML", "CSS", "BOOTSTRAP", "PHP", "MYSQL"],
     images: [houssna, houssna2, houssna3, houssna4, houssna5, houssna6],
     whatfor: "",
-    context: "Internships",
+    context: ["top" ,"Internships" , "University"],
     github: "",
+    link : ""
   },
   {
     title: "Full stack Ecommerce Website",
@@ -224,8 +234,9 @@ export const ProjectsData = [
       phpecom10,
     ],
     whatfor: "",
-    context: "Internships",
+    context: ["Internships","University" , "top"],
     github: "",
+    link : ""
   },
   {
     title: "Projects Managments Desktop Application ",
@@ -235,6 +246,7 @@ export const ProjectsData = [
     whatfor: "",
     context: "University",
     github: "https://github.com/YounesBouchbouk/ProjectsManager-JAVAFX",
+    link : ""
   },
   {
     title: "Natours ReastFull APi",
@@ -245,6 +257,7 @@ export const ProjectsData = [
     whatfor: "",
     context: "Self-Learning",
     github: "",
+    link : ""
   },
   {
     title: "ECommerce Shopping API",
@@ -255,6 +268,7 @@ export const ProjectsData = [
     whatfor: "",
     context: "Self-Learning",
     github: "",
+    link : ""
   },
   {
     title: "JAYBY , mobile Application  ",
@@ -264,6 +278,7 @@ export const ProjectsData = [
     whatfor: "",
     context: "University",
     github: "https://github.com/Houssineyahia/android_Gestion-of-Budget-App",
+    link : ""
   },
   {
     title: "Informatique Club Managment System ",
@@ -271,8 +286,9 @@ export const ProjectsData = [
     technologies: ["JEE", "CSS", "EclipceLink", "MYSQL"],
     images: [jee, jee2, jee3, jee4, jee5, jee6],
     whatfor: "",
-    context: "University",
+    context: ["University","top"],
     github:
       "https://github.com/YounesBouchbouk/gestion_club_informatique_JEE_MYSQL_HIBERNATE",
+      link : ""
   },
 ]

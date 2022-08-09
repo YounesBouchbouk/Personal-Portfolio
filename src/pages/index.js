@@ -17,18 +17,69 @@ import ProjectPopUp from "../components/Cards/ProjectPopUp"
 import ContactBar from "../components/ContactBar"
 import { motion, AnimatePresence } from "framer-motion"
 import Contact from "../components/Contact"
+
+const getInitialTheme = () => {
+  if (typeof window !== "undefined" && window.localStorage) {
+    const storedPrefs = window.localStorage.getItem("current-theme")
+    if (typeof storedPrefs === "string") {
+      return storedPrefs
+    }
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      return "dark"
+    }
+  }
+  return "dark"
+}
+
+const Themeprovider2 = ({ initialTheme, children }) => {
+  const [theme, setTheme] = React.useState(getInitialTheme)
+
+
+  const checkTheme = existing => {
+    // your document or window manipulation
+    const root = window.document.documentElement
+     const isDark = existing === "dark"
+ 
+     root.classList.remove(isDark ? "light" : "dark")
+     root.classList.add(existing)
+ 
+     localStorage.setItem("current-theme", existing)
+     
+   }
+ 
+   if (initialTheme) {
+     checkTheme(initialTheme)
+   }
+ 
+   React.useEffect(() => {
+     checkTheme(theme)
+   }, [theme])
+
+  return (
+      <div className="w-full">
+          <Header setTheme={setTheme} theme={theme} />
+        {children}
+        {/* <button onClick={()=>{console.log(theme)}} className={"bg-white py-4 px-8"}>Click</button> */}
+
+      </div>
+  )
+}
+
+
 const IndexPage = () => {
   const [popup, setpopup] = React.useState(false)
   const [item, setItem] = React.useState({})
+
   return (
+   
     <div className="bg-slate-50 dark:bg-black-p relative">
       <Seo
         title="Younes Bouchbouk - Home"
         description="Full stack javascript developer , ReactJs front end developer , nodejs backend developer , junior developer , Mern stack student developer , young software engineer "
       />
-      <ThemeProvider>
+          <Themeprovider2>
+
         <div className={`${popup ? "blur-sm" : ""}`}>
-          <Header />
           <SideBar />
           <HeroSection />
           <SectionTitle label={"Who   I'm   I   ?"} />
@@ -52,9 +103,13 @@ const IndexPage = () => {
 
         {/* <SectionTitle label={"Funny Break :"} /> */}
         <Foother />
-      </ThemeProvider>
+        </Themeprovider2>
+
+        
     </div>
+    
   )
+
 }
 
 export default IndexPage

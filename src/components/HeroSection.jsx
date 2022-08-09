@@ -19,7 +19,7 @@ const HeroSection = () => {
         </div>
 
         <p className="text-4xl font-Monoton  text-black dark:text-white">
-          YOUNES <span className="text-black-s text-6xl ">BOUCHBOUK</span>
+          YOUNES <span className="text-black-s text-6xl ml-2 ">BOUCHBOUK</span>
         </p>
 
         <div className="text-left p-2 dark:text-slate-50 text-black-p  ">
