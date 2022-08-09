@@ -1,12 +1,11 @@
 import React, { useContext } from "react"
-import { ThemeContext } from "../mode/modeContext"
+// import { ThemeContext } from "../mode/modeContext"
 
 const Toggle = ({theme , setTheme}) => {
   // const { theme, setTheme } = useContext(ThemeContext || {})
   // const theme = "dark";
 
-  console.log("from tototo");
-  console.log(theme + "hada hwa");
+ 
   return (
     <div>
       {theme === "dark" ? (
