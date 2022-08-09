@@ -3,16 +3,6 @@ import React, { useContext } from "react"
 
 const Toggle = ({theme , setTheme}) => {
   // const { theme, setTheme } = useContext(ThemeContext || {})
-
-const Toggle = () => {
-  const { theme, setTheme } = useContext(ThemeContext || {
-    theme : null ,
-    setTheme : null
-  })
-
-  // const theme = "dark";
-
- 
   return (
     <div>
       {theme === "dark" ? (
