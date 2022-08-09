@@ -75,6 +75,15 @@ import pfe3 from "../images/pfe3.png"
 import pfe4 from "../images/pfe4.png"
 import pfe5 from "../images/pfe5.png"
 
+import ispappfigma from '../images/ispappfigma.png'
+import ispapp1 from '../images/ispapp1.png'
+import ispapp2 from '../images/ispapp2.png'
+import ispapp3 from '../images/ispapp3.png'
+
+import turnkeyisp from '../images/turnkeyisp.png'
+import turnkeyisp2 from '../images/turnkeyisp2.png'
+
+
 export const ProjectsData = [
   {
     title: "Weather App",
@@ -83,10 +92,34 @@ export const ProjectsData = [
     technologies: ["ReacJS", "Redux", "Material Ui"],
     images: [weather1, wheather2, weather3],
     whatfor: "",
-    context: "Self-Learning",
+    context: ["Self-Learning"],
     github:
       "https://github.com/YounesBouchbouk/WeatherAPP-With-ReactJs-MUI-and-API",
     link : ""
+  },
+  {
+    title: "ispapp website",
+    description:
+      "from figma to nextjs project , isapp landings pages ",
+    technologies: ["NextJs", "ReactJs", "tailwindcss"],
+    images: [ispappfigma, ispapp1, ispapp2,ispapp3],
+    whatfor: "",
+    context: ["Internships","top"],
+    // github:
+    //   "https://github.com/YounesBouchbouk/CovidTracker-Application-With-ReactJs",
+      link : "https://ispapp.co"
+  },
+  {
+    title: "turnkeyisp website",
+    description:
+      "from figma to html css javascript project , isapp landings pages ",
+    technologies: ["tailwind", "javascript"],
+    images: [turnkeyisp, turnkeyisp2],
+    whatfor: "",
+    context: ["Internships","top"],
+    // github:
+    //   "https://github.com/YounesBouchbouk/CovidTracker-Application-With-ReactJs",
+      link : "https://turnkeyisp.co/"
   },
   {
     title: "Covid Tracker",
@@ -204,7 +237,7 @@ export const ProjectsData = [
     technologies: ["Python", "Opencv", "Tkinter", "YoloV3"],
     images: [pfe1, pfe2, pfe3, pfe4, pfe5, pfeSchema],
     whatfor: "",
-    context: "Internships",
+    context: ["Internships","University"],
     github: "https://github.com/YounesBouchbouk/Re-identification-GUI",
     link : ""
   },
@@ -244,7 +277,7 @@ export const ProjectsData = [
     technologies: ["JavaFX", "CSS", "MYSQL"],
     images: [TemplateJava, jfx, jfx2, jfx3, jfx4],
     whatfor: "",
-    context: "University",
+    context: ["University","top"],
     github: "https://github.com/YounesBouchbouk/ProjectsManager-JAVAFX",
     link : ""
   },
@@ -255,7 +288,7 @@ export const ProjectsData = [
     technologies: ["NodeJS", "ExpressJS", "MongoDb"],
     images: [postman],
     whatfor: "",
-    context: "Self-Learning",
+    context: ["Self-Learning"],
     github: "",
     link : ""
   },
@@ -266,7 +299,7 @@ export const ProjectsData = [
     technologies: ["NodeJS", "ExpressJS", "MongoDb"],
     images: [postman],
     whatfor: "",
-    context: "Self-Learning",
+    context: ["Self-Learning"],
     github: "",
     link : ""
   },
@@ -276,7 +309,7 @@ export const ProjectsData = [
     technologies: ["Android", "JAVA", "firebase"],
     images: [Tempaltemobile, part0, part1, part2, part3, part4, part5, part6],
     whatfor: "",
-    context: "University",
+    context: ["University"],
     github: "https://github.com/Houssineyahia/android_Gestion-of-Budget-App",
     link : ""
   },

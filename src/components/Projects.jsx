@@ -5,11 +5,11 @@ import SectionTitle from "./SectionTitle"
 import { ProjectsData } from "../Data/Projects"
 
 const Projects = ({ setPopUp, popup, setItem }) => {
-  const [filter, setFiltred] = useState(ProjectsData)
-  const [selected, setSelected] = useState("all")
+  const [filter, setFiltred] = useState(ProjectsData.filter(item => item.context.includes("top")))
+  const [selected, setSelected] = useState("top")
 
   const letsFilter = name => {
-    const newData = ProjectsData.filter(item => item.context === name)
+    const newData = ProjectsData.filter(item => item.context.includes(name)  )
     setFiltred(newData)
     setSelected(name)
   }
@@ -20,7 +20,7 @@ const Projects = ({ setPopUp, popup, setItem }) => {
 
       <div className="w-full   flex justify-center items-center">
         <div className="w-1/2 flex justify-around">
-          <button
+        <button
             className={`p-2 ${
               selected === "all"
                 ? "bg-black-s text-white "
@@ -32,6 +32,20 @@ const Projects = ({ setPopUp, popup, setItem }) => {
             }}
           >
             All
+          </button>
+
+          <button
+            className={`p-2 ${
+              selected === "top"
+                ? "bg-black-s text-white "
+                : "bg-white text-black hover:bg-black-s hover:text-white"
+            }   font-Ubuntu font-bold rounded-md shadow-md shadow-black`}
+            onClick={() => {
+              letsFilter("top")
+              setSelected("top")
+            }}
+          >
+            Top
           </button>
           <button
             className={`p-2 ${
