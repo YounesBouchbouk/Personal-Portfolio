@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `My Portfolio`,
-    description: `Younes Bouchbouk , Software Engineer Portfolio `,
+    description: `Younes Bouchbouk , Software Engineer Portfolio , javascript developer , arabian full stack javascript developer `,
     author: `@YounesBouchbouk`,
   },
   plugins: [

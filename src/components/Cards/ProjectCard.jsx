@@ -27,12 +27,14 @@ const ProjectCard = ({ setPopUp, popup, item, setItem }) => {
       variants={squareVariants}
       className="bg-white dark:bg-black-p-l w-full md:w-3/12 rounded-md overflow-hidden flex flex-col items-start relative m-4 border-y-2 border-black-s"
     >
+     <div className="w-full flex justify-center items-center p-5">
+
       <img
         src={item.images[0]}
         alt="img1"
-        className="rounded-md w-full h-56 "
+        className="rounded-md  "
       />
-
+    </div>
       <div className="px-2 w-full">
         <div className="w-full -mt-3 ">
           <p className="font-Ubuntu px-2 text-black text-base font-bold dark:text-white">
