@@ -112,7 +112,7 @@ const ProjectPopUp = ({ setPopUp, popup, item }) => {
             <div className="w-2/4 h-0.5 bg-white"></div>
 
             <div className="mt-4">
-              <p className="text-white text-sm">{item.description}</p>
+              {/* <p className="text-white text-sm">{item.description}</p> */}
             </div>
 
             <div className="w-full  flex justify-center items-center flex-wrap ">

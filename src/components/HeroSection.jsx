@@ -25,7 +25,7 @@ const HeroSection = () => {
         <div className="text-left p-2 dark:text-slate-50 text-black-p  ">
           <p>
             I'm A passionate Full Stack Javascript Developer , Adapted with
-            lastes Technologie And ready to learn any thing{" "}
+            lastes Technologie and ready to learn anything{" "}
           </p>
         </div>
 
