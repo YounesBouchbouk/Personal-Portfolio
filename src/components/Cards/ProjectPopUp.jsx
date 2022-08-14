@@ -93,7 +93,7 @@ const ProjectPopUp = ({ setPopUp, popup, item }) => {
             b
           </button>
           <div className="flex justify-center items-center w-full h-full">
-          <img  src={item.images[i]} alt="Img" className={item.title === "AntySemsar , Full Stack Mobile Application with ReactNative" && "h-[500px]"} />
+          <img  src={item.images[i]} alt="Img" className={item.title === "AntySemsar , Full Stack Mobile Application with ReactNative" || item.title === "JAYBY , mobile Application"  ? "h-[500px]" : ""} />
           </div>
           <div className="w-4 bg-white/60 hover:bg-white/40 h-full absolute top-0 right-0">
             <button
