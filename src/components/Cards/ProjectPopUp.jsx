@@ -33,6 +33,7 @@ function useOutsideAlerter(ref, setPopUp) {
 }
 
 const ProjectPopUp = ({ setPopUp, popup, item }) => {
+  console.log(item);
   const wrapperRef = useRef(null)
   useOutsideAlerter(wrapperRef, setPopUp)
 
@@ -91,7 +92,9 @@ const ProjectPopUp = ({ setPopUp, popup, item }) => {
           >
             b
           </button>
-          <img src={item.images[i]} alt="Img" className="w-full h-full " />
+          <div className="flex justify-center items-center w-full h-full">
+          <img  src={item.images[i]} alt="Img" className={item.title === "AntySemsar , Full Stack Mobile Application with ReactNative" && "h-[500px]"} />
+          </div>
           <div className="w-4 bg-white/60 hover:bg-white/40 h-full absolute top-0 right-0">
             <button
               onClick={() => {

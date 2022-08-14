@@ -4,12 +4,15 @@ import covide3 from "../images/covide3.png"
 import weather1 from "../images/weather1.png"
 import wheather2 from "../images/wheather2.png"
 import weather3 from "../images/weather3.png"
+
 import reminder from "../images/Reminder.png"
+
 import EcommF1 from "../images/EcommF1.png"
 import EcommF2 from "../images/EcommF2.png"
 import EcommF3 from "../images/EcommF3.png"
 import EcommF4 from "../images/EcommF4.png"
 import EcommF5 from "../images/EcommF5.png"
+
 import part0 from "../images/part0.png"
 import part1 from "../images/part1.png"
 import part2 from "../images/part2.png"
@@ -17,7 +20,9 @@ import part3 from "../images/part3.png"
 import part4 from "../images/part4.png"
 import part5 from "../images/part5.png"
 import part6 from "../images/part6.png"
+
 import Tempaltemobile from "../images/Tempaltemobile.png"
+
 import phpecom1 from "../images/phpecom1.png"
 import phpecom2 from "../images/phpecom2.png"
 import phpecom3 from "../images/phpecom3.png"
@@ -75,14 +80,27 @@ import pfe3 from "../images/pfe3.png"
 import pfe4 from "../images/pfe4.png"
 import pfe5 from "../images/pfe5.png"
 
-import ispappfigma from '../images/ispappfigma.png'
-import ispapp1 from '../images/ispapp1.png'
-import ispapp2 from '../images/ispapp2.png'
-import ispapp3 from '../images/ispapp3.png'
+import ispappfigma from "../images/ispappfigma.png"
+import ispapp1 from "../images/ispapp1.png"
+import ispapp2 from "../images/ispapp2.png"
+import ispapp3 from "../images/ispapp3.png"
 
-import turnkeyisp from '../images/turnkeyisp.png'
-import turnkeyisp2 from '../images/turnkeyisp2.png'
+import turnkeyisp from "../images/turnkeyisp.png"
+import turnkeyisp2 from "../images/turnkeyisp2.png"
 
+import SignUpUSer from "../images/Deliverynet/SignUpUSer.jpg"
+import SignUpDelivery from "../images/Deliverynet/SignUpDelivery.jpg"
+import ResetPassowrdDemander from "../images/Deliverynet/ResetPassowrdDemander.jpg"
+import confiméemailAlert from "../images/Deliverynet/confiméemailAlert.jpg"
+import Adresses from "../images/Deliverynet/Adresses.jpg"
+import phones from "../images/Deliverynet/phones.jpg"
+import days from "../images/Deliverynet/days.jpg"
+import wonesDelaivraison from "../images/Deliverynet/wonesDelaivraison.jpg"
+import tarrifs from "../images/Deliverynet/tarrifs.jpg"
+import Review from "../images/Deliverynet/Review.jpg"
+import findZone from "../images/Deliverynet/Review.jpg"
+import DashServices from "../images/Deliverynet/DashServices.jpg"
+import ListeUtili from "../images/Deliverynet/ListeUtili.jpg"
 
 export const ProjectsData = [
   {
@@ -95,19 +113,18 @@ export const ProjectsData = [
     context: ["Self-Learning"],
     github:
       "https://github.com/YounesBouchbouk/WeatherAPP-With-ReactJs-MUI-and-API",
-    link : ""
+    link: "",
   },
   {
     title: "ispapp website",
-    description:
-      "from figma to nextjs project , isapp landings pages ",
+    description: "from figma to nextjs project , isapp landings pages ",
     technologies: ["NextJs", "ReactJs", "tailwindcss"],
-    images: [ispappfigma, ispapp1, ispapp2,ispapp3],
+    images: [ispappfigma, ispapp1, ispapp2, ispapp3],
     whatfor: "",
-    context: ["Internships","top"],
+    context: ["Internships", "top"],
     // github:
     //   "https://github.com/YounesBouchbouk/CovidTracker-Application-With-ReactJs",
-      link : "https://ispapp.co"
+    link: "https://ispapp.co",
   },
   {
     title: "turnkeyisp website",
@@ -116,10 +133,10 @@ export const ProjectsData = [
     technologies: ["tailwind", "javascript"],
     images: [turnkeyisp, turnkeyisp2],
     whatfor: "",
-    context: ["Internships","top"],
+    context: ["Internships", "top"],
     // github:
     //   "https://github.com/YounesBouchbouk/CovidTracker-Application-With-ReactJs",
-      link : "https://turnkeyisp.co/"
+    link: "https://turnkeyisp.co/",
   },
   {
     title: "Covid Tracker",
@@ -131,7 +148,7 @@ export const ProjectsData = [
     context: ["Self-Learning"],
     github:
       "https://github.com/YounesBouchbouk/CovidTracker-Application-With-ReactJs",
-      link : ""
+    link: "",
   },
   {
     title: "My journey with reactJs start's with this small Reminder App",
@@ -141,7 +158,7 @@ export const ProjectsData = [
     whatfor: "",
     context: ["Self-Learning"],
     github: "",
-    link : ""
+    link: "",
   },
 
   {
@@ -152,21 +169,23 @@ export const ProjectsData = [
     whatfor: "",
     context: ["Self-Learning"],
     github: "https://github.com/YounesBouchbouk/Ecommerce-View",
-    link : ""
+    link: "",
   },
   {
     title: "AntySemsar , Full Stack Mobile Application with ReactNative",
-    description: "antysemsar is a mobile cross platform application developed with react native and node js , it help student who are going to continu their education in a defirent city to find where to live with ather student's who already find a local , so any one who already found a place can share it in the app with the price and pictures and more informaion ",
+    description:
+      "antysemsar is a mobile cross platform application developed with react native and node js , it help student who are going to continu their education in a defirent city to find where to live with ather student's who already find a local , so any one who already found a place can share it in the app with the price and pictures and more informaion ",
     technologies: ["ReactNAtive", "CSS", "NodeJS", "ExpressJS", "MongoDb"],
     images: [anty1, anty2, anty3, anty4, anty5, anty6, anty7, anty8],
     whatfor: "",
-    context: ["Self-Learning" , "top"],
+    context: ["Self-Learning", "top"],
     github: "https://github.com/YounesBouchbouk/AntySemsara",
-    link : ""
+    link: "",
   },
   {
     title: "NextFActoryIt portfolio with React , gatsby , TailwindCss ",
-    description: "This is a portfolio for nextFactory IT company , developed with react , gatsby , tailwindcss ",
+    description:
+      "This is a portfolio for nextFactory IT company , developed with react , gatsby , tailwindcss ",
     technologies: [
       "ReactJS",
       "FramerMotion",
@@ -186,8 +205,8 @@ export const ProjectsData = [
     ],
     whatfor: "",
     github: "",
-    context: ["Internships","top"],
-    link : ""
+    context: ["Internships", "top"],
+    link: "",
   },
   {
     title: "Full Stack Delivery Network Application",
@@ -205,11 +224,25 @@ export const ProjectsData = [
       "Docker",
       "Unit Test",
     ],
-    images: [],
+    images: [
+      SignUpUSer,
+      SignUpDelivery,
+      ResetPassowrdDemander,
+      confiméemailAlert,
+      Adresses,
+      phones,
+      days,
+      wonesDelaivraison,
+      tarrifs,
+      Review,
+      findZone,
+      DashServices,
+      ListeUtili,
+    ],
     whatfor: "",
-    context: ["Internships","top"],
+    context: ["Internships", "top"],
     github: "",
-    link : ""
+    link: "",
   },
   {
     title: "YounesBouchbouk portfolio with React , gatsby , TailwindCss ",
@@ -226,7 +259,7 @@ export const ProjectsData = [
     whatfor: "",
     context: ["Self-Learning", "top"],
     github: "",
-    link : ""
+    link: "",
   },
 
   // for University
@@ -237,9 +270,9 @@ export const ProjectsData = [
     technologies: ["Python", "Opencv", "Tkinter", "YoloV3"],
     images: [pfe1, pfe2, pfe3, pfe4, pfe5, pfeSchema],
     whatfor: "",
-    context: ["Internships","University"],
+    context: ["Internships", "University"],
     github: "https://github.com/YounesBouchbouk/Re-identification-GUI",
-    link : ""
+    link: "",
   },
   {
     title: "Kids School Managment System ",
@@ -247,9 +280,9 @@ export const ProjectsData = [
     technologies: ["HTML", "CSS", "BOOTSTRAP", "PHP", "MYSQL"],
     images: [houssna, houssna2, houssna3, houssna4, houssna5, houssna6],
     whatfor: "",
-    context: ["top" ,"Internships" , "University"],
+    context: ["top", "Internships", "University"],
     github: "",
-    link : ""
+    link: "",
   },
   {
     title: "Full stack Ecommerce Website",
@@ -267,9 +300,9 @@ export const ProjectsData = [
       phpecom10,
     ],
     whatfor: "",
-    context: ["Internships","University" , "top"],
+    context: ["Internships", "University", "top"],
     github: "",
-    link : ""
+    link: "",
   },
   {
     title: "Projects Managments Desktop Application ",
@@ -277,9 +310,9 @@ export const ProjectsData = [
     technologies: ["JavaFX", "CSS", "MYSQL"],
     images: [TemplateJava, jfx, jfx2, jfx3, jfx4],
     whatfor: "",
-    context: ["University","top"],
+    context: ["University", "top"],
     github: "https://github.com/YounesBouchbouk/ProjectsManager-JAVAFX",
-    link : ""
+    link: "",
   },
   {
     title: "Natours ReastFull APi",
@@ -290,7 +323,7 @@ export const ProjectsData = [
     whatfor: "",
     context: ["Self-Learning"],
     github: "",
-    link : ""
+    link: "",
   },
   {
     title: "ECommerce Shopping API",
@@ -301,7 +334,7 @@ export const ProjectsData = [
     whatfor: "",
     context: ["Self-Learning"],
     github: "",
-    link : ""
+    link: "",
   },
   {
     title: "JAYBY , mobile Application  ",
@@ -311,7 +344,7 @@ export const ProjectsData = [
     whatfor: "",
     context: ["University"],
     github: "https://github.com/Houssineyahia/android_Gestion-of-Budget-App",
-    link : ""
+    link: "",
   },
   {
     title: "Informatique Club Managment System ",
@@ -319,9 +352,9 @@ export const ProjectsData = [
     technologies: ["JEE", "CSS", "EclipceLink", "MYSQL"],
     images: [jee, jee2, jee3, jee4, jee5, jee6],
     whatfor: "",
-    context: ["University","top"],
+    context: ["University", "top"],
     github:
       "https://github.com/YounesBouchbouk/gestion_club_informatique_JEE_MYSQL_HIBERNATE",
-      link : ""
+    link: "",
   },
 ]
