@@ -171,17 +171,17 @@ export const ProjectsData = [
     github: "https://github.com/YounesBouchbouk/Ecommerce-View",
     link: "",
   },
-  {
-    title: "AntySemsar , Full Stack Mobile Application with ReactNative",
-    description:
-      "antysemsar is a mobile cross platform application developed with react native and node js , it help student who are going to continu their education in a defirent city to find where to live with ather student's who already find a local , so any one who already found a place can share it in the app with the price and pictures and more informaion ",
-    technologies: ["ReactNAtive", "CSS", "NodeJS", "ExpressJS", "MongoDb"],
-    images: [anty1, anty2, anty3, anty4, anty5, anty6, anty7, anty8],
-    whatfor: "",
-    context: ["Self-Learning", "top"],
-    github: "https://github.com/YounesBouchbouk/AntySemsara",
-    link: "",
-  },
+  // {
+  //   title: "AntySemsar , Full Stack Mobile Application with ReactNative",
+  //   description:
+  //     "antysemsar is a mobile cross platform application developed with react native and node js , it help student who are going to continu their education in a defirent city to find where to live with ather student's who already find a local , so any one who already found a place can share it in the app with the price and pictures and more informaion ",
+  //   technologies: ["ReactNAtive", "CSS", "NodeJS", "ExpressJS", "MongoDb"],
+  //   images: [anty1, anty2, anty3, anty4, anty5, anty6, anty7, anty8],
+  //   whatfor: "",
+  //   context: ["Self-Learning", "top"],
+  //   github: "https://github.com/YounesBouchbouk/AntySemsara",
+  //   link: "",
+  // },
   {
     title: "NextFActoryIt portfolio with React , gatsby , TailwindCss ",
     description:
