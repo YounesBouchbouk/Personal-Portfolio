@@ -12,11 +12,12 @@ import SectionTitle from "../components/SectionTitle"
 import AboutMe from "../components/AboutMe"
 import Projects from "../components/Projects"
 import TimeLine from "../components/TimeLine"
-import { Certificat, Education } from "../Data/Career"
+import { Certificat, Education, Professinal_experiences } from "../Data/Career"
 import ProjectPopUp from "../components/Cards/ProjectPopUp"
 import { motion, AnimatePresence } from "framer-motion"
 import Contact from "../components/Contact"
 import GitHubCalendar from "react-github-calendar"
+import TimeLineExp from "../components/TimeLineExp"
 
 const getInitialTheme = () => {
   if (typeof window !== "undefined" && window.localStorage) {
@@ -77,11 +78,14 @@ const IndexPage = () => {
           <HeroSection />
           <SectionTitle label={"Who   I'm   I   ?"} />
           <AboutMe />
-
           <SectionTitle label={"My Skilles"} />
           <Skilles />
           <SectionTitle label={"Education"} />
           <TimeLine Data={Education} type={"education"} />
+
+          <SectionTitle label={"Professional Expériences : "} />
+          <TimeLineExp Data={Professinal_experiences} />
+
           <SectionTitle label={"CERTIFICATE"} />
           <TimeLine Data={Certificat} type={"education"} />
           <Projects setPopUp={setpopup} popUp={popup} setItem={setItem} />
