@@ -14,9 +14,9 @@ import Projects from "../components/Projects"
 import TimeLine from "../components/TimeLine"
 import { Certificat, Education } from "../Data/Career"
 import ProjectPopUp from "../components/Cards/ProjectPopUp"
-import ContactBar from "../components/ContactBar"
 import { motion, AnimatePresence } from "framer-motion"
 import Contact from "../components/Contact"
+import GitHubCalendar from "react-github-calendar"
 
 const getInitialTheme = () => {
   if (typeof window !== "undefined" && window.localStorage) {
@@ -95,7 +95,9 @@ const IndexPage = () => {
         </AnimatePresence>
 
         {/* <SectionTitle label={"Funny Break :"} /> */}
-        <Foother />
+        <div className="my-4 flex items-center justify-center w-full py-3 bg-slate-100">
+          <GitHubCalendar username="YounesBouchbouk" color="#3069ba" />
+        </div>
       </Themeprovider2>
     </div>
   )
