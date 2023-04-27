@@ -4,7 +4,10 @@ import Me from "../images/Me2.png"
 import react from "../images/React-icon.png"
 import tailwind from "../images/Tailwind.png"
 import node from "../images/node.png"
-import SectionTitle from "./SectionTitle"
+import  {
+  
+  SiGoland,
+} from "react-icons/si"
 const HeroSection = () => {
   return (
     <div
@@ -27,6 +30,13 @@ const HeroSection = () => {
             I'm A passionate Full Stack Javascript Developer , Adapted with
             lastes Technologie and ready to learn anything{" "}
           </p>
+        </div>
+
+        <div className="flex gap-4 items-center ">
+        <p className="font-Merriweather text-xs   dark:text-slate-50 text-black-p">
+          Currently i'm learning backend development with  leaning Golang  
+        </p>
+        <span><SiGoland width={100} height={100}  color="#ffff"/></span>
         </div>
 
         <p className="font-Merriweather text-xs font-bold text-black-s">

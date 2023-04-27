@@ -6,7 +6,7 @@ const squareVariants = {
   visible: { opacity: 1, y: 0, transition: { duration: 1 } },
   hidden: { opacity: 0, y: 5 },
 }
-const LiTimeLine = ({ index, item }) => {
+const LiTimeLineOfEsp = ({ index, item }) => {
   const controls = useAnimation()
   const [ref, inView] = useInView()
 
@@ -28,22 +28,22 @@ const LiTimeLine = ({ index, item }) => {
     >
       <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
       <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-        {item.year} / {item?.city}
+        {item.Contract}
       </time>
       <h3 className="text-lg uppercase font-semibold text-gray-900 dark:text-white">
         {item.title}
       </h3>
-      <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+      <p className="mb-4 text-small font-extralight text-gray-500 dark:text-gray-400">
         {item.description}
       </p>
       <p className="mt-2 text-base font-normal text-gray-500 dark:text-gray-400">
-        {item.provider}
+        {item.localisation} , {item.Company}
       </p>
       <p className="mt-2 text-base font-normal text-gray-500 dark:text-gray-400">
-        {item.Link}
+        {item.Competences}
       </p>
     </motion.li>
   )
 }
 
-export default LiTimeLine
+export default LiTimeLineOfEsp
