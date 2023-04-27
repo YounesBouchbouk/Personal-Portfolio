@@ -13,9 +13,10 @@ import {
   SiReact,
   SiNextdotjs,
   SiMongodb,
+  SiGoland,
 } from "react-icons/si"
 import { DiPython } from "react-icons/di"
-
+import { FaAws, FaDocker } from "react-icons/fa"
 export const SkillesData = [
   {
     tech: "HTML5",
@@ -33,13 +34,18 @@ export const SkillesData = [
     icon: <SiTailwindcss className="text-5xl text-white" />,
   },
   {
+    tech: "Golang",
+    AVG: 50,
+    icon: <SiGoland className="text-5xl text-white" />,
+  },
+  {
     tech: "Javascript ES6",
     AVG: 70,
     icon: <SiJavascript className="text-5xl text-white" />,
   },
   {
     tech: "TypeScript",
-    AVG: 50,
+    AVG: 70,
     icon: <SiTypescript className="text-5xl text-white" />,
   },
   {
@@ -59,11 +65,11 @@ export const SkillesData = [
   },
   {
     tech: "NextJS",
-    AVG: 50,
+    AVG: 70,
     icon: <SiNextdotjs className="text-5xl text-white" />,
   },
   {
-    tech: "ReactNative",
+    tech: "React Native",
     AVG: 50,
     icon: <SiReact className="text-5xl text-white" />,
   },
@@ -91,5 +97,15 @@ export const SkillesData = [
     tech: "Pythone",
     AVG: 50,
     icon: <DiPython className="text-5xl text-white" />,
+  },
+  {
+    tech: "AWS",
+    AVG: 30,
+    icon: <FaAws className="text-5xl text-white" />,
+  },
+  {
+    tech: "Docker",
+    AVG: 30,
+    icon: <FaDocker className="text-5xl text-white" />,
   },
 ]

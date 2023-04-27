@@ -20,6 +20,13 @@ export const Education = [
       "Sector: Computer Engineering  Faculté polydesiplinaire University Ibn Zohr  ",
     city: "Agadir Morocco",
   },
+  {
+    year: "2024",
+    title: "Engineer diploma",
+    description:
+      "Sector: data and software engineer , Institut National des postes et télécommunications  ",
+    city: "Rabat Morocco",
+  },
 ]
 
 export const Certificat = [
@@ -74,5 +81,12 @@ export const Certificat = [
     title: "NextJS & React - The Complete Guide",
     description: "NextJs basics , Static Generation  , Server-side Rendering",
     provider: "Udemy ",
+  },
+  {
+    year: "2023",
+    title: "Backend Master Class [Golang + Postgres + Kubernetes + gRPC]",
+    description: "Golang ,Gin ,  CI/CD  , Kubernetes , docker , AWS  , gRPC ",
+    provider: "Udemy ",
+    Link: "soon",
   },
 ]
