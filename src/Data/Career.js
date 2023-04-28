@@ -4,28 +4,28 @@ export const Education = [
     title: "Bachelor's degree in Physical Science",
     description:
       "Get my Bachelor's degree in Physical Science in High school Abdellah chefchaouni",
-    city: "Agadir Morocco",
+    city: "Agadir,  Morocco",
   },
   {
     year: "2021",
     title: "Technical University degree",
     description:
       "Sector : Computer Engineering  Ecole supérieur de technologie Safi  University CADI AYYAD  ",
-    city: "Agadir Morocco",
+    city: "SAFI,  Morocco",
   },
   {
     year: "2022",
     title: "Professional license",
     description:
       "Sector: Computer Engineering  Faculté polydesiplinaire University Ibn Zohr  ",
-    city: "Agadir Morocco",
+    city: "TAROUDANT ,  Morocco",
   },
   {
     year: "2024",
     title: "Engineer diploma",
     description:
       "Sector: data and software engineer , Institut National des postes et télécommunications  ",
-    city: "Rabat Morocco",
+    city: "RABAT ,  Morocco",
   },
 ]
 
@@ -72,7 +72,7 @@ export const Certificat = [
   },
   {
     year: "2022",
-    title: " NestJS Zero to Hero - Modern TypeScript Back-end Development",
+    title: "NestJS Zero to Hero - Modern TypeScript Back-end Development",
     description: "NestJS TypeScript GraphQl API",
     provider: "Udemy ",
   },
@@ -99,7 +99,7 @@ export const Professinal_experiences = [
   {
     Contract: "Internship",
     title: "Full stack developer",
-    localisation: "États-Unis",
+    localisation: "Casablanca",
     durée: "janv. 2022 - juin 2022 · 6 mois",
     description:
       "Internship end study to obtain my diploma of the 3rd year professional license on computer development ,I held the position of Full stack Javascript developer , I realized two web applications a portfolio for the company with ReactJs / GatsbyJs / TailwindCss/CMS , and a delivery solution (Delivery Network) With ReactJs , NodeJs , MongoDb , ExpressJs , TailwindCss , Neo4j Graph Database, Docker ...more",
@@ -110,7 +110,7 @@ export const Professinal_experiences = [
   {
     Contract: "Internship",
     title: "web development: application internship",
-    localisation: "États-Unis",
+    localisation: "Safi",
     durée: "avr. 2021 - juin 2021 · 3 mois",
     description: "design and creation of an e-commerce website ",
     Company: "GITECH ",
@@ -119,7 +119,7 @@ export const Professinal_experiences = [
   {
     Contract: "PFE",
     title: "Machine Learning Researcher PFE",
-    localisation: "États-Unis",
+    localisation: "Safi",
     durée: "févr. 2021 - juil. 2021 · 6 mois",
     description:
       "Detection and re-identification of people in camera network .* using : Python ( OpenCV , SIFT && ORB algorithm , Tkinter ) , YOLOV4 .",
