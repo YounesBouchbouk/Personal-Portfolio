@@ -85,6 +85,17 @@ import ispapp1 from "../images/ispapp1.png"
 import ispapp2 from "../images/ispapp2.png"
 import ispapp3 from "../images/ispapp3.png"
 
+import nms from "../images/ispapp/adminLog.png"
+import nms2 from "../images/ispapp/dashboad.png"
+import nms3 from "../images/ispapp/dashboad2.png"
+import nms4 from "../images/ispapp/routerList.png"
+import nms5 from "../images/ispapp/routerchart.png"
+import nms6 from "../images/ispapp/routersam.png"
+import nms7 from "../images/ispapp/routersam2.png"
+import nms8 from "../images/ispapp/routershell.png"
+import nms9 from "../images/ispapp/routerwireless.png"
+import nms10 from "../images/ispapp/routerbackup.png"
+
 import turnkeyisp from "../images/turnkeyisp.png"
 import turnkeyisp2 from "../images/turnkeyisp2.png"
 
@@ -109,28 +120,40 @@ import ListeUtili from "../images/Deliverynet/ListeUtili.jpg"
 
 export const ProjectsData = [
   {
-    title: "Weather App",
+    title: "ispapp : network management  system ",
     description:
-      "My journey with reactJs start's with this small weather application to track weather of many countries and theire cities , the api was provided by ",
-    technologies: ["ReacJS", "Redux", "Material Ui"],
-    images: [weather1, wheather2, weather3],
+      "Learn everything about backend web development: Golang, Postgres, Redis, Gin, gRPC, Docker, Kubernetes, AWS, CI/CD",
+    technologies: [
+      "nextJs",
+      "typescript",
+      "tailwindcss",
+      "sockets",
+      "Leaflet",
+      "Plotly",
+      "zustand",
+      "Google api",
+      "Rest Api",
+    ],
+    images: [nms, nms2, nms3, nms4, nms5, nms6, nms7, nms8, nms9],
     whatfor: "",
-    context: ["Self-Learning"],
-    github:
-      "https://github.com/YounesBouchbouk/WeatherAPP-With-ReactJs-MUI-and-API",
-    link: "",
+    context: ["top"],
+    github: "",
+    link: "dash.ispapp.co",
   },
   {
-    title: "Simple_bank Rest API , gRPC , Docker , Kubernetes , CI CD",
+    title:
+      "Simple_bank Rest API Golang , Gin, gRPC , Docker , Kubernetes , CI CD",
     description:
       "Learn everything about backend web development: Golang, Postgres, Redis, Gin, gRPC, Docker, Kubernetes, AWS, CI/CD",
     technologies: [
       "Golang",
       "Gin",
       "gRPC",
+      "Rest Api",
       "Docker",
       "github actions",
       "Kubernetes",
+      "Test",
       "postgres",
       "Sqlc",
       "Swagger",
@@ -146,7 +169,7 @@ export const ProjectsData = [
   {
     title: "ispapp website",
     description: "from figma to nextjs project , isapp landings pages ",
-    technologies: ["NextJs", "ReactJs", "tailwindcss"],
+    technologies: ["Next Js", "React Js", "tailwindcss"],
     images: [ispappfigma, ispapp1, ispapp2, ispapp3],
     whatfor: "",
     context: ["Internships", "top"],
@@ -164,28 +187,6 @@ export const ProjectsData = [
     github: "https://turnkeyisp.co/",
     link: "https://turnkeyisp.co/",
   },
-  {
-    title: "Covid Tracker",
-    description:
-      "My journey with reactJs start's with this small covid Tracker APP conected with external API provided By ",
-    technologies: ["ReacJS", "ReactCharts", "Material Ui"],
-    images: [covide1, covide2, covide3],
-    whatfor: "",
-    context: ["Self-Learning"],
-    github:
-      "https://github.com/YounesBouchbouk/CovidTracker-Application-With-ReactJs",
-    link: "",
-  },
-  {
-    title: "My journey with reactJs start's with this small Reminder App",
-    description: "Todo List with React Redux",
-    technologies: ["ReactJs", "Material UI"],
-    images: [reminder],
-    whatfor: "",
-    context: ["Self-Learning"],
-    github: "",
-    link: "",
-  },
 
   {
     title: "ECommerce FrontEnd",
@@ -201,7 +202,14 @@ export const ProjectsData = [
     title: "AntySemsar , Full Stack Mobile Application with ReactNative",
     description:
       "antysemsar is a mobile cross platform application developed with react native and node js , it help student who are going to continu their education in a defirent city to find where to live with ather student's who already find a local , so any one who already found a place can share it in the app with the price and pictures and more informaion ",
-    technologies: ["ReactNAtive", "CSS", "NodeJS", "ExpressJS", "MongoDb"],
+    technologies: [
+      "React Native",
+      "CSS",
+      "Node JS",
+      "Rest Api",
+      "Express JS",
+      "MongoDb",
+    ],
     images: [anty3, anty4, anty5, anty6, anty7, anty8],
     whatfor: "",
     context: ["Self-Learning", "top"],
@@ -240,11 +248,11 @@ export const ProjectsData = [
       "Advenced MERN stack Project For internship  with ReactJs , Hooks , Neo4j , NodeJs ,  ...",
     technologies: [
       "ReactJs",
-      "reactNative",
       "TailwindCSS",
       "NodeJS",
       "ExpressJS",
       "MongoDb",
+      "Rest Api",
       "swagger",
       "Git&Github",
       "Docker",
@@ -284,6 +292,41 @@ export const ProjectsData = [
     images: [portfolio],
     whatfor: "",
     context: ["Self-Learning", "top"],
+    github: "",
+    link: "",
+  },
+
+  {
+    title: "Weather App",
+    description:
+      "My journey with reactJs start's with this small weather application to track weather of many countries and theire cities , the api was provided by ",
+    technologies: ["ReacJS", "Redux", "Material Ui"],
+    images: [weather1, wheather2, weather3],
+    whatfor: "",
+    context: ["Self-Learning"],
+    github:
+      "https://github.com/YounesBouchbouk/WeatherAPP-With-ReactJs-MUI-and-API",
+    link: "",
+  },
+  {
+    title: "Covid Tracker",
+    description:
+      "My journey with reactJs start's with this small covid Tracker APP conected with external API provided By ",
+    technologies: ["ReacJS", "ReactCharts", "Material Ui"],
+    images: [covide1, covide2, covide3],
+    whatfor: "",
+    context: ["Self-Learning"],
+    github:
+      "https://github.com/YounesBouchbouk/CovidTracker-Application-With-ReactJs",
+    link: "",
+  },
+  {
+    title: "My journey with reactJs start's with this small Reminder App",
+    description: "Todo List with React Redux",
+    technologies: ["ReactJs", "Material UI"],
+    images: [reminder],
+    whatfor: "",
+    context: ["Self-Learning"],
     github: "",
     link: "",
   },

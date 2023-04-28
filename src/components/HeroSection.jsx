@@ -34,7 +34,7 @@ const HeroSection = () => {
 
         <div className="flex gap-4 items-center ">
         <p className="font-Merriweather text-xs   dark:text-slate-50 text-black-p">
-          Currently i'm learning backend development with  leaning Golang  
+          Currently i'm learning backend development with  Golang  
         </p>
         <span><SiGoland width={100} height={100}  color="#ffff"/></span>
         </div>
