@@ -339,7 +339,7 @@ export const ProjectsData = [
     technologies: ["Python", "Opencv", "Tkinter", "YoloV3"],
     images: [pfe1, pfe2, pfe3, pfe4, pfe5, pfeSchema],
     whatfor: "",
-    context: ["Internships", "University"],
+    context: ["top", "Internships", "University"],
     github: "https://github.com/YounesBouchbouk/Re-identification-GUI",
     link: "",
   },
