@@ -36,7 +36,7 @@ const AboutMe = () => {
             Younes Bouchbouk
           </span>{" "}
           <span>
-            <br /> i have 21 yeas old . I'm a  Full-stack javascript developer adated
+            <br /> i have 22 yeas old . I'm a  Full-stack javascript developer adated
             with lastes technologie .
             <br /> I created my first page when I was 17 years old. It was a login page with HTML and CSS.
             <br />I entered this maze after getting my bachelor's degree.
@@ -44,7 +44,7 @@ const AboutMe = () => {
             In my educational career, I have worked on a lot of school
              and personal projects with different technologies : <br />
             <br />
-              React , NodeJs , NextJs , Gastby , NextJs ....
+              React , NodeJs , NextJs , Gastby , NextJs , Golang ....
           </span>
         </p>
       </div>
