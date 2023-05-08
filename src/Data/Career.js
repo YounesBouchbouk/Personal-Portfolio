@@ -80,8 +80,8 @@ export const Certificat = [
     year: "2023",
     title: "Backend Master Class [Golang + Postgres + Kubernetes + gRPC]",
     description: "Golang ,Gin ,  CI/CD  , Kubernetes , docker , AWS  , gRPC ",
-    provider: "Udemy ",
-    Link: "soon",
+    provider: "Udemy , UC-d003538f-08f1-493e-8cbf-6fb1c59a6c41 ",
+    Link: "https://www.udemy.com/certificate/UC-d003538f-08f1-493e-8cbf-6fb1c59a6c41/",
   },
 ]
 
