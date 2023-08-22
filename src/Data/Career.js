@@ -1,3 +1,6 @@
+import ispapp from "../images/ispapp.jpeg"
+import oracle from "../images/Oracle.png"
+import kadiaad from "../images/kadiaad.png"
 export const Education = [
   {
     year: "2019",
@@ -76,6 +79,19 @@ export const Certificat = [
     description: "NestJS TypeScript GraphQl API",
     provider: "Udemy ",
   },
+
+  {
+    year: "2023",
+    title: "gRPC [Golang] Master Class: Build Modern API and Microservices",
+    description: "exploring gRPC · Go (Programming Language)",
+    provider: "O'Reilly",
+  },
+  {
+    year: "2023",
+    title: "Up and Running with Concurrency in Go (Golang)",
+    description: "exploring Concurrency with Go ",
+    provider: "O'Reilly",
+  },
   {
     year: "2023",
     title: "Backend Master Class [Golang + Postgres + Kubernetes + gRPC]",
@@ -87,14 +103,26 @@ export const Certificat = [
 
 export const Professinal_experiences = [
   {
+    Contract: "Internship",
+    title: "Research Assistant",
+    localisation: "Morocco , Casablanca",
+    durée: "juil 2023 - today ",
+    description:
+      "Improved and automated testing processes for Graal Cloud Native Guides (https://www.graal.cloud/gcn/guides) .",
+    Company: "Oracle",
+    Competences: "Java , Groovy , CI",
+    imageUrl: oracle,
+  },
+  {
     Contract: "Temps plein",
     title: "Full stack developer",
     localisation: "États-Unis",
-    durée: "août 2022 - aujourd’hui ",
+    durée: "août 2022 - today",
     description:
       "As a front-end JavaScript developer on an ISP project, I helped turn MikroTik routers into cloud-managed Wi-Fi routers. By copying and pasting our RouterOS script onto the routers, we enabled centralized control of a fleet of MikroTik routers from a cloud dashboard. With this system, we could easily configure, monitor, and manage MikroTik routers alongside OpenWRT, SNMP, and TR-069 CWMP devices. \nOur system also provided valuable insights, such as email alerts for offline routers, the number of Wi-Fi connected devices and their signal strengths, latency charts, real-time traffic and bandwidth charts, and a browser web shell for remote terminal access. Plus, we used ISPApp bulk commands or server API to perform tasks like firmware upgrades, password changes, internet plan speed settings, and auto-disconnection of delinquent subscribers who don't pay. \n Through my work as a front-end developer on this project, I helped create a powerful and user-friendly system that simplified router management for our clients.",
     Company: "ispapp.co",
     Competences: "Next.js · Prisma · Tailwindcss · NestJS · React.js · MongoDB",
+    imageUrl: ispapp,
   },
   {
     Contract: "Internship",
@@ -119,12 +147,13 @@ export const Professinal_experiences = [
   {
     Contract: "PFE",
     title: "Machine Learning Researcher PFE",
-    localisation: "Safi",
+    localisation: "Morocco , Safi",
     durée: "févr. 2021 - juil. 2021 · 6 mois",
     description:
       "Detection and re-identification of people in camera network .* using : Python ( OpenCV , SIFT && ORB algorithm , Tkinter ) , YOLOV4 .",
     Company: "EST SAFI ",
     Competences:
-      "Deep learning · Tkinter · yoloV4 · OpenCV · Python (langage de programmation) · Apprentissage automatique",
+      " Python ,Machine Learning , Deep learning · Tkinter · yoloV4 · OpenCV ",
+    imageUrl: kadiaad,
   },
 ]

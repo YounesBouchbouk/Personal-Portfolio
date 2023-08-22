@@ -2,7 +2,6 @@ import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import Seo from "../components/seo"
 import Header from "../components/header.jsx"
-import Foother from "../components/Foother.jsx"
 
 import { ThemeProvider } from "../mode/modeContext"
 import HeroSection from "../components/HeroSection"
@@ -81,16 +80,15 @@ const IndexPage = () => {
           <SectionTitle label={"My Skilles"} />
           <Skilles />
           <SectionTitle label={"Education"} />
-          <TimeLine Data={Education} type={"education"} />
+          <TimeLine Data={Education.reverse()} type={"education"} />
 
           <SectionTitle label={"Professional Expériences : "} />
           <TimeLineExp Data={Professinal_experiences} />
 
-          <SectionTitle label={"CERTIFICATE"} />
-          <TimeLine Data={Certificat} type={"education"} />
+          <SectionTitle label={"Online Courses"} />
+          <TimeLine Data={Certificat.reverse()} type={"education"} />
           <Projects setPopUp={setpopup} popUp={popup} setItem={setItem} />
         </div>
-        {/* <Contact /> */}
 
         <AnimatePresence>
           {popup && (
