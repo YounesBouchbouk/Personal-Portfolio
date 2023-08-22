@@ -16,18 +16,18 @@ import {
   SiGoland,
 } from "react-icons/si"
 import { DiPython } from "react-icons/di"
-import { FaAws, FaDocker } from "react-icons/fa"
+// import { FaAws, FaDocker } from "react-icons/fa"
 export const SkillesData = [
   {
-    tech: "HTML5",
+    tech: "HTML5/CSS3",
     AVG: 80,
     icon: <TiHtml5 className="text-5xl text-white" />,
   },
-  {
-    tech: "CSS3",
-    AVG: 85,
-    icon: <SiCsswizardry className="text-5xl text-white" />,
-  },
+  // {
+  //   tech: "",
+  //   AVG: 85,
+  //   icon: <SiCsswizardry className="text-5xl text-white" />,
+  // },
   {
     tech: "TailwindCSS",
     AVG: 60,
@@ -94,18 +94,8 @@ export const SkillesData = [
     icon: <SiOracle className="text-5xl text-white" />,
   },
   {
-    tech: "Pythone",
-    AVG: 50,
+    tech: "Python",
+    AVG: 60,
     icon: <DiPython className="text-5xl text-white" />,
-  },
-  {
-    tech: "AWS",
-    AVG: 30,
-    icon: <FaAws className="text-5xl text-white" />,
-  },
-  {
-    tech: "Docker",
-    AVG: 30,
-    icon: <FaDocker className="text-5xl text-white" />,
   },
 ]

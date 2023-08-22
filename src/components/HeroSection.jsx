@@ -4,10 +4,7 @@ import Me from "../images/Me2.png"
 import react from "../images/React-icon.png"
 import tailwind from "../images/Tailwind.png"
 import node from "../images/node.png"
-import  {
-  
-  SiGoland,
-} from "react-icons/si"
+import { SiGoland } from "react-icons/si"
 const HeroSection = () => {
   return (
     <div
@@ -27,16 +24,18 @@ const HeroSection = () => {
 
         <div className="text-left p-2 dark:text-slate-50 text-black-p  ">
           <p>
-            I'm A passionate Full Stack Javascript Developer , Adapted with
-            lastes Technologie and ready to learn anything{" "}
+            Experienced Full Stack Developer | JavaScript Enthusiast |
+            Passionate About Concurrency
           </p>
         </div>
 
         <div className="flex gap-4 items-center ">
-        <p className="font-Merriweather text-xs   dark:text-slate-50 text-black-p">
-          Currently i'm learning backend development with  Golang  
-        </p>
-        <span><SiGoland width={100} height={100}  color="#ffff"/></span>
+          <p className="font-Merriweather text-xs   dark:text-slate-50 text-black-p">
+            Currently i'm learning backend development with Golang
+          </p>
+          <span>
+            <SiGoland width={100} height={100} color="#ffff" />
+          </span>
         </div>
 
         <p className="font-Merriweather text-xs font-bold text-black-s">
@@ -47,17 +46,18 @@ const HeroSection = () => {
         <div
           className="w-full  rounded-full bg-white dark:bg-black-p-l "
           style={{
-            width: 400,
-            height: 400,
+            width: 500,
+            height: 500,
             overflow: "hidden",
           }}
         >
           <img
             src={Me}
             alt="Younes Bouchbouk Picture"
+            className="-mt-6"
             style={{
-              width: 500,
-              height: 400,
+              width: 550,
+              height: 590,
             }}
           />
         </div>

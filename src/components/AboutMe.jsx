@@ -36,15 +36,22 @@ const AboutMe = () => {
             Younes Bouchbouk
           </span>{" "}
           <span>
-            <br /> i have 22 yeas old . I'm a  Full-stack javascript developer adated
-            with lastes technologie .
-            <br /> I created my first page when I was 17 years old. It was a login page with HTML and CSS.
-            <br />I entered this maze after getting my bachelor's degree.
             <br />
-            In my educational career, I have worked on a lot of school
-             and personal projects with different technologies : <br />
+            🚀 Currently, I'm on an exciting journey, delving deep into Golang
+            and the intricacies of concurrency. My fascination with gRPC API is
+            leading me to explore new horizons in the world of backend
+            development.
             <br />
-              React , NodeJs , NextJs , Gastby , NextJs , Golang ....
+            <br />
+            🛠️ Throughout my journey, I've successfully contributed to a diverse
+            range of projects, both as an independent freelancer and in
+            collaborative educational endeavors. With over a year of hands-on
+            experience under my belt, I've honed my skills and insights to
+            consistently deliver high-quality solutions.
+            <br />
+            <br />
+            Let's connect and explore the possibilities together! 🌟
+            #FullStackDevelopment #JavaScript #Golang #Concurrency #React #gRPC
           </span>
         </p>
       </div>
