@@ -5,11 +5,13 @@ import SectionTitle from "./SectionTitle"
 import { ProjectsData } from "../Data/Projects"
 
 const Projects = ({ setPopUp, popup, setItem }) => {
-  const [filter, setFiltred] = useState(ProjectsData.filter(item => item.context.includes("top")))
+  const [filter, setFiltred] = useState(
+    ProjectsData.filter(item => item.context.includes("top"))
+  )
   const [selected, setSelected] = useState("top")
 
   const letsFilter = name => {
-    const newData = ProjectsData.filter(item => item.context.includes(name)  )
+    const newData = ProjectsData.filter(item => item.context.includes(name))
     setFiltred(newData)
     setSelected(name)
   }
@@ -20,7 +22,7 @@ const Projects = ({ setPopUp, popup, setItem }) => {
 
       <div className="w-full   flex justify-center items-center">
         <div className="w-1/2 flex justify-around">
-        <button
+          <button
             className={`p-2 ${
               selected === "all"
                 ? "bg-black-s text-white "
@@ -32,6 +34,7 @@ const Projects = ({ setPopUp, popup, setItem }) => {
             }}
           >
             All
+            {` (${ProjectsData.length})`}
           </button>
 
           <button
@@ -45,7 +48,10 @@ const Projects = ({ setPopUp, popup, setItem }) => {
               setSelected("top")
             }}
           >
-            Top
+            Top{" "}
+            {`(${
+              ProjectsData.filter(item => item.context.includes("top")).length
+            })`}
           </button>
           <button
             className={`p-2 ${
@@ -57,7 +63,11 @@ const Projects = ({ setPopUp, popup, setItem }) => {
               letsFilter("Internships")
             }}
           >
-            Internships
+            Internships{" "}
+            {`(${
+              ProjectsData.filter(item => item.context.includes("Internships"))
+                .length
+            })`}
           </button>
           <button
             className={`p-2 ${
@@ -69,7 +79,11 @@ const Projects = ({ setPopUp, popup, setItem }) => {
               letsFilter("University")
             }}
           >
-            University
+            University{" "}
+            {`(${
+              ProjectsData.filter(item => item.context.includes("University"))
+                .length
+            })`}
           </button>
           <button
             className={`p-2 ${
@@ -81,7 +95,12 @@ const Projects = ({ setPopUp, popup, setItem }) => {
               letsFilter("Self-Learning")
             }}
           >
-            Self-Learning
+            Self-Learning{" "}
+            {`(${
+              ProjectsData.filter(item =>
+                item.context.includes("Self-Learning")
+              ).length
+            })`}
           </button>
         </div>
       </div>

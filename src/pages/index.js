@@ -77,17 +77,15 @@ const IndexPage = () => {
           <HeroSection />
           <SectionTitle label={"Who   I'm   I   ?"} />
           <AboutMe />
-          <SectionTitle label={"My Skilles"} />
-          <Skilles />
-          <SectionTitle label={"Education"} />
-          <TimeLine Data={Education.reverse()} type={"education"} />
-
           <SectionTitle label={"Professional Expériences : "} />
           <TimeLineExp Data={Professinal_experiences} />
-
+          <SectionTitle label={"Education"} />
+          <TimeLine Data={Education.reverse()} type={"education"} />
+          <Projects setPopUp={setpopup} popUp={popup} setItem={setItem} />
+          <SectionTitle label={"My Skilles"} />
+          <Skilles />
           <SectionTitle label={"Online Courses"} />
           <TimeLine Data={Certificat.reverse()} type={"education"} />
-          <Projects setPopUp={setpopup} popUp={popup} setItem={setItem} />
         </div>
 
         <AnimatePresence>

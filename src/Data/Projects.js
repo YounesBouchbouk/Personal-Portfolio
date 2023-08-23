@@ -118,7 +118,27 @@ import findZone from "../images/Deliverynet/Review.jpg"
 import DashServices from "../images/Deliverynet/DashServices.jpg"
 import ListeUtili from "../images/Deliverynet/ListeUtili.jpg"
 
+import swiftHome from "../images/swiftnet/HomePage.png"
+import swiftMap from "../images/swiftnet/Map.png"
+import swiftPlan from "../images/swiftnet/plan.png"
+import swiftPricing from "../images/swiftnet/Priving.png"
+
+import mindMeetHome from "../images/mindmeet/Homepage.png"
+import mindDialog from "../images/mindmeet/Dialog.png"
+import mindDoctors from "../images/mindmeet/Doctors.png"
+import mindArticles from "../images/mindmeet/Articles.png"
+
 export const ProjectsData = [
+  {
+    title: "SwiftNet.ca",
+    description: "",
+    technologies: ["NextJs", "Google API", "TailwindCss"],
+    images: [swiftHome, swiftMap, swiftPlan, swiftPricing],
+    whatfor: "",
+    github: "https://www.swift-net.ca",
+    context: ["top"],
+    link: "https://www.swift-net.ca",
+  },
   {
     title: "ispapp : network management  system",
     description:
@@ -177,7 +197,6 @@ export const ProjectsData = [
     github: "https://ispapp.co/",
     link: "https://ispapp.co",
   },
-
   {
     title: "Machine Learning : person re-identification",
     description:
@@ -185,10 +204,21 @@ export const ProjectsData = [
     technologies: ["Python", "Opencv", "Tkinter", "YoloV4"],
     images: [pfe1, pfe2, pfe3, pfe4, pfe5, pfeSchema],
     whatfor: "",
-    context: ["top", "Internships", "University"],
+    context: ["top", "University"],
     github: "https://github.com/YounesBouchbouk/Re-identification-GUI",
     link: "",
   },
+  {
+    title: "MindMeet",
+    description: "",
+    technologies: ["NextJs", "OpenAI API", "TailwindCss"],
+    images: [mindMeetHome, mindDialog, mindDoctors, mindArticles],
+    whatfor: "",
+    github: "https://www.mindmeet.online/",
+    context: ["University", "top"],
+    link: "https://www.mindmeet.online/",
+  },
+
   {
     title: "NextFactoryIt portfolio",
     description:
