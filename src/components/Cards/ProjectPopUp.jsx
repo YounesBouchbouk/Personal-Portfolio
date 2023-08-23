@@ -15,32 +15,29 @@ function useOutsideAlerter(ref, setPopUp) {
         setPopUp(false)
       }
     }
-	if(window !== "undefined"){
-   // your document or window manipulation
-       document.addEventListener("mousedown", handleClickOutside)
-
-	}
+    if (window !== "undefined") {
+      // your document or window manipulation
+      document.addEventListener("mousedown", handleClickOutside)
+    }
     // Bind the event listener
     return () => {
-		if(window !== "undefined"){
-   // your document or window manipulation
-		document.removeEventListener("mousedown", handleClickOutside)
-		}
+      if (window !== "undefined") {
+        // your document or window manipulation
+        document.removeEventListener("mousedown", handleClickOutside)
+      }
       // Unbind the event listener on clean up
-      
     }
   }, [ref])
 }
 
 const ProjectPopUp = ({ setPopUp, popup, item }) => {
-  console.log(item);
+  console.log(item)
   const wrapperRef = useRef(null)
   useOutsideAlerter(wrapperRef, setPopUp)
 
   const [i, setI] = useState(0)
 
   const next = () => {
-    console.log(i)
     if (i === item.images.length - 1) {
       setI(0)
     } else {
@@ -90,10 +87,20 @@ const ProjectPopUp = ({ setPopUp, popup, item }) => {
             }}
             className="w-4 bg-white/60 hover:bg-white/40 h-full absolute top-0 left-0"
           >
-            b
+            {`<`}
           </button>
           <div className="flex justify-center items-center w-full h-full">
-          <img  src={item.images[i]} alt="Img" className={item.title === "AntySemsar , Full Stack Mobile Application with ReactNative" || item.title === "JAYBY , mobile Application"  ? "h-[500px]" : ""} />
+            <img
+              src={item.images[i]}
+              alt="Img"
+              className={
+                item.title ===
+                  "AntySemsar , Full Stack Mobile Application with ReactNative" ||
+                item.title === "JAYBY , mobile Application"
+                  ? "h-[500px]"
+                  : ""
+              }
+            />
           </div>
           <div className="w-4 bg-white/60 hover:bg-white/40 h-full absolute top-0 right-0">
             <button
@@ -102,7 +109,7 @@ const ProjectPopUp = ({ setPopUp, popup, item }) => {
               }}
               className="w-4 bg-white/60 hover:bg-white/40 h-full absolute top-0 left-0"
             >
-              n
+              {`>`}
             </button>
           </div>
         </div>
@@ -115,7 +122,7 @@ const ProjectPopUp = ({ setPopUp, popup, item }) => {
             <div className="w-2/4 h-0.5 bg-white"></div>
 
             <div className="mt-4">
-              {/* <p className="text-white text-sm">{item.description}</p> */}
+              <p className="text-white text-xs px-4">{item.description}</p>
             </div>
 
             <div className="w-full  flex justify-center items-center flex-wrap ">

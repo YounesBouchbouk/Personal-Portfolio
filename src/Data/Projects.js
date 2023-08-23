@@ -120,9 +120,9 @@ import ListeUtili from "../images/Deliverynet/ListeUtili.jpg"
 
 export const ProjectsData = [
   {
-    title: "ispapp : network management  system ",
+    title: "ispapp : network management  system",
     description:
-      "Learn everything about backend web development: Golang, Postgres, Redis, Gin, gRPC, Docker, Kubernetes, AWS, CI/CD",
+      "As a front-end JavaScript developer on an ISP project, I helped turn MikroTik routers into cloud-managed Wi-Fi routers. By copying and pasting our RouterOS script onto the routers, we enabled centralized control of a fleet of MikroTik routers from a cloud dashboard. With this system, we could easily configure, monitor, and manage MikroTik routers alongside OpenWRT, SNMP, and TR-069 CWMP devices.",
     technologies: [
       "nextJs",
       "typescript",
@@ -144,7 +144,7 @@ export const ProjectsData = [
     title:
       "Simple_bank Rest API Golang , Gin, gRPC , Docker , Kubernetes , CI CD",
     description:
-      "Learn everything about backend web development: Golang, Postgres, Redis, Gin, gRPC, Docker, Kubernetes, AWS, CI/CD",
+      "Learn everything about backend web development: Golang, Postgres, Gin, gRPC, Docker, Kubernetes, AWS, CI/CD",
     technologies: [
       "Golang",
       "Gin",
@@ -168,7 +168,8 @@ export const ProjectsData = [
   },
   {
     title: "ispapp website",
-    description: "from figma to nextjs project , isapp landings pages ",
+    description:
+      "Implemented a robust and user-friendly landing pages based on Figma design for ISPapp.",
     technologies: ["Next Js", "React Js", "tailwindcss"],
     images: [ispappfigma, ispapp1, ispapp2, ispapp3],
     whatfor: "",
@@ -176,55 +177,27 @@ export const ProjectsData = [
     github: "https://ispapp.co/",
     link: "https://ispapp.co",
   },
-  {
-    title: "turnkeyisp website",
-    description:
-      "from figma to html css javascript project , turnkeyisp landing pages ",
-    technologies: ["tailwind", "javascript"],
-    images: [turnkeyisp, turnkeyisp2],
-    whatfor: "",
-    context: ["Internships", "top"],
-    github: "https://turnkeyisp.co/",
-    link: "https://turnkeyisp.co/",
-  },
 
   {
-    title: "ECommerce FrontEnd",
-    description: "Ecommerce UI with ReactJs and MaterialUI",
-    technologies: ["ReactJs", "Material UI"],
-    images: [EcommF1, EcommF2, EcommF3, EcommF4, EcommF5],
+    title: "Machine Learning : person re-identification",
+    description:
+      "Developed a desktop application aimed at detecting and tracking individuals not wearing masks during the COVID-19 crise. Utilized the capabilities of YOLOV4 to achieve precise mask detection and smoothly integrated its functionality with the primary camera, enabling real-time monitoring.Employed the openCV library to incorporate SIFT and ORB algorithms, enabling the extraction of distinctive image characteristics from secondary cameras.",
+    technologies: ["Python", "Opencv", "Tkinter", "YoloV4"],
+    images: [pfe1, pfe2, pfe3, pfe4, pfe5, pfeSchema],
     whatfor: "",
-    context: ["Self-Learning"],
-    github: "https://github.com/YounesBouchbouk/Ecommerce-View",
+    context: ["top", "Internships", "University"],
+    github: "https://github.com/YounesBouchbouk/Re-identification-GUI",
     link: "",
   },
   {
-    title: "AntySemsar , Full Stack Mobile Application with ReactNative",
+    title: "NextFactoryIt portfolio",
     description:
-      "antysemsar is a mobile cross platform application developed with react native and node js , it help student who are going to continu their education in a defirent city to find where to live with ather student's who already find a local , so any one who already found a place can share it in the app with the price and pictures and more informaion ",
-    technologies: [
-      "React Native",
-      "CSS",
-      "Node JS",
-      "Rest Api",
-      "Express JS",
-      "MongoDb",
-    ],
-    images: [anty3, anty4, anty5, anty6, anty7, anty8],
-    whatfor: "",
-    context: ["Self-Learning", "top"],
-    github: "https://github.com/YounesBouchbouk/AntySemsara",
-    link: "",
-  },
-  {
-    title: "NextFActoryIt portfolio with React , gatsby , TailwindCss ",
-    description:
-      "This is a portfolio for nextFactory IT company , developed with react , gatsby , tailwindcss ",
+      "This portfolio showcases the capabilities of nextFactory, an IT company. It has been crafted using technologies like React, Gatsby, and Tailwind CSS.",
     technologies: [
       "ReactJS",
       "FramerMotion",
       "TailwindCss",
-      "Gatsby",
+      "GatsbyJs",
       "GraphQL",
       "makerdown",
     ],
@@ -279,68 +252,64 @@ export const ProjectsData = [
     link: "",
   },
   {
-    title: "YounesBouchbouk portfolio with React , gatsby , TailwindCss ",
-    description: "My own protfolio , you are visiting it now ",
-    technologies: [
-      "ReactJS",
-      "FramerMotion",
-      "TailwindCss",
-      "Gatsby",
-      "GraphQL",
-      "makerdown",
-    ],
+    title: "YounesBouchbouk portfolio  ",
+    description: "You are currently exploring it lol.",
+    technologies: ["ReactJS", "TailwindCss", "GatsbyJs", "FramerMotion"],
     images: [portfolio],
     whatfor: "",
     context: ["Self-Learning", "top"],
     github: "",
     link: "",
   },
-
   {
-    title: "Weather App",
+    title: "turnkeyisp website",
     description:
-      "My journey with reactJs start's with this small weather application to track weather of many countries and theire cities , the api was provided by ",
-    technologies: ["ReacJS", "Redux", "Material Ui"],
-    images: [weather1, wheather2, weather3],
+      "from figma to html css javascript project , turnkeyisp landing pages ",
+    technologies: ["tailwind", "javascript"],
+    images: [turnkeyisp, turnkeyisp2],
     whatfor: "",
-    context: ["Self-Learning"],
-    github:
-      "https://github.com/YounesBouchbouk/WeatherAPP-With-ReactJs-MUI-and-API",
-    link: "",
+    context: ["Internships", "top"],
+    github: "https://turnkeyisp.co/",
+    link: "https://turnkeyisp.co/",
   },
   {
-    title: "Covid Tracker",
+    title: "AntySemsar , Full Stack Mobile Application with ReactNative",
     description:
-      "My journey with reactJs start's with this small covid Tracker APP conected with external API provided By ",
-    technologies: ["ReacJS", "ReactCharts", "Material Ui"],
-    images: [covide1, covide2, covide3],
+      "Antysemsar is a cross-platform mobile application built using React Native and Node.js. It serves as a valuable tool for students planning to pursue their education in a new city. The app facilitates the search for suitable accommodation by connecting students with peers who have already secured local housing. Users who have already found housing can use the app to share details such as pricing, images, and additional information about their living arrangements.",
+    technologies: [
+      "React Native",
+      "CSS",
+      "Node JS",
+      "Rest Api",
+      "Express JS",
+      "MongoDb",
+    ],
+    images: [anty3, anty4, anty5, anty6, anty7, anty8],
     whatfor: "",
-    context: ["Self-Learning"],
-    github:
-      "https://github.com/YounesBouchbouk/CovidTracker-Application-With-ReactJs",
+    context: ["Self-Learning", "top"],
+    github: "https://github.com/YounesBouchbouk/AntySemsara",
     link: "",
   },
   {
-    title: "My journey with reactJs start's with this small Reminder App",
-    description: "Todo List with React Redux",
-    technologies: ["ReactJs", "Material UI"],
-    images: [reminder],
+    title: "JAYBY , mobile Application",
+    description:
+      "Your Mobile Budget Management Solution Meet JayBy, a powerful mobile application designed to streamline budget management on the go. With a user-friendly interface and intuitive features, JayBy empowers you to take control of your finances effectively.",
+    technologies: ["Android", "JAVA", "firebase"],
+    images: [part2, Tempaltemobile, part0, part1, part3, part4, part5, part6],
     whatfor: "",
-    context: ["Self-Learning"],
-    github: "",
+    context: ["top", "University"],
+    github: "https://github.com/Houssineyahia/android_Gestion-of-Budget-App",
     link: "",
   },
-
   // for University
-
   {
-    title: "Machine Learning : person re-identification",
-    description: "",
-    technologies: ["Python", "Opencv", "Tkinter", "YoloV3"],
-    images: [pfe1, pfe2, pfe3, pfe4, pfe5, pfeSchema],
+    title: "Projects Managments Desktop Application ",
+    description: "Project Managments Desktop Application ",
+    technologies: ["JavaFX", "CSS", "MYSQL"],
+    images: [TemplateJava, jfx, jfx2, jfx3, jfx4],
     whatfor: "",
-    context: ["top", "Internships", "University"],
-    github: "https://github.com/YounesBouchbouk/Re-identification-GUI",
+    context: ["University", "top"],
+    github: "https://github.com/YounesBouchbouk/ProjectsManager-JAVAFX",
     link: "",
   },
   {
@@ -355,7 +324,7 @@ export const ProjectsData = [
   },
   {
     title: "Full stack Ecommerce Website",
-    description: "School managment System  ",
+    description: "Full stack ecommerce website ",
     technologies: ["HTML", "CSS", "BOOTSTRAP", "JQuery", "PHP", "MYSQL"],
     images: [
       phpecom1,
@@ -374,19 +343,9 @@ export const ProjectsData = [
     link: "",
   },
   {
-    title: "Projects Managments Desktop Application ",
-    description: "Project Managments Desktop Application ",
-    technologies: ["JavaFX", "CSS", "MYSQL"],
-    images: [TemplateJava, jfx, jfx2, jfx3, jfx4],
-    whatfor: "",
-    context: ["University", "top"],
-    github: "https://github.com/YounesBouchbouk/ProjectsManager-JAVAFX",
-    link: "",
-  },
-  {
     title: "Natours ReastFull APi",
     description:
-      "RestFull Api for  Natours Website includes : Tours , Revieus , Users , JWT , Security , Authentication and autorition",
+      "Introducing our comprehensive RESTful API designed to power the Natours website with seamless functionality. This API includes essential features such as Tours, Reviews, Users, JWT for secure communication, robust Security measures, and Authentication and Authorization protocols. Manage diverse tours effortlessly, access and manage user reviews, handle user operations securely, and ensure data protection through JWT and advanced security implementations. Our API forms the core of Natours, enhancing tour management, user engagement, and overall website security for an exceptional user experience.",
     technologies: ["NodeJS", "ExpressJS", "MongoDb"],
     images: [postman],
     whatfor: "",
@@ -397,7 +356,7 @@ export const ProjectsData = [
   {
     title: "ECommerce Shopping API",
     description:
-      "RestFull Api for Ecommerce Website includes : Users, Products , Orders , Revieus , Categories , JWT , Security , Authentication and autorition",
+      "Presenting our comprehensive RESTful API tailored to empower your Ecommerce website with a seamless and dynamic experience. This API encompasses fundamental components such as User management, Product catalog, Order processing, Reviews, Category organization, and employs advanced security measures including JWT (JSON Web Tokens) for secure communication. Robust security features ensure data protection, while Authentication and Authorization mechanisms guarantee secure user interactions. Seamlessly manage user accounts, curate a diverse product range, streamline order fulfillment, gather user reviews, categorize products effectively, and enhance overall security. Our API serves as the cornerstone of your Ecommerce venture, optimizing user engagement, bolstering data integrity, and fortifying your website's functionality for unparalleled performance.",
     technologies: ["NodeJS", "ExpressJS", "MongoDb"],
     images: [postman],
     whatfor: "",
@@ -405,25 +364,40 @@ export const ProjectsData = [
     github: "",
     link: "",
   },
-  {
-    title: "JAYBY , mobile Application",
-    description: " Gestion Of budget mobile Application Named JAYBY",
-    technologies: ["Android", "JAVA", "firebase"],
-    images: [part2, Tempaltemobile, part0, part1, part3, part4, part5, part6],
-    whatfor: "",
-    context: ["top", "University"],
-    github: "https://github.com/Houssineyahia/android_Gestion-of-Budget-App",
-    link: "",
-  },
+
   {
     title: "Informatique Club Managment System ",
-    description: "Informatique Club Managment Systemn Hybernet ",
+    description: "Informatique Club Managment system  ",
     technologies: ["JEE", "CSS", "EclipceLink", "MYSQL"],
     images: [jee, jee2, jee3, jee4, jee5, jee6],
     whatfor: "",
     context: ["University", "top"],
     github:
       "https://github.com/YounesBouchbouk/gestion_club_informatique_JEE_MYSQL_HIBERNATE",
+    link: "",
+  },
+  {
+    title: "Weather App",
+    description:
+      "My journey with React.js began with the creation of a modest weather application aimed at tracking weather conditions across numerous countries and their respective cities. This project marked my initial steps into the world of React.js development. I sourced weather data through an API graciously provided by a service, which facilitated the application's functionality.",
+    technologies: ["ReacJS", "Redux", "Material Ui"],
+    images: [weather1, wheather2, weather3],
+    whatfor: "",
+    context: ["Self-Learning"],
+    github:
+      "https://github.com/YounesBouchbouk/WeatherAPP-With-ReactJs-MUI-and-API",
+    link: "",
+  },
+  {
+    title: "Covid Tracker",
+    description:
+      "My journey with React.js commenced through the development of a compact COVID Tracker app, intricately linked to an external API. This API, generously , served as the cornerstone of the app, enabling real-time tracking and display of COVID-related data.",
+    technologies: ["ReacJS", "React Charts", "Material Ui"],
+    images: [covide1, covide2, covide3],
+    whatfor: "",
+    context: ["Self-Learning"],
+    github:
+      "https://github.com/YounesBouchbouk/CovidTracker-Application-With-ReactJs",
     link: "",
   },
 ]
