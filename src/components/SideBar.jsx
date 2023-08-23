@@ -7,6 +7,8 @@ import {
   BsGithub,
 } from "react-icons/bs"
 
+import { AiOutlineFileText } from "react-icons/ai"
+
 import { motion, useAnimation } from "framer-motion"
 import { Link } from "gatsby"
 
@@ -32,7 +34,7 @@ const SideBar = () => {
       transition={{ duration: 1, ease: "easeInOut" }}
       animate="visible"
       variants={variants}
-      className="fixed h-full px-2 flex flex-col cursor-pointer z-50  items-center justify-center transition-all duration-500 ease-in  "
+      className="fixed h-full w-[100px] px-2 flex flex-col cursor-pointer z-50  items-start justify-center transition-all duration-500 ease-in  "
     >
       <motion.div custom={0} animate={controls} className="flex relative group">
         <Link to="https://www.linkedin.com/in/younes-bouchbouk-71a355217/">
@@ -66,10 +68,20 @@ const SideBar = () => {
           FACEBOOK
         </p>
       </div>
+
       <div className="flex relative group">
         <BsWhatsapp className="text-2xl text-black-p hover:text-black-s animate-pulse mb-6 dark:text-white-c  " />
         <p className="absolute left-8 hidden text-black-s   text-xs font-Ubuntu  group-hover:inline transition-all duration-500 ease-in">
           +212 680413729
+        </p>
+      </div>
+
+      <div className="flex relative group">
+        <a href="/YounesBouchboukResume.pdf" download>
+          <AiOutlineFileText className="text-2xl text-black-p hover:text-black-s animate-pulse mb-6 dark:text-white-c  " />
+        </a>
+        <p className="absolute left-8 hidden text-black-s   text-xs font-Ubuntu  group-hover:inline transition-all duration-500 ease-in">
+          My Resume
         </p>
       </div>
     </motion.div>
