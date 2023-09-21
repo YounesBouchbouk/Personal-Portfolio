@@ -17,6 +17,8 @@ import { motion, AnimatePresence } from "framer-motion"
 import Contact from "../components/Contact"
 import GitHubCalendar from "react-github-calendar"
 import TimeLineExp from "../components/TimeLineExp"
+import Annance from "../components/Annonce"
+import Annonce from "../components/Annonce"
 
 const getInitialTheme = () => {
   if (typeof window !== "undefined" && window.localStorage) {
@@ -71,6 +73,8 @@ const IndexPage = () => {
         title="Younes Bouchbouk - Home"
         description="Full stack javascript developer , ReactJs front end developer , nodejs backend developer , junior developer , Mern stack student developer , young software engineer "
       />
+      {/* <Annonce /> */}
+
       <Themeprovider2>
         <div className={`${popup ? "blur-sm" : ""}`}>
           <SideBar />

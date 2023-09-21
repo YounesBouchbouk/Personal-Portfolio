@@ -5,7 +5,7 @@ import { motion, useAnimation } from "framer-motion"
 import { Link } from "react-scroll"
 import Upbutton from "./UpButton"
 
-const Header = ({theme , setTheme}) => {
+const Header = ({ theme, setTheme }) => {
   const [showbar, setShowbar] = useState(false)
   const controls = useAnimation()
 
@@ -107,6 +107,14 @@ const Header = ({theme , setTheme}) => {
           </Link>
         </motion.div>
       </div>
+
+      <div className="h-full flex items-center justify-center">
+        <p className="dark:text-white font-bold mt-4 animate-pulse ">
+          {" "}
+          Currently i'm looking for an end-of-studies internship opportunity in
+          software development.
+        </p>
+      </div>
       <motion.div
         initial={{ opacity: 0, x: -10 }}
         animate={{ opacity: 1, x: 0 }}
@@ -120,7 +128,6 @@ const Header = ({theme , setTheme}) => {
           className="p-2 bg-black-s text-black-p dark:text-white hover:bg-blue-600 rounded-lg text-xs  uppercase font-bold "
           onClick={() => {
             HidDrawer()
-            console.log("clicked me")
           }}
         >
           <svg
