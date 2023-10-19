@@ -83,13 +83,13 @@ const IndexPage = () => {
           <AboutMe />
           <SectionTitle label={"Professional Expériences : "} />
           <TimeLineExp Data={Professinal_experiences} />
+          <SectionTitle label={"Online Courses & CERTIFICATIONS"} />
+          <TimeLine Data={Certificat.reverse()} type={"education"} />
           <SectionTitle label={"Education"} />
           <TimeLine Data={Education.reverse()} type={"education"} />
           <Projects setPopUp={setpopup} popUp={popup} setItem={setItem} />
           <SectionTitle label={"My Skilles"} />
           <Skilles />
-          <SectionTitle label={"Online Courses"} />
-          <TimeLine Data={Certificat.reverse()} type={"education"} />
         </div>
 
         <AnimatePresence>

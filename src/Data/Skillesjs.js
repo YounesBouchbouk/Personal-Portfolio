@@ -35,7 +35,7 @@ export const SkillesData = [
   },
   {
     tech: "Golang",
-    AVG: 50,
+    AVG: 70,
     icon: <SiGoland className="text-5xl text-white" />,
   },
   {
@@ -89,7 +89,7 @@ export const SkillesData = [
     icon: <SiMysql className="text-5xl text-white" />,
   },
   {
-    tech: "ORACLE",
+    tech: "ORACLE DB",
     AVG: 70,
     icon: <SiOracle className="text-5xl text-white" />,
   },

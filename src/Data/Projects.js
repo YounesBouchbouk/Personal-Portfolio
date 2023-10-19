@@ -406,28 +406,28 @@ export const ProjectsData = [
       "https://github.com/YounesBouchbouk/gestion_club_informatique_JEE_MYSQL_HIBERNATE",
     link: "",
   },
-  {
-    title: "Weather App",
-    description:
-      "My journey with React.js began with the creation of a modest weather application aimed at tracking weather conditions across numerous countries and their respective cities. This project marked my initial steps into the world of React.js development. I sourced weather data through an API graciously provided by a service, which facilitated the application's functionality.",
-    technologies: ["ReacJS", "Redux", "Material Ui"],
-    images: [weather1, wheather2, weather3],
-    whatfor: "",
-    context: ["Self-Learning"],
-    github:
-      "https://github.com/YounesBouchbouk/WeatherAPP-With-ReactJs-MUI-and-API",
-    link: "",
-  },
-  {
-    title: "Covid Tracker",
-    description:
-      "My journey with React.js commenced through the development of a compact COVID Tracker app, intricately linked to an external API. This API, generously , served as the cornerstone of the app, enabling real-time tracking and display of COVID-related data.",
-    technologies: ["ReacJS", "React Charts", "Material Ui"],
-    images: [covide1, covide2, covide3],
-    whatfor: "",
-    context: ["Self-Learning"],
-    github:
-      "https://github.com/YounesBouchbouk/CovidTracker-Application-With-ReactJs",
-    link: "",
-  },
+  // {
+  //   title: "Weather App",
+  //   description:
+  //     "My journey with React.js began with the creation of a modest weather application aimed at tracking weather conditions across numerous countries and their respective cities. This project marked my initial steps into the world of React.js development. I sourced weather data through an API graciously provided by a service, which facilitated the application's functionality.",
+  //   technologies: ["ReacJS", "Redux", "Material Ui"],
+  //   images: [weather1, wheather2, weather3],
+  //   whatfor: "",
+  //   context: ["Self-Learning"],
+  //   github:
+  //     "https://github.com/YounesBouchbouk/WeatherAPP-With-ReactJs-MUI-and-API",
+  //   link: "",
+  // },
+  // {
+  //   title: "Covid Tracker",
+  //   description:
+  //     "My journey with React.js commenced through the development of a compact COVID Tracker app, intricately linked to an external API. This API, generously , served as the cornerstone of the app, enabling real-time tracking and display of COVID-related data.",
+  //   technologies: ["ReacJS", "React Charts", "Material Ui"],
+  //   images: [covide1, covide2, covide3],
+  //   whatfor: "",
+  //   context: ["Self-Learning"],
+  //   github:
+  //     "https://github.com/YounesBouchbouk/CovidTracker-Application-With-ReactJs",
+  //   link: "",
+  // },
 ]
