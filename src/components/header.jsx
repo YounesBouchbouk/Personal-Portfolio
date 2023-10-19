@@ -108,13 +108,6 @@ const Header = ({ theme, setTheme }) => {
         </motion.div>
       </div>
 
-      <div className="h-full flex items-center justify-center">
-        <p className="dark:text-white font-bold mt-4 animate-pulse ">
-          {" "}
-          Currently i'm looking for an end-of-studies internship opportunity in
-          software development.
-        </p>
-      </div>
       <motion.div
         initial={{ opacity: 0, x: -10 }}
         animate={{ opacity: 1, x: 0 }}
