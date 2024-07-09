@@ -1,17 +1,17 @@
-import covide1 from "../images/covide1.png"
-import covide2 from "../images/covide2.png"
-import covide3 from "../images/covide3.png"
-import weather1 from "../images/weather1.png"
-import wheather2 from "../images/wheather2.png"
-import weather3 from "../images/weather3.png"
+// import covide1 from "../images/covide1.png"
+// import covide2 from "../images/covide2.png"
+// import covide3 from "../images/covide3.png"
+// import weather1 from "../images/weather1.png"
+// import wheather2 from "../images/wheather2.png"
+// import weather3 from "../images/weather3.png"
 
-import reminder from "../images/Reminder.png"
+// import reminder from "../images/Reminder.png"
 
-import EcommF1 from "../images/EcommF1.png"
-import EcommF2 from "../images/EcommF2.png"
-import EcommF3 from "../images/EcommF3.png"
-import EcommF4 from "../images/EcommF4.png"
-import EcommF5 from "../images/EcommF5.png"
+// import EcommF1 from "../images/EcommF1.png"
+// import EcommF2 from "../images/EcommF2.png"
+// import EcommF3 from "../images/EcommF3.png"
+// import EcommF4 from "../images/EcommF4.png"
+// import EcommF5 from "../images/EcommF5.png"
 
 import part0 from "../images/part0.png"
 import part1 from "../images/part1.png"
@@ -214,9 +214,9 @@ export const ProjectsData = [
     technologies: ["NextJs", "OpenAI API", "TailwindCss"],
     images: [mindMeetHome, mindDialog, mindDoctors, mindArticles],
     whatfor: "",
-    github: "https://www.mindmeet.online/",
+    github: "https://mind-meet-front.vercel.app/",
     context: ["University", "top"],
-    link: "https://www.mindmeet.online/",
+    link: "https://mind-meet-front.vercel.app/",
   },
 
   {
@@ -282,14 +282,14 @@ export const ProjectsData = [
     link: "",
   },
   {
-    title: "YounesBouchbouk portfolio  ",
+    title: "YounesBouchbouk portfolio",
     description: "You are currently exploring it lol.",
     technologies: ["ReactJS", "TailwindCss", "GatsbyJs", "FramerMotion"],
     images: [portfolio],
     whatfor: "",
     context: ["Self-Learning", "top"],
-    github: "",
-    link: "",
+    github: "https://github.com/YounesBouchbouk/Personal-Portfolio",
+    link: "https://github.com/YounesBouchbouk/Personal-Portfolio",
   },
   {
     title: "turnkeyisp website",
@@ -391,8 +391,8 @@ export const ProjectsData = [
     images: [postman],
     whatfor: "",
     context: ["Self-Learning"],
-    github: "",
-    link: "",
+    github: "https://github.com/YounesBouchbouk/Ecommerce-API-NodeJs",
+    link: "https://github.com/YounesBouchbouk/Ecommerce-API-NodeJs",
   },
 
   {
