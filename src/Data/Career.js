@@ -114,11 +114,11 @@ export const Professinal_experiences = [
     Contract: "Internship",
     title: "Research Assistant",
     localisation: "Morocco , Casablanca",
-    durée: "juil 2023 - today ",
+    durée: "Junuary - Juil 2024 ",
     description:
-      "Improved and automated testing processes for Graal Cloud Native Guides (https://www.graal.cloud/gcn/guides) .",
+      "Improved and automated testing processes for Graal Cloud Native Guides (https://www.graal.cloud/gcn/guides) . Join Oracle Labs Data Studio Back-end Team, implementing new features, and fixing bugs",
     Company: "Oracle",
-    Competences: "Java , Groovy , CI",
+    Competences: "Agile, Java, TypeScript, Docker, Kubernetes, Python ",
     imageUrl: oracle,
   },
   {
