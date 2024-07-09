@@ -37,21 +37,19 @@ const AboutMe = () => {
           </span>{" "}
           <span>
             <br />
-            🚀 Currently, I'm on an exciting journey, delving deep into Golang
-            and the intricacies of concurrency. My fascination with gRPC API is
-            leading me to explore new horizons in the world of backend
-            development.
+            🚀 I'm Younes Bouchbouk, Full Stack web developer with an engineering degree. I have a strong background in front-end and back-end development.
             <br />
+            From a young age, I have been fascinated by technology and its ability to transform the way we live and work. As a Full-Stack  developer, I have had the opportunity to work on a wide range of projects, from building responsive websites to developing complex web applications. This experience has allowed me to develop a deep understanding of the entire development process, from concept to deployment.
+
             <br />
-            🛠️ Throughout my journey, I've successfully contributed to a diverse
-            range of projects, both as an independent freelancer and in
-            collaborative educational endeavors. With over a year of hands-on
-            experience under my belt, I've honed my skills and insights to
-            consistently deliver high-quality solutions.
+            I want to let you know that I have one year of experience as a React and Next.js developer at a startup located in the US. Additionally, I spent nine months as a Software Developer Intern at the Oracle Research and Development Center as back-end engineer.
+
             <br />
+            I believe that my skills in HTML/CSS/JS , React.Js , Next.Js and TailwindCss for front-end and GO, Node.Js and JAVA and for back-end , combined with my ability to solve complex problems and adapt and learn quickly, make me a great fit for any role.
+            
             <br />
             Let's connect and explore the possibilities together! 🌟
-            #FullStackDevelopment #JavaScript #Golang #Concurrency #React #gRPC
+            #FullStackDevelopment #JavaScript #Golang #Concurrency #Javascript 
           </span>
         </p>
       </div>
