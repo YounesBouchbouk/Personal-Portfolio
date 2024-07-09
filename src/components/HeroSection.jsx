@@ -24,9 +24,7 @@ const HeroSection = () => {
 
         <div className="text-left p-2 dark:text-slate-50 text-black-p  ">
           <p>
-            Experienced Full Stack Developer | Golang Enthusiast | Final year
-            engineering student at INPT (National Institute Of Posts And
-            Telecommunications)
+            Software Engineer | Experienced Full Stack Developer | Golang Enthusiast 
           </p>
         </div>
 
