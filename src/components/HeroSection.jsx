@@ -30,8 +30,7 @@ const HeroSection = () => {
 
         <div className="flex gap-4 items-center ">
           <p className="font-Merriweather text-xs   dark:text-slate-50 text-black-p">
-            Currently i'm looking for an end-of-studies internship opportunity
-            in software development.
+            Currently i'm looking for full-time position as full-stack developer.
           </p>
           <span>
             <SiGoland width={100} height={100} color="#ffff" />
