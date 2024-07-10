@@ -111,17 +111,6 @@ export const Certificat = [
 
 export const Professinal_experiences = [
   {
-    Contract: "Internship",
-    title: "Research Assistant",
-    localisation: "Morocco , Casablanca",
-    durée: "Junuary - Juil 2024 ",
-    description:
-      "Improved and automated testing processes for Graal Cloud Native Guides (https://www.graal.cloud/gcn/guides) . Join Oracle Labs Data Studio Back-end Team, implementing new features, and fixing bugs",
-    Company: "Oracle",
-    Competences: "Agile, Java, TypeScript, Docker, Kubernetes, Python ",
-    imageUrl: oracle,
-  },
-  {
     Contract: "Temps plein",
     title: "Full stack developer",
     localisation: "États-Unis",
@@ -131,6 +120,17 @@ export const Professinal_experiences = [
     Company: "ispapp.co",
     Competences: "Next.js · Prisma · Tailwindcss · NestJS · React.js · MongoDB",
     imageUrl: ispapp,
+  },
+  {
+    Contract: "Internship",
+    title: "Research Assistant",
+    localisation: "Morocco , Casablanca",
+    durée: "Junuary - Juil 2024 ",
+    description:
+      "Improved and automated testing processes for Graal Cloud Native Guides (https://www.graal.cloud/gcn/guides) . Join Oracle Labs Data Studio Back-end Team, implementing new features, and fixing bugs",
+    Company: "Oracle",
+    Competences: "Agile, Java, TypeScript, Docker, Kubernetes, Python ",
+    imageUrl: oracle,
   },
   {
     Contract: "Internship",
@@ -148,9 +148,9 @@ export const Professinal_experiences = [
     title: "web development: application internship",
     localisation: "Safi",
     durée: "avr. 2021 - juin 2021 · 3 mois",
-    description: "design and creation of an e-commerce website ",
+    description: "first professional experience, where I built a full-stack e-commerce application using HTML/CSS/JavaScript and PHP, enabling clients to select products and make purchases, and allowing admins to track and update order statuses, generate and send invoices, and manage other backend operations.",
     Company: "GITECH ",
-    Competences: "MySQL · PHP",
+    Competences: "HTML, CSS, Javascript, PHP ,Mysql"
   },
   {
     Contract: "PFE",
