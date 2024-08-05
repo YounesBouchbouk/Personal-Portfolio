@@ -77,7 +77,7 @@ const SideBar = () => {
       </div>
 
       <div className="flex relative group">
-        <a href="/YounesBouchboukResume2.pdf" download>
+        <a href="/CV_Younes_Bouchbouk.pdf" download>
           <AiOutlineFileText className="text-2xl text-black-p hover:text-black-s animate-pulse mb-6 dark:text-white-c  " />
         </a>
         <p className="absolute left-8 hidden text-black-s   text-xs font-Ubuntu  group-hover:inline transition-all duration-500 ease-in">
