@@ -22,17 +22,17 @@ const HeroSection = () => {
           YOUNES <span className="text-black-s text-6xl ml-2 ">BOUCHBOUK</span>
         </p>
 
-        <div className="text-left p-2 dark:text-slate-50 text-black-p  ">
-          <p>
-            Software Engineer | Experienced Full Stack Developer | Golang Enthusiast 
+        <div className="text-left p-2 dark:text-slate-50 text-black-p">
+          <p className="md:text-base text-sm">
+            Full Stack Engineer at 21Factory | Go & JavaScript Specialist
           </p>
         </div>
 
-        <div className="flex gap-4 items-center ">
-          <p className="font-Merriweather text-xs   dark:text-slate-50 text-black-p">
-            Currently i'm looking for full-time position as full-stack developer.
+        <div className="flex flex-col md:flex-row gap-4 items-start md:items-center">
+          <p className="font-Merriweather text-xs md:text-sm dark:text-slate-50 text-black-p">
+            Building scalable microservices with Domain-Driven Design & Hexagonal Architecture
           </p>
-          <span>
+          <span className="hidden md:block">
             <SiGoland width={100} height={100} color="#ffff" />
           </span>
         </div>

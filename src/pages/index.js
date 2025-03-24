@@ -18,6 +18,7 @@ import Contact from "../components/Contact"
 import GitHubCalendar from "react-github-calendar"
 import TimeLineExp from "../components/TimeLineExp"
 import Annonce from "../components/Annonce"
+import Upbutton from "../components/UpButton"
 
 const getInitialTheme = () => {
   if (typeof window !== "undefined" && window.localStorage) {
@@ -66,11 +67,18 @@ const IndexPage = () => {
   const [popup, setpopup] = React.useState(false)
   const [item, setItem] = React.useState({})
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    })
+  }
+  
   return (
     <div className="bg-slate-50 dark:bg-black-p relative">
       <Seo
-        title="Younes Bouchbouk - Full Stack Developer"
-        description="Full stack developer specializing in JavaScript, React, Next.js, Golang, and Node.js. Experienced in building responsive and scalable web applications."
+        title="Younes Bouchbouk - Full Stack Engineer"
+        description="Full stack engineer specializing in Go, JavaScript, React, Next.js, and microservices. Experienced in building scalable and maintainable applications."
         type="website"
         pathname="/"
       />
@@ -99,6 +107,8 @@ const IndexPage = () => {
             <ProjectPopUp setPopUp={setpopup} popUp={popup} item={item} />
           )}
         </AnimatePresence>
+        
+        <Upbutton scrollToTop={scrollToTop} />
 
         <div className="my-4 flex items-center justify-center w-full py-6 bg-slate-100 dark:bg-black-p-l">
           <div className="max-w-full overflow-x-auto px-4">

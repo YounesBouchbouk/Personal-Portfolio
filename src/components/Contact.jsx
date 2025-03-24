@@ -74,7 +74,7 @@ const Contact = () => {
     return true
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
     setError("")
     
@@ -82,9 +82,17 @@ const Contact = () => {
 
     setLoading(true)
     
-    // In a real scenario, you would send the form data to a backend
-    // Using setTimeout to simulate an API call
-    setTimeout(() => {
+    try {
+      // Create a mailto URL with the form data
+      const subject = encodeURIComponent(`Portfolio Contact: ${formData.name}`)
+      const body = encodeURIComponent(
+        `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+      )
+      
+      // Open the user's email client
+      window.open(`mailto:younesbouchbouk.py@gmail.com?subject=${subject}&body=${body}`)
+      
+      // Reset the form and show success message
       setLoading(false)
       setSubmitted(true)
       setFormData({ name: "", email: "", message: "" })
@@ -93,7 +101,10 @@ const Contact = () => {
       setTimeout(() => {
         setSubmitted(false)
       }, 5000)
-    }, 1500)
+    } catch (error) {
+      setLoading(false)
+      setError("Failed to send message. Please try again or email me directly.")
+    }
   }
 
   return (

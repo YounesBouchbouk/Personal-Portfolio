@@ -59,14 +59,14 @@ const SideBar = () => {
       url: "https://www.facebook.com/younss.bouchbouk.3/",
     },
     {
-      name: "+212 680413729",
+      name: "+212 708204919",
       icon: <BsWhatsapp className="text-2xl text-black-p hover:text-black-s dark:text-white-c" />,
-      url: "https://wa.me/212680413729",
+      url: "https://wa.me/212708204919",
     },
     {
       name: "My Resume",
       icon: <AiOutlineFileText className="text-2xl text-black-p hover:text-black-s dark:text-white-c" />,
-      url: "/YounesBouchboukResume2.pdf",
+      url: "/BouchboukYounesResumeGO_JS.pdf",
       download: true,
     },
   ]
