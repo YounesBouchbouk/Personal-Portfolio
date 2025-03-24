@@ -6,7 +6,7 @@ import Header from "../components/header.jsx"
 import { ThemeProvider } from "../mode/modeContext"
 import HeroSection from "../components/HeroSection"
 import SideBar from "../components/SideBar"
-import Skilles from "../components/Skilles"
+import Skills from "../components/Skilles"
 import SectionTitle from "../components/SectionTitle"
 import AboutMe from "../components/AboutMe"
 import Projects from "../components/Projects"
@@ -17,7 +17,6 @@ import { motion, AnimatePresence } from "framer-motion"
 import Contact from "../components/Contact"
 import GitHubCalendar from "react-github-calendar"
 import TimeLineExp from "../components/TimeLineExp"
-import Annance from "../components/Annonce"
 import Annonce from "../components/Annonce"
 
 const getInitialTheme = () => {
@@ -70,8 +69,10 @@ const IndexPage = () => {
   return (
     <div className="bg-slate-50 dark:bg-black-p relative">
       <Seo
-        title="Younes Bouchbouk - Home"
-        description="Full stack javascript developer , ReactJs front end developer , nodejs backend developer , junior developer , Mern stack student developer , young software engineer "
+        title="Younes Bouchbouk - Full Stack Developer"
+        description="Full stack developer specializing in JavaScript, React, Next.js, Golang, and Node.js. Experienced in building responsive and scalable web applications."
+        type="website"
+        pathname="/"
       />
       {/* <Annonce /> */}
 
@@ -79,17 +80,18 @@ const IndexPage = () => {
         <div className={`${popup ? "blur-sm" : ""}`}>
           <SideBar />
           <HeroSection />
-          <SectionTitle label={"Who   I'm   I   ?"} />
+          <SectionTitle label={"Who I Am"} />
           <AboutMe />
-          <SectionTitle label={"Professional Expériences : "} />
+          <SectionTitle label={"Professional Experiences"} />
           <TimeLineExp Data={Professinal_experiences} />
-          <SectionTitle label={"Online Courses & CERTIFICATIONS"} />
+          <SectionTitle label={"Online Courses & Certifications"} />
           <TimeLine Data={Certificat.reverse()} type={"education"} />
           <SectionTitle label={"Education"} />
           <TimeLine Data={Education.reverse()} type={"education"} />
           <Projects setPopUp={setpopup} popUp={popup} setItem={setItem} />
-          <SectionTitle label={"My Skilles"} />
-          <Skilles />
+          <SectionTitle label={"My Skills"} />
+          <Skills />
+          <Contact />
         </div>
 
         <AnimatePresence>
@@ -98,10 +100,21 @@ const IndexPage = () => {
           )}
         </AnimatePresence>
 
-        {/* <SectionTitle label={"Funny Break :"} /> */}
-        <div className="my-4 flex items-center justify-center w-full py-3 bg-slate-100">
-          <GitHubCalendar username="YounesBouchbouk" color="#3069ba" />
+        <div className="my-4 flex items-center justify-center w-full py-6 bg-slate-100 dark:bg-black-p-l">
+          <div className="max-w-full overflow-x-auto px-4">
+            <GitHubCalendar 
+              username="YounesBouchbouk" 
+              colorScheme="dark"
+              fontSize={14}
+              blockSize={12}
+              blockMargin={4}
+            />
+          </div>
         </div>
+
+        <footer className="w-full py-4 text-center text-sm text-gray-600 dark:text-gray-400">
+          © {new Date().getFullYear()} Younes Bouchbouk. All rights reserved.
+        </footer>
       </Themeprovider2>
     </div>
   )
