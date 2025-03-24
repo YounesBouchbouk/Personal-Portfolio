@@ -1,16 +1,23 @@
 import React, { useContext } from "react"
 // import { ThemeContext } from "../mode/modeContext"
 
-const Toggle = ({theme , setTheme}) => {
-  // const { theme, setTheme } = useContext(ThemeContext || {}) 
+const Toggle = ({theme, setTheme}) => {
+  // Handle the case when only theme is provided (static display)
+  const isStatic = !setTheme;
+  
+  const handleToggle = () => {
+    if (isStatic) return; // Do nothing if in static mode
+    setTheme(theme === "dark" ? "light" : "dark");
+  };
+  
   return (
     <div>
       {theme === "dark" ? (
         <button
-          onClick={() => {
-            setTheme(theme === "dark" ? "light" : "dark")
-          }}
-          className="text-gray-400 dark:text-gray-400 bg-white shadow-none p-2 focus:outline-none text-lg rounded-full outline-none ring-transparent cursor-pointer"
+          onClick={handleToggle}
+          disabled={isStatic}
+          className={`text-gray-400 dark:text-gray-400 bg-white shadow-none p-2 focus:outline-none text-lg rounded-full outline-none ring-transparent ${isStatic ? '' : 'cursor-pointer'}`}
+          aria-label="Switch to light mode"
         >
           <svg
             className="w-6 h-6"
@@ -29,8 +36,10 @@ const Toggle = ({theme , setTheme}) => {
         </button>
       ) : (
         <button
-          onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-          className="text-gray-500 dark:text-gray-400 bg-white focus:outline-none shadow-none p-2 text-lg rounded-full outline-none ring-transparent cursor-pointer"
+          onClick={handleToggle}
+          disabled={isStatic}
+          className={`text-gray-500 dark:text-gray-400 bg-white focus:outline-none shadow-none p-2 text-lg rounded-full outline-none ring-transparent ${isStatic ? '' : 'cursor-pointer'}`}
+          aria-label="Switch to dark mode"
         >
           <svg
             className="w-6 h-6"

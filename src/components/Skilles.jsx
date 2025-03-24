@@ -1,97 +1,62 @@
-import React from "react"
-
-import SectionTitle from "./SectionTitle"
+import React, { useEffect } from "react"
 import { motion, useAnimation } from "framer-motion"
 import { useInView } from "react-intersection-observer"
-import SkillesItem from "./SkillesItem"
-import { SkillesData } from "../Data/Skillesjs"
+import SkillItem from "./SkillesItem"
+import { SkillsData } from "../Data/Skillesjs"
 
-// const SkillesData = [
-//   {
-//     tech: "HTML5",
-//     AVG: 80,
-//     icon: <TiHtml5 className="text-5xl text-white" />,
-//   },
-//   {
-//     tech: "CSS3",
-//     AVG: 75,
-//     icon: <SiCsswizardry className="text-5xl text-white" />,
-//   },
-//   {
-//     tech: "TailwindCSS",
-//     AVG: 70,
-//     icon: <SiTailwindcss className="text-5xl text-white" />,
-//   },
-//   {
-//     tech: "Javascript ES6",
-//     AVG: 90,
-//     icon: <SiJavascript className="text-5xl text-white" />,
-//   },
-//   {
-//     tech: "TypeScript",
-//     AVG: 70,
-//     icon: <SiTypescript className="text-5xl text-white" />,
-//   },
-//   {
-//     tech: "Solidity Contract",
-//     AVG: 50,
-//     icon: <SiSolidity className="text-5xl text-white" />,
-//   },
-//   {
-//     tech: "ReactJS",
-//     AVG: 75,
-//     icon: <SiReact className="text-5xl text-white" />,
-//   },
-//   {
-//     tech: "GatsbyJS",
-//     AVG: 75,
-//     icon: <GrGatsbyjs className="text-5xl text-white" />,
-//   },
-//   {
-//     tech: "NextJS",
-//     AVG: 75,
-//     icon: <SiNextdotjs className="text-5xl text-white" />,
-//   },
-//   {
-//     tech: "ReactNative",
-//     AVG: 60,
-//     icon: <SiReact className="text-5xl text-white" />,
-//   },
-//   {
-//     tech: "NodeJs",
-//     AVG: 70,
-//     icon: <DiNodejsSmall className="text-5xl text-white" />,
-//   },
-//   {
-//     tech: "MongoDB",
-//     AVG: 70,
-//     icon: <SiMongodb className="text-5xl text-white" />,
-//   },
-//   {
-//     tech: "MySql",
-//     AVG: 70,
-//     icon: <SiMysql className="text-5xl text-white" />,
-//   },
-//   {
-//     tech: "ORACLE",
-//     AVG: 80,
-//     icon: <SiOracle className="text-5xl text-white" />,
-//   },
-// ]
+const Skills = () => {
+  const controls = useAnimation()
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  })
 
-const Skilles = () => {
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible")
+    }
+  }, [controls, inView])
+
+  const containerVariants = {
+    hidden: {},
+    visible: {
+      transition: {
+        staggerChildren: 0.1,
+      },
+    },
+  }
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+      },
+    },
+  }
+
   return (
     <div
-      id="MySkilles"
-      className="w-full lg:h-screen  flex justify-center items-center"
+      id="MySkills"
+      className="w-full py-16 flex flex-col justify-center items-center"
     >
-      <div className="p-4  flex flex-wrap justify-around ">
-        {SkillesData.map(item => {
-          return <SkillesItem item={item} />
-        })}
-      </div>
+      <motion.div
+        ref={ref}
+        variants={containerVariants}
+        initial="hidden"
+        animate={controls}
+        className="p-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 w-full max-w-6xl"
+      >
+        {SkillsData.map((item, index) => (
+          <motion.div key={index} variants={itemVariants}>
+            <SkillItem item={item} />
+          </motion.div>
+        ))}
+      </motion.div>
     </div>
   )
 }
 
-export default Skilles
+export default Skills

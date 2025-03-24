@@ -1,19 +1,18 @@
 import React from "react"
 
 function Upbutton(props) {
-  console.log(props)
   return (
-    <div className="z-100 fixed bottom-4 right-2 cursor-pointer animate-bounce bg-black dark:bg-white flex justify-between rounded-full">
+    <div className="z-50 fixed bottom-8 right-8 cursor-pointer animate-bounce bg-black-s dark:bg-black-s flex justify-between rounded-full shadow-lg hover:bg-opacity-90 transition-all duration-300">
       <button
-        onClick={() => {
-          props.scrollToTop()
-        }}
+        onClick={props.scrollToTop}
+        aria-label="Scroll to top"
+        className="p-2 focus:outline-none focus:ring-2 focus:ring-black-s"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"
           fill="currentColor"
-          className="w-10 h-10  dark:text-black text-white"
+          className="w-8 h-8 text-white"
         >
           <path
             fillRule="evenodd"
