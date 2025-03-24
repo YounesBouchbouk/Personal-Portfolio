@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Younes Bouchbouk | Full Stack Developer`,
-    description: `Younes Bouchbouk - Full Stack Developer and Software Engineer. Specializing in JavaScript, React, NextJS, Golang and more.`,
+    title: `Younes Bouchbouk | Full Stack Engineer`,
+    description: `Younes Bouchbouk - Full Stack Engineer and Software Developer. Specializing in Go, JavaScript, React, NextJS, and microservices.`,
     author: `@YounesBouchbouk`,
     siteUrl: `https://younesbouchbouk.com`, // Update with your actual domain
     image: `/images/profile-image.jpg`, // Path to your default image for social sharing
@@ -27,8 +27,41 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `blog`,
+        path: `${__dirname}/content/blog`,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 800,
+              quality: 90,
+              linkImagesToOriginal: false,
+            },
+          },
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              classPrefix: "language-",
+              inlineCodeMarker: null,
+              aliases: {},
+              showLineNumbers: false,
+              noInlineHighlight: false,
+            },
+          },
+          `gatsby-remark-copy-linked-files`,
+        ],
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

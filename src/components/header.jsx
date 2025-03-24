@@ -2,10 +2,13 @@ import React, { useState, useEffect } from "react"
 import PropTypes from "prop-types"
 import Toggle from "./toggle"
 import { motion, useAnimation } from "framer-motion"
-import { Link } from "react-scroll"
+import { Link as ScrollLink } from "react-scroll"
+import { Link as GatsbyLink } from "gatsby"
 import Upbutton from "./UpButton"
 
 const Header = ({ theme, setTheme }) => {
+  // Use default theme if none provided (for static display in blog pages)
+  const currentTheme = theme || "dark";
   const [showbar, setShowbar] = useState(false)
   const controls = useAnimation()
 
@@ -40,7 +43,7 @@ const Header = ({ theme, setTheme }) => {
           transition={{ delay: 1.5, duration: 2 }}
           className="flex px-4 md:p-0 md:my-0 md:relative md:flex-row md:justify-start"
         >
-          <Link
+          <ScrollLink
             onClick={scrollToTop}
             to="Welcome"
             spy={true}
@@ -49,9 +52,9 @@ const Header = ({ theme, setTheme }) => {
             className={linkstyle}
           >
             Home
-          </Link>
+          </ScrollLink>
 
-          <Link
+          <ScrollLink
             to="AboutMe"
             spy={true}
             smooth={true}
@@ -59,8 +62,8 @@ const Header = ({ theme, setTheme }) => {
             className={linkstyle}
           >
             About
-          </Link>
-          <Link
+          </ScrollLink>
+          <ScrollLink
             to="MySkilles"
             spy={true}
             smooth={true}
@@ -68,8 +71,8 @@ const Header = ({ theme, setTheme }) => {
             className={linkstyle}
           >
             Skills
-          </Link>
-          <Link
+          </ScrollLink>
+          <ScrollLink
             to="Projects"
             spy={true}
             smooth={true}
@@ -77,8 +80,14 @@ const Header = ({ theme, setTheme }) => {
             className={linkstyle}
           >
             Projects
-          </Link>
-          <Link
+          </ScrollLink>
+          <GatsbyLink
+            to="/blog"
+            className={`p-4 py-4 md:p-2 md:mr-4 cursor-pointer hover:text-black-s uppercase text-xs text-slate-700 dark:text-white font-Ubuntu`}
+          >
+            Blog
+          </GatsbyLink>
+          <ScrollLink
             to="contact"
             spy={true}
             smooth={true}
@@ -86,7 +95,7 @@ const Header = ({ theme, setTheme }) => {
             className={linkstyle}
           >
             Contact
-          </Link>
+          </ScrollLink>
         </motion.div>
       </div>
 
@@ -98,7 +107,7 @@ const Header = ({ theme, setTheme }) => {
           exit={{ opacity: 0, y: -20 }}
           className="fixed top-14 left-0 w-full bg-white/95 dark:bg-black/95 backdrop-blur-sm shadow-lg z-40 py-4 px-2 flex flex-col items-center md:hidden"
         >
-          <Link
+          <ScrollLink
             onClick={() => {
               HidDrawer()
               scrollToTop()
@@ -110,9 +119,9 @@ const Header = ({ theme, setTheme }) => {
             className="p-3 w-full text-center font-Ubuntu uppercase text-sm text-slate-700 dark:text-white"
           >
             Home
-          </Link>
+          </ScrollLink>
 
-          <Link
+          <ScrollLink
             onClick={HidDrawer}
             to="AboutMe"
             spy={true}
@@ -121,8 +130,8 @@ const Header = ({ theme, setTheme }) => {
             className="p-3 w-full text-center font-Ubuntu uppercase text-sm text-slate-700 dark:text-white"
           >
             About
-          </Link>
-          <Link
+          </ScrollLink>
+          <ScrollLink
             onClick={HidDrawer}
             to="MySkilles"
             spy={true}
@@ -131,8 +140,8 @@ const Header = ({ theme, setTheme }) => {
             className="p-3 w-full text-center font-Ubuntu uppercase text-sm text-slate-700 dark:text-white"
           >
             Skills
-          </Link>
-          <Link
+          </ScrollLink>
+          <ScrollLink
             onClick={HidDrawer}
             to="Projects"
             spy={true}
@@ -141,8 +150,15 @@ const Header = ({ theme, setTheme }) => {
             className="p-3 w-full text-center font-Ubuntu uppercase text-sm text-slate-700 dark:text-white"
           >
             Projects
-          </Link>
-          <Link
+          </ScrollLink>
+          <GatsbyLink
+            onClick={HidDrawer}
+            to="/blog"
+            className="p-3 w-full text-center font-Ubuntu uppercase text-sm text-slate-700 dark:text-white hover:text-black-s"
+          >
+            Blog
+          </GatsbyLink>
+          <ScrollLink
             onClick={HidDrawer}
             to="contact"
             spy={true}
@@ -151,7 +167,7 @@ const Header = ({ theme, setTheme }) => {
             className="p-3 w-full text-center font-Ubuntu uppercase text-sm text-slate-700 dark:text-white"
           >
             Contact
-          </Link>
+          </ScrollLink>
         </motion.div>
       )}
 
@@ -162,7 +178,7 @@ const Header = ({ theme, setTheme }) => {
         transition={{ delay: 1.5, duration: 2 }}
         className="rounder-full p-2 w-28 flex justify-center items-center"
       >
-        <Toggle theme={theme} setTheme={setTheme} />
+        <Toggle theme={currentTheme} setTheme={setTheme} />
       </motion.div>
       
       {/* Mobile Menu Toggle Button */}
