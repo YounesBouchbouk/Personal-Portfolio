@@ -1,6 +1,7 @@
 {
   "version": 2,
-  "buildCommand": "npm run build",
+  "buildCommand": "./build.sh",
   "outputDirectory": "public",
-  "framework": "gatsby"
+  "framework": "gatsby",
+  "nodeVersion": "18.x"
 }
