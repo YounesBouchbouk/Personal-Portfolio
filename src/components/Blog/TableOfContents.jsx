@@ -5,18 +5,28 @@ import { motion } from "framer-motion"
 const TableOfContents = ({ html }) => {
   // Extract headings from HTML
   const extractHeadings = () => {
-    const parser = new DOMParser();
-    const doc = parser.parseFromString(html, 'text/html');
-    const headings = Array.from(doc.querySelectorAll('h1, h2, h3, h4, h5, h6'))
-      .filter(heading => heading.id) // Only include headings with IDs
-      .map(heading => ({
-        id: heading.id,
-        text: heading.textContent,
-        level: parseInt(heading.tagName.substring(1), 10)
-      }))
-      .filter(heading => heading.level <= 3); // Only include h1, h2, h3
+    // Check if we're in a browser environment
+    if (typeof window === 'undefined') {
+      return []; // Return empty array during server-side rendering
+    }
     
-    return headings;
+    try {
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(html, 'text/html');
+      const headings = Array.from(doc.querySelectorAll('h1, h2, h3, h4, h5, h6'))
+        .filter(heading => heading.id) // Only include headings with IDs
+        .map(heading => ({
+          id: heading.id,
+          text: heading.textContent,
+          level: parseInt(heading.tagName.substring(1), 10)
+        }))
+        .filter(heading => heading.level <= 3); // Only include h1, h2, h3
+      
+      return headings;
+    } catch (error) {
+      console.error('Error parsing HTML for table of contents:', error);
+      return [];
+    }
   };
 
   const headings = extractHeadings();
