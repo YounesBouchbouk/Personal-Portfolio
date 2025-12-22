@@ -1,10 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `Younes Bouchbouk | Full Stack Engineer`,
-    description: `Younes Bouchbouk - Full Stack Engineer and Software Developer. Specializing in Go, JavaScript, React, NextJS, and microservices.`,
+    title: `Younes Bouchbouk | Software Engineer (Go/React)`,
+    description: `Software Engineer @21Factory. Go microservices (DDD/Clean Architecture), gRPC, Kubernetes, Datadog, and React/Next.js. Passionate about building scalable, resilient cloud-native systems.`,
     author: `@YounesBouchbouk`,
-    siteUrl: `https://younesbouchbouk.com`, // Update with your actual domain
-    image: `/images/profile-image.jpg`, // Path to your default image for social sharing
+    // Keep this in sync with your deployed domain (used for sitemap/canonical URLs)
+    siteUrl: `https://younesdev.com`,
+    // Public path under /static
+    image: `/profile-image.png`,
     twitterUsername: `@BouchboukYounes`,
   },
   plugins: [
@@ -15,8 +17,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-robots-txt`,
       options: {
-        host: `https://younesbouchbouk.com`,
-        sitemap: `https://younesbouchbouk.com/sitemap/sitemap-index.xml`,
+        host: `https://younesdev.com`,
+        sitemap: `https://younesdev.com/sitemap/sitemap-index.xml`,
         policy: [{ userAgent: '*', allow: '/' }]
       }
     },

@@ -28,15 +28,18 @@ const LiTimeLineOfEsp = ({ index, item }) => {
     >
       <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
       <div className="w-full flex items-center justify-start gap-3 mb-4">
-        <div className="bg-white w-[100px] h-[100px] rounded-full overflow-hidden items-center justify-center flex">
-          <img
-            src={item.imageUrl}
-            style={{
-              width: "105px",
-              height: "105px",
-            }}
-          />
-        </div>
+        {item.imageUrl && (
+          <div className="bg-white w-[100px] h-[100px] rounded-full overflow-hidden items-center justify-center flex">
+            <img
+              src={item.imageUrl}
+              alt={`${item.Company} logo`}
+              style={{
+                width: "105px",
+                height: "105px",
+              }}
+            />
+          </div>
+        )}
 
         <div>
           <time className="mb-1 text-sm font-normal leading-none  dark:text-gray-400">

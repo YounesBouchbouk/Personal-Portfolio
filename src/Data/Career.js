@@ -112,34 +112,45 @@ export const Certificat = [
 export const Professinal_experiences = [
   {
     Contract: "Full-time",
-    title: "Full Stack Engineer",
-    localisation: "Casablanca, Morocco",
-    durée: "September 2024 - Present",
+    title: "Mid-level Software Engineer",
+    localisation: "Casablanca-Settat, Morocco",
+    durée: "July 2025 - Present",
     description:
-      "As a Full Stack Engineer at 21Factory, I work on developing and maintaining a SaaS platform built with Go microservices and React ecosystem frameworks:\n\n• Responsible for developing new features and fixing bugs across the entire stack\n• Built an event booking system in Go using Domain-Driven Design (DDD) principles and Hexagonal Architecture\n• Implemented microservices using Go with a focus on maintainability and scalability\n• Worked with React and associated frameworks for frontend development\n• Collaborated with team members using agile methodologies\n• Applied clean code principles and best practices in both frontend and backend development\n\nThis role has allowed me to deepen my expertise in Go programming language while maintaining my skills in the React ecosystem.",
+      "Leading full-stack development of a next-generation gamification SaaS platform.\n\n• Built immersive AR experiences with Three.js that increased user engagement\n• Developed a models microservice for AR asset compression (GLB, USDZ)\n• Designed and implemented Golang microservices following DDD and hexagonal architecture, utilizing gRPC for efficient inter-service communication\n• Integrated Datadog for real-time monitoring, logging, and performance insights\n• Deployed and managed microservices in Kubernetes clusters, ensuring scalability and resilience\n• Optimized performance and refactored the legacy codebase for better maintainability\n\n• Applied TDD to ensure high-quality, reliable, and well-tested code",
     Company: "21Factory",
-    Competences: "Go · Microservices · Domain-Driven Design · Hexagonal Architecture · React · Clean Code",
+    Competences:
+      "Go · Microservices · DDD · Hexagonal Architecture · gRPC · Kubernetes · Docker · Datadog · React.js · Next.js · Three.js · TDD",
   },
   {
     Contract: "Full-time",
-    title: "Full Stack Developer",
-    localisation: "Remote (United States)",
-    durée: "August 2022 - July 2024",
+    title: "Software Engineer",
+    localisation: "Casablanca, Casablanca-Settat, Morocco",
+    durée: "September 2024 - July 2025",
     description:
-      "As a Full Stack Developer at ispapp.co, I developed and maintained a cloud-based router management system for Internet Service Providers, handling both front-end and back-end components:\n\n• Created and enhanced React/Next.js components for monitoring network resources and managing MikroTik, OpenWRT, and SNMP devices\n• Implemented real-time monitoring features using WebSockets and chart integrations (Plotly.js)\n• Developed a map-based visualization system for network equipment using Leaflet.js\n• Built and improved RESTful APIs for router management using NestJS, Express, and MongoDB\n• Implemented security features including JWT authentication and access control\n• Created bulk operation tools for managing device fleets, such as batch configuration, firmware updates, and maintenance tasks\n• Worked with relational data modeling using Prisma ORM\n• Deployed and managed cloud infrastructure on AWS and Digital Ocean\n\nThe system helped ISPs manage thousands of network devices from a single dashboard, providing real-time monitoring, configuration management, and automated maintenance workflows.",
+      "Contributed to the same platform, focusing on delivering reliable backend services and user-facing features.\n\n• Designed and implemented Golang services with clean boundaries (DDD / Hexagonal Architecture)\n• Fixed production issues and improved performance and maintainability\n• Collaborated across product, design, and engineering in an agile environment",
+    Company: "21Factory",
+    Competences: "Go · Microservices · Clean Architecture · React.js · CI/CD",
+  },
+  {
+    Contract: "Full-time",
+    title: "Full stack developer",
+    localisation: "United States",
+    durée: "August 2022 - July 2023",
+    description:
+      "As a full-stack engineer at ISPApp, I was responsible for developing a user-centric dashboard that streamlined router management.\n\n• Integrating Plotly to dynamically visualize various types of real-time graphs (such as ping, TCP, interfaces, and wireless access points) for router monitoring.",
     Company: "ispapp.co",
-    Competences: "Next.js · React.js · NestJS · Express.js · TypeScript · Prisma · MongoDB · Tailwind CSS · Leaflet · Plotly · WebSockets · AWS",
+    Competences: "React.js · Next.js · Plotly · Real-time Monitoring",
     imageUrl: ispapp,
   },
   {
     Contract: "Internship",
-    title: "Software Developer Intern",
-    localisation: "Casablanca, Morocco",
-    durée: "January 2024 - July 2024",
+    title: "Research assistant",
+    localisation: "Casablanca-Settat, Maroc",
+    durée: "January 2024 - June 2024",
     description:
-      "I worked as a Software Developer Intern in the Oracle Labs Data Studio Back-end Team, focusing on the GraalVM and Graal Cloud Native (GCN) ecosystem:\n\n• Improved and automated testing processes for Graal Cloud Native Guides using Java and Python\n• Developed and maintained back-end Java Spring Boot applications supporting the Graal ecosystem\n• Implemented new features and fixed bugs for internal tools using Java and TypeScript\n• Worked with team to containerize applications using Docker and deploy to Kubernetes environments\n• Collaborated with cross-functional teams using Agile/Scrum methodology\n• Contributed to code reviews and participated in technical discussions\n\nMy work helped make the Graal Cloud Native platform more reliable and easier to use for developers.",
+      "QA Testing Team: Improved and automated testing processes for Graal Cloud Native Guides (graal.cloud/gcn/guides), enhancing reliability and efficiency.\n\nOracle Labs Data Studio - Back-End Team:\n\n• Developed new features and fixed bugs for a notebook-based data science platform\n• Worked on Jupyter integration, updating Jupyter to support themes and system file access within Oracle Data Studio\n• Embedded Jupyter inside Data Studio using iframes, ensuring seamless integration.",
     Company: "Oracle",
-    Competences: "Java · Spring Boot · TypeScript · Docker · Kubernetes · Python · Agile · GraalVM",
+    Competences: "Java · Python · Jupyter · QA Automation · Integration",
     imageUrl: oracle,
   },
   {

@@ -48,7 +48,7 @@ function ContactBar() {
           <div className="flex flex-col justify-center items-center  ">
             <AiTwotonePhone className="text-6xl mr-4  text-black-s" />
             <p className="font-robot font-bold  text-xl text-white ">
-              +212 680984938
+              +212 708204919
             </p>
           </div>
         </div>
@@ -57,7 +57,7 @@ function ContactBar() {
           <div className="flex flex-col justify-center items-center  ">
             <AiOutlineMail className="text-6xl   text-black-s" />
             <p className="font-robot font-bold  text-xl text-white ">
-              Younesbouchbouk.py@gmail.com
+              younesbouchbouk.py@gmail.com
             </p>
           </div>
         </div>
