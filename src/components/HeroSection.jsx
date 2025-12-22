@@ -14,7 +14,7 @@ const HeroSection = () => {
       <div className="w-full px-12   lg:px-3  lg:w-1/2 p-4  ">
         <div className=" w-1/2 lg:w-1/3 flex flex-col justify-center items-center ">
           <p className="font-Ubuntu text-text-sm   lg:text-lg font-bold text-black-s">
-            Full stack Developer
+            Software Engineer
           </p>
         </div>
 
@@ -24,18 +24,22 @@ const HeroSection = () => {
 
         <div className="text-left p-2 dark:text-slate-50 text-black-p">
           <p className="md:text-base text-sm">
-            Full Stack Engineer at 21Factory | Go & JavaScript Specialist
+            Software Engineer @21Factory | Go/React Specialist
           </p>
         </div>
 
         <div className="flex flex-col md:flex-row gap-4 items-start md:items-center">
           <p className="font-Merriweather text-xs md:text-sm dark:text-slate-50 text-black-p">
-            Building scalable microservices with Domain-Driven Design & Hexagonal Architecture
+            Building cloud-native Go microservices (DDD/Clean Architecture), gRPC, Kubernetes, and production-grade observability
           </p>
           <span className="hidden md:block">
             <SiGoland width={100} height={100} color="#ffff" />
           </span>
         </div>
+
+        <p className="mt-3 font-Merriweather text-xs md:text-sm dark:text-slate-50 text-black-p">
+          I love building startups that scale — always happy to collaborate and ship impactful products.
+        </p>
 
         <p className="font-Merriweather text-xs font-bold text-black-s">
           // I code And I Know Things

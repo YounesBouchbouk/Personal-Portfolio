@@ -29,39 +29,46 @@ const AboutMe = () => {
       className="w-full  flex justify-center items-center my-16"
       id="AboutMe"
     >
-      <div className="w-3/4  text-black  dark:text-white text-start leading-6 font-mono space-x-5">
+      <div className="w-3/4 text-black dark:text-white text-start leading-7 font-mono">
         <p>
-          Hi! I'm{" "}
+          Hi, I'm{" "}
           <span className="px-2 text-xl text-orange-300 font-Ubuntu">
             Younes Bouchbouk
-          </span>{" "}
-          <span>
-            <br />
-            🚀 I'm a Full Stack Engineer with an engineering degree and over 2 years of professional experience building modern web applications. My expertise spans both frontend and backend development, with a particular focus on JavaScript/TypeScript and Golang ecosystems.
-            <br />
-            <br />
-            I currently work as a Full Stack Engineer at 21Factory, where I develop and maintain a SaaS platform built with Go microservices and React. I've built an event booking system using Domain-Driven Design principles and Hexagonal Architecture, which has deepened my expertise in Go while maintaining my React skills.
-            <br />
-            <br />
-            Previously, I worked as a Full Stack Developer at ispapp.co (2022-2024), where I developed and maintained a cloud-based network management system for Internet Service Providers. I built reactive user interfaces with Next.js and developed scalable backend services using NestJS and Go.
-            <br />
-            <br />
-            I also completed a 6-month internship at Oracle Labs, where I worked on the GraalVM and Graal Cloud Native ecosystem as a Software Developer. This experience strengthened my backend development skills and gave me valuable experience with Java and cloud technologies.
-            <br />
-            <br />
-            My technical toolkit includes:
-            • Frontend: React.js, Next.js, TypeScript, Tailwind CSS
-            • Backend: Golang, Node.js, NestJS, Express.js, Java (Spring Boot)
-            • Databases: MongoDB, PostgreSQL, MySQL, Redis
-            • DevOps: Docker, Kubernetes, AWS
-            <br />
-            <br />
-            I'm passionate about building efficient, maintainable, and user-friendly applications. I enjoy solving complex problems and continuously learning new technologies and approaches. I'm particularly interested in microservices architecture, cloud-native applications, and real-time systems.
-            <br />
-            <br />
-            Let's connect and explore opportunities to create impactful software solutions together!
           </span>
+          — a Software Engineer focused on building scalable, cloud-native systems.
         </p>
+
+        <p className="mt-4 text-black-p dark:text-gray-200">
+          I currently work at <span className="font-bold">OmniLab by 21Factory</span>, where I build Go microservices and modern web experiences. I care about clean architecture, resilience, and delivering features that perform under real production constraints.
+        </p>
+
+        <div className="mt-5">
+          <p className="font-bold text-black-s">What I do</p>
+          <ul className="list-disc ml-6 mt-2 text-black-p dark:text-gray-200">
+            <li>Design and implement <span className="font-bold">Golang microservices</span> using <span className="font-bold">DDD</span> and <span className="font-bold">Hexagonal/Clean Architecture</span>.</li>
+            <li>Build efficient APIs with <span className="font-bold">gRPC</span> and production-grade observability with <span className="font-bold">Datadog</span>, <span className="font-bold">OpenTelemetry</span>, and <span className="font-bold">ClickStack</span>.</li>
+            <li>Deploy and operate services on <span className="font-bold">Kubernetes</span> with Docker and CI/CD (GitLab).</li>
+            <li>On the frontend, ship React/Next.js apps; recently I built immersive <span className="font-bold">AR experiences with Three.js</span>.</li>
+          </ul>
+        </div>
+
+        <div className="mt-5">
+          <p className="font-bold text-black-s">Highlights</p>
+          <ul className="list-disc ml-6 mt-2 text-black-p dark:text-gray-200">
+            <li>Domain expert for two microservices: the <span className="font-bold">Event Booking</span> microservice and the <span className="font-bold">SmartLink</span> microservice.</li>
+            <li>Integrated <span className="font-bold">Datadog</span> for monitoring, logging, and performance insights.</li>
+            <li>Applied <span className="font-bold">TDD</span> to improve reliability and maintainability.</li>
+            <li>At <span className="font-bold">Oracle</span>, worked on a notebook-based data science platform: Jupyter integration (themes + system file access) and embedding Jupyter via iframes.</li>
+            <li>At <span className="font-bold">ISPApp</span>, built a router-management dashboard and visualized real-time metrics using <span className="font-bold">Plotly</span>.</li>
+          </ul>
+        </div>
+
+        <div className="mt-5">
+          <p className="font-bold text-black-s">Core stack</p>
+          <p className="mt-2 text-black-p dark:text-gray-200">
+            Go, gRPC, Kubernetes, Docker, Datadog, React, Next.js, TypeScript, Node.js.
+          </p>
+        </div>
       </div>
     </motion.div>
   )

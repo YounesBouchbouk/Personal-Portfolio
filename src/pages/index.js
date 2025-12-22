@@ -77,8 +77,8 @@ const IndexPage = () => {
   return (
     <div className="bg-slate-50 dark:bg-black-p relative">
       <Seo
-        title="Younes Bouchbouk - Full Stack Engineer"
-        description="Full stack engineer specializing in Go, JavaScript, React, Next.js, and microservices. Experienced in building scalable and maintainable applications."
+        title="Younes Bouchbouk - Software Engineer (Go/React)"
+        description="Software Engineer @21Factory. I build Go microservices with DDD/Clean Architecture, gRPC, Kubernetes, and Datadog observability—plus modern React/Next.js frontends."
         type="website"
         pathname="/"
       />

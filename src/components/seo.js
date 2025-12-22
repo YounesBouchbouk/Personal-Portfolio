@@ -41,8 +41,8 @@ function Seo({ description, lang, meta, title, image, type, pathname }) {
     "name": "Younes Bouchbouk",
     "url": site.siteMetadata.siteUrl,
     "image": `${site.siteMetadata.siteUrl}${metaImage}`,
-    "jobTitle": "Full Stack Developer",
-    "description": "Software Engineer and Full Stack Developer specializing in JavaScript, React, Next.js, Golang, and more.",
+    "jobTitle": "Software Engineer (Go/React)",
+    "description": "Software Engineer specializing in Go microservices (DDD/Clean Architecture), gRPC, Kubernetes, Datadog observability, and React/Next.js.",
     "alumniOf": [
       {
         "@type": "CollegeOrUniversity",
@@ -51,6 +51,13 @@ function Seo({ description, lang, meta, title, image, type, pathname }) {
       }
     ],
     "knowsAbout": [
+      "Microservices",
+      "Clean Architecture",
+      "Domain-Driven Design",
+      "gRPC",
+      "Observability",
+      "Datadog",
+      "GitLab",
       "JavaScript",
       "React.js",
       "Next.js",
@@ -62,11 +69,14 @@ function Seo({ description, lang, meta, title, image, type, pathname }) {
       "Docker",
       "Kubernetes",
       "AWS",
-      "TailwindCSS"
+      "TailwindCSS",
+      "Three.js",
+      "TDD"
     ],
     "sameAs": [
       "https://www.linkedin.com/in/younes-bouchbouk-71a355217/",
       "https://github.com/YounesBouchbouk",
+      "https://personal-portfolio-six-lake.vercel.app/",
       "https://twitter.com/BouchboukYounes",
       "https://www.facebook.com/younss.bouchbouk.3/"
     ]
@@ -104,7 +114,7 @@ function Seo({ description, lang, meta, title, image, type, pathname }) {
         },
         {
           name: `keywords`,
-          content: `Younes Bouchbouk, Developer, Full Stack, JavaScript, React, Golang, NextJS, Portfolio, Software Engineer, Web Developer, Frontend Developer, Backend Developer`,
+          content: `Younes Bouchbouk, Software Engineer, Go, Golang, Microservices, gRPC, Kubernetes, Datadog, Clean Architecture, DDD, React, Next.js, Backend Engineer, Full Stack`,
         },
         {
           property: `og:title`,
