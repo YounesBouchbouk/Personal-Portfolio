@@ -163,7 +163,7 @@ const BlogPostTemplate = ({ data }) => {
           )}
           
           <div 
-            className="prose prose-lg max-w-none dark:prose-invert dark:prose-p:text-gray-300 prose-headings:text-black-p dark:prose-headings:text-white prose-a:text-black-s"
+            className="prose prose-lg max-w-none text-black-p dark:text-gray-300 dark:prose-invert dark:prose-p:text-gray-300 dark:prose-strong:text-gray-200 dark:prose-li:text-gray-300 dark:prose-li:marker:text-gray-500 prose-headings:text-black-p dark:prose-headings:text-white prose-a:text-black-s"
             dangerouslySetInnerHTML={{ __html: html }}
           />
           
