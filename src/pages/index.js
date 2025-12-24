@@ -73,7 +73,7 @@ const IndexPage = () => {
       behavior: "smooth",
     })
   }
-  
+
   return (
     <div className="bg-slate-50 dark:bg-black-p relative">
       <Seo

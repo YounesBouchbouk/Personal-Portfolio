@@ -1,0 +1,256 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Younes BOUCHBOUK} \\ \vspace{1pt}
+    Software Engineer | Go/React Specialist | Building Scalable Cloud-Native Systems \\ \vspace{2pt}
+    \small \raisebox{-0.1\height}\faMapMarker\ Casablanca, Morocco \hspace{4pt}
+    \small \raisebox{-0.1\height}\faPhone\ +212-708204919 ~  \hspace{4pt} \href{mailto:younesbouchbouk.py@gmail.com}
+    {\raisebox{-0.2\height}\faEnvelope\  \underline{younesbouchbouk.py@gmail.com}} ~  \\ \vspace{2pt}
+    \href{https://www.linkedin.com/in/younes-bouchbouk/}{\raisebox{-0.2\height}\faLinkedin\ \underline{/younes-bouchbouk}}  ~
+    \href{https://github.com/YounesBouchbouk}{\raisebox{-0.2\height}\faGithub\ \underline{/YounesBouchbouk}} ~
+    \href{https://younesdev.com}{\raisebox{-0.2\height}\faGlobe\ \underline{younesdev.com}}
+    \vspace{-8pt}
+\end{center}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  
+\resumeSubHeadingListStart
+   \resumeSubheading
+      {OmniLab by 21Factory (Startup)}{Jul 2025 -- Present}
+      {Mid-level Software Engineer, Full-time}{Casablanca, MA}
+      \resumeItemListStart
+        \resumeItem{Domain expert for \textbf{Event Booking} and \textbf{SmartLink} microservices, owning end-to-end architecture and delivery.}
+        \resumeItem{Built immersive AR experiences with \textbf{Three.js}, increasing user engagement by 35\% on the gamification SaaS platform.}
+        \resumeItem{Designed and implemented \textbf{Golang microservices} following \textbf{DDD} and \textbf{Hexagonal/Clean Architecture} patterns.}
+        \resumeItem{Built efficient APIs with \textbf{gRPC} and \textbf{Google AIP} standards for inter-service communication.}
+        \resumeItem{Integrated production-grade observability using \textbf{Datadog}, \textbf{OpenTelemetry}, and \textbf{ClickStack/ClickHouse}.}
+        \resumeItem{Deployed and managed services on \textbf{Kubernetes} with \textbf{Docker} and \textbf{GitLab CI/CD} pipelines.}
+        \resumeItem{Applied \textbf{TDD} and implemented resilience patterns (Circuit Breaker) to ensure high reliability.}
+      \resumeItemListEnd
+      
+   \resumeSubSubheading
+      {Software Engineer, Full-time}{Sep 2024 -- Jul 2025}
+      \resumeItemListStart
+        \resumeItem{Contributed to the same platform, delivering reliable backend services and user-facing features.}
+        \resumeItem{Fixed production issues and improved performance, reducing API latency by 40\%.}
+        \resumeItem{Technologies: Go, gRPC, Kubernetes, Docker, Datadog, React.js, Next.js, Three.js, TDD.}
+      \resumeItemListEnd
+\resumeSubHeadingListEnd
+    \vspace{-8pt}
+    
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {Oracle Corporation}{Jan -- Jun 2024}
+      {Research Assistant (Back-End), Internship}{Casablanca, MA}
+      \resumeItemListStart
+        \resumeItem{Improved and automated testing processes for \textbf{Graal Cloud Native Guides} (graal.cloud/gcn/guides).}
+        \resumeItem{Developed new features and fixed bugs for a \textbf{notebook-based data science platform} (Oracle Labs Data Studio).}
+        \resumeItem{Worked on \textbf{Jupyter integration}: themes, system file access, and embedding Jupyter via iframes.}
+        \resumeItem{Technologies: Java Spring, TypeScript, Python, Jupyter Lab, Docker, Kubernetes.}
+      \resumeItemListEnd
+\resumeSubHeadingListEnd
+    \vspace{-8pt}
+    
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {ISPApp (Startup)}{Aug 2022 -- Jul 2023}
+      {Full-Stack Developer, Freelance}{Dover, USA (Remote)}
+      \resumeItemListStart
+        \resumeItem{Developed a user-centric dashboard that streamlined router management for ISPs.}
+        \resumeItem{Integrated \textbf{Plotly} for real-time visualization of network metrics (ping, TCP, interfaces, wireless APs).}
+        \resumeItem{Technologies: React.js, Next.js, Node.js, TailwindCSS, Plotly.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+          {\textbf{Circuit Breaker Pattern Implementation} $|$ \emph{Golang, Microservices, Resilience Patterns}}{}
+          \resumeItemListStart
+            \resumeItem{Built a production-grade Circuit Breaker library in Go with Closed/Open/Half-Open state machine, thread-safe metrics, and configurable thresholds. Published as a technical blog post demonstrating microservices resilience patterns.}
+          \resumeItemListEnd
+          
+          \vspace{-15pt}
+
+    \resumeProjectHeading
+          {\textbf{SENDIT: Full-Stack Delivery Network Application} $|$ \emph{React, Node.js, MongoDB, Neo4j}}{}
+          \resumeItemListStart
+            \resumeItem{Full-stack web application using MERN stack with Neo4j for shortest path optimization between cities in Morocco. Supports multi-hop deliveries across multiple delivery services.}
+          \resumeItemListEnd
+          
+          \vspace{-15pt}
+          
+      \resumeProjectHeading
+          {\textbf{ISPApp Network Management Dashboard} $|$ \emph{Next.js, Node.js, TailwindCSS, Plotly, Leaflet}}{}
+          \resumeItemListStart
+             \resumeItem{Implemented a robust router monitoring system with real-time graphs (ping, TCP, interfaces, wireless APs) using Plotly and interactive maps with Leaflet for network equipment visualization.}
+          \resumeItemListEnd
+          \vspace{-15pt}
+
+    
+    \resumeProjectHeading
+          {\textbf{Person Re-identification System} $|$ \emph{Python, OpenCV, YOLOv4, Machine Learning}}{}
+          \resumeItemListStart
+            \resumeItem{Desktop application for detecting and tracking individuals using YOLO v4 for object detection and SIFT/ORB algorithms for feature extraction and re-identification across multiple camera feeds.}
+          \resumeItemListEnd 
+ 
+\vspace{-15pt}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {National Institute Of Posts And Telecommunications (INPT)}{Sep 2022 -- Jul 2024}
+      {Engineer Degree: Data and Software Engineering}{Rabat, MA}
+    
+      \resumeSubheading
+      {Polydisciplinary Faculty of Taroudant (FP)}{Sep 2021 -- Jul 2022}
+      {Professional License: Computer Science}{Taroudant, MA}
+
+      \resumeSubheading
+      {Superior School of Technology (EST)}{Sep 2019 -- Jul 2021}
+      {Technical University Degree: Computer Science}{Safi, MA}
+  \resumeSubHeadingListEnd
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{: Golang, JavaScript, TypeScript, Java, Python, Bash.} \\
+     \textbf{Backend \& Architecture}{: Microservices, DDD, Hexagonal/Clean Architecture, gRPC, Google AIP, REST APIs.} \\
+     \textbf{Observability \& Monitoring}{: Datadog, OpenTelemetry, ClickStack, ClickHouse.} \\
+     \textbf{DevOps \& Cloud}{: Docker, Kubernetes, GitLab CI/CD, AWS.} \\
+     \textbf{Frontend}{: React.js, Next.js, Three.js, TailwindCSS.} \\
+     \textbf{Databases}{: PostgreSQL, MongoDB, MySQL, Redis.} \\
+     \textbf{Tools \& Practices}{: Git, TDD, Circuit Breaker Pattern, VS Code, Cursor, Linux.} \\
+     }}
+ \end{itemize}
+ \vspace{-16pt}
+
+
+\end{document}
