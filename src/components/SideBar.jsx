@@ -10,12 +10,19 @@ import {
 } from "react-icons/bs"
 import { AiOutlineFileText } from "react-icons/ai"
 import { motion, useAnimation, AnimatePresence } from "framer-motion"
-import { Link } from "gatsby"
+import ReactGA from "react-ga4"
 
 const SideBar = () => {
   const controls = useAnimation()
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [isMobile, setIsMobile] = useState(false)
+
+  const trackSocialClick = (name) => {
+    ReactGA.event({
+      category: "User",
+      action: `Social Clicked:+${name}`,
+    })
+  }
 
   // Check if we're on mobile
   useEffect(() => {
@@ -66,7 +73,7 @@ const SideBar = () => {
     {
       name: "My Resume",
       icon: <AiOutlineFileText className="text-2xl text-black-p hover:text-black-s dark:text-white-c" />,
-      url: "/BouchboukYounesResumeGO_JS.pdf",
+      url: "/YounesBouchboukResume.pdf",
       download: true,
     },
   ]
@@ -87,13 +94,24 @@ const SideBar = () => {
           className="flex relative group mb-6"
         >
           {link.download ? (
-            <a href={link.url} download aria-label={link.name}>
+            <a
+              href={link.url}
+              download
+              aria-label={link.name}
+              onClick={() => trackSocialClick(link.name)}
+            >
               {link.icon}
             </a>
           ) : (
-            <Link to={link.url} aria-label={link.name}>
+            <a
+              href={link.url}
+              target="_blank"
+              rel="noreferrer noopener"
+              aria-label={link.name}
+              onClick={() => trackSocialClick(link.name)}
+            >
               {link.icon}
-            </Link>
+            </a>
           )}
           <p className="absolute left-8 hidden text-black-s text-xs font-Ubuntu shadow-sm group-hover:inline transition-all duration-500 ease-in dark:text-white">
             {link.name}
@@ -144,19 +162,23 @@ const SideBar = () => {
                   download 
                   className="flex items-center gap-3 p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md transition-colors"
                   aria-label={link.name}
+                  onClick={() => trackSocialClick(link.name)}
                 >
                   {link.icon}
                   <span className="text-black-s dark:text-white text-sm">{link.name}</span>
                 </a>
               ) : (
-                <Link 
-                  to={link.url}
+                <a
+                  href={link.url}
+                  target="_blank"
+                  rel="noreferrer noopener"
                   className="flex items-center gap-3 p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md transition-colors"
                   aria-label={link.name}
+                  onClick={() => trackSocialClick(link.name)}
                 >
                   {link.icon}
                   <span className="text-black-s dark:text-white text-sm">{link.name}</span>
-                </Link>
+                </a>
               )}
             </motion.div>
           ))}
