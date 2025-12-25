@@ -92,11 +92,22 @@ const IndexPage = () => {
           <AboutMe />
           <SectionTitle label={"Professional Experiences"} />
           <TimeLineExp Data={Professinal_experiences} />
+          <Projects setPopUp={setpopup} popUp={popup} setItem={setItem} />
+          <div className="my-4 flex items-center justify-center w-full py-6 bg-slate-100 dark:bg-black-p-l">
+          <div className="max-w-full overflow-x-auto px-4">
+            <GitHubCalendar 
+              username="YounesBouchbouk" 
+              colorScheme="dark"
+              fontSize={14}
+              blockSize={12}
+              blockMargin={4}
+            />
+          </div>
+        </div>
           <SectionTitle label={"Online Courses & Certifications"} />
           <TimeLine Data={Certificat.reverse()} type={"education"} />
           <SectionTitle label={"Education"} />
           <TimeLine Data={Education.reverse()} type={"education"} />
-          <Projects setPopUp={setpopup} popUp={popup} setItem={setItem} />
           <SectionTitle label={"My Skills"} />
           <Skills />
           <Contact />
@@ -110,17 +121,7 @@ const IndexPage = () => {
         
         <Upbutton scrollToTop={scrollToTop} />
 
-        <div className="my-4 flex items-center justify-center w-full py-6 bg-slate-100 dark:bg-black-p-l">
-          <div className="max-w-full overflow-x-auto px-4">
-            <GitHubCalendar 
-              username="YounesBouchbouk" 
-              colorScheme="dark"
-              fontSize={14}
-              blockSize={12}
-              blockMargin={4}
-            />
-          </div>
-        </div>
+      
 
         <footer className="w-full py-4 text-center text-sm text-gray-600 dark:text-gray-400">
           © {new Date().getFullYear()} Younes Bouchbouk. All rights reserved.
