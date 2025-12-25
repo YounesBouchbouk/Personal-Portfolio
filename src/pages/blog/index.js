@@ -3,11 +3,11 @@ import { graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
 import Seo from "../../components/seo"
-import Header from "../../components/header.jsx"
 import { motion } from "framer-motion"
 import SideBar from "../../components/SideBar"
 import Upbutton from "../../components/UpButton"
 import BlogCard from "../../components/Blog/BlogCard"
+import BlogHeader from "../../components/BlogHeader.jsx"
 
 const BlogPage = ({ data }) => {
   const allPosts = data.allMarkdownRemark.edges
@@ -126,8 +126,8 @@ const BlogPage = ({ data }) => {
         pathname="/blog/"
       />
       
-      <Header theme={theme} setTheme={handleThemeChange} />
-      <SideBar />
+      <BlogHeader theme={theme} setTheme={handleThemeChange} />
+      <SideBar  />
       
       <div className="container mx-auto px-4 py-24">
         
