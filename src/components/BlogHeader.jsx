@@ -6,7 +6,7 @@ import { Link as ScrollLink } from "react-scroll"
 import { Link as GatsbyLink } from "gatsby"
 import Upbutton from "./UpButton"
 
-const Header = ({ theme, setTheme }) => {
+const BlogHeader = ({ theme, setTheme }) => {
   // Use default theme if none provided (for static display in blog pages)
   const currentTheme = theme || "dark";
   const [showbar, setShowbar] = useState(false)
@@ -28,7 +28,7 @@ const Header = ({ theme, setTheme }) => {
   }
   const linkstyle = `p-4 py-4 md:p-2 md:mr-4 cursor-pointer  hover:text-black-s  uppercase text-xs  text-slate-700  dark:text-white font-Ubuntu`
   return (
-    <motion.header
+    <motion.BlogHeader
       initial="hidden"
       transition={{ duration: 1 }}
       animate="visible"
@@ -43,59 +43,12 @@ const Header = ({ theme, setTheme }) => {
           transition={{ delay: 1.5, duration: 2 }}
           className="flex px-4 md:p-0 md:my-0 md:relative md:flex-row md:justify-start"
         >
-          <ScrollLink
-            onClick={scrollToTop}
-            to="Welcome"
-            spy={true}
-            smooth={true}
-            duration={1500}
-            className={linkstyle}
-          >
-            Home
-          </ScrollLink>
-
-          <ScrollLink
-            to="AboutMe"
-            spy={true}
-            smooth={true}
-            duration={1500}
-            className={linkstyle}
-          >
-            About
-          </ScrollLink>
-          <ScrollLink
-            to="MySkilles"
-            spy={true}
-            smooth={true}
-            duration={1500}
-            className={linkstyle}
-          >
-            Skills
-          </ScrollLink>
-          <ScrollLink
-            to="Projects"
-            spy={true}
-            smooth={true}
-            duration={1500}
-            className={linkstyle}
-          >
-            Projects
-          </ScrollLink>
           <GatsbyLink
-            to="/blog"
+            to="/"
             className={`p-4 py-4 md:p-2 md:mr-4 cursor-pointer hover:text-black-s uppercase text-xs text-slate-700 dark:text-white font-Ubuntu`}
           >
-            Blog
+            Home
           </GatsbyLink>
-          <ScrollLink
-            to="contact"
-            spy={true}
-            smooth={true}
-            duration={1500}
-            className={linkstyle}
-          >
-            Contact
-          </ScrollLink>
         </motion.div>
       </div>
 
@@ -213,8 +166,8 @@ const Header = ({ theme, setTheme }) => {
           </svg>
         </button>
       </div>
-    </motion.header>
+    </motion.BlogHeader>
   )
 }
 
-export default Header
+export default BlogHeader

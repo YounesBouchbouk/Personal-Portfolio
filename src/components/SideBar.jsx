@@ -84,7 +84,7 @@ const SideBar = () => {
       initial={{ opacity: 0, x: -50 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 1, ease: "easeInOut" }}
-      className="fixed left-0 h-full w-[90px] px-2 flex flex-col z-50 items-start justify-center transition-all duration-500 ease-in"
+      className="fixed left-0 h-full w-[90px] px-2 flex flex-col z-[60] items-start justify-center transition-all duration-500 ease-in"
     >
       {socialLinks.map((link, index) => (
         <motion.div 
@@ -127,7 +127,7 @@ const SideBar = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-      className="fixed bottom-6 right-6 z-50 bg-black-p dark:bg-orange-400 text-white p-3 rounded-full shadow-lg"
+      className="fixed bottom-6 right-6 z-[60] bg-black-p dark:bg-orange-400 text-white p-3 rounded-full shadow-lg"
       aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
     >
       {mobileMenuOpen ? (

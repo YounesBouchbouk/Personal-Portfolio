@@ -414,3 +414,5 @@ Circuit breakers are one of the simplest (and highest ROI) resilience patterns y
 If you want, I can also refactor the implementation into a reusable package (`breaker`), add unit tests + race tests, and show a real integration example (e.g., wrapping `http.Client`).
 
 
+
+

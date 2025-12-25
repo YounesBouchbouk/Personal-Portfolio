@@ -7,6 +7,7 @@ import { motion } from "framer-motion"
 import SideBar from "../components/SideBar"
 import Upbutton from "../components/UpButton"
 import TableOfContents from "../components/Blog/TableOfContents"
+import BlogHeader from "../components/BlogHeader.jsx"
 
 const BlogPostTemplate = ({ data }) => {
   const post = data.markdownRemark
@@ -90,7 +91,7 @@ const BlogPostTemplate = ({ data }) => {
         image={image ? image.images.fallback.src : ""}
       />
       
-      <Header theme={theme} setTheme={handleThemeChange} />
+      <BlogHeader theme={theme} setTheme={handleThemeChange} />
       <SideBar />
       
       <article className="container mx-auto px-4 py-24">
