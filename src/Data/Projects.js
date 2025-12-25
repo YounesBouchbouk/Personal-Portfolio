@@ -130,16 +130,6 @@ import mindArticles from "../images/mindmeet/Articles.png"
 
 export const ProjectsData = [
   {
-    title: "SwiftNet.ca",
-    description: "",
-    technologies: ["NextJs", "Google API", "TailwindCss"],
-    images: [swiftHome, swiftMap, swiftPlan, swiftPricing],
-    whatfor: "",
-    github: "https://www.swift-net.ca",
-    context: ["top"],
-    link: "https://www.swift-net.ca",
-  },
-  {
     title: "ispapp : network management  system",
     description:
       "As a front-end JavaScript developer on an ISP project, I helped turn MikroTik routers into cloud-managed Wi-Fi routers. By copying and pasting our RouterOS script onto the routers, we enabled centralized control of a fleet of MikroTik routers from a cloud dashboard. With this system, we could easily configure, monitor, and manage MikroTik routers alongside OpenWRT, SNMP, and TR-069 CWMP devices.",
@@ -198,6 +188,16 @@ export const ProjectsData = [
     link: "https://ispapp.co",
   },
   {
+    title: "SwiftNet.ca",
+    description: "",
+    technologies: ["NextJs", "Google API", "TailwindCss"],
+    images: [swiftHome, swiftMap, swiftPlan, swiftPricing],
+    whatfor: "",
+    github: "https://www.swift-net.ca",
+    context: ["top"],
+    link: "https://www.swift-net.ca",
+  },
+  {
     title: "Machine Learning : person re-identification",
     description:
       "Developed a desktop application aimed at detecting and tracking individuals not wearing masks during the COVID-19 crise. Utilized the capabilities of YOLOV4 to achieve precise mask detection and smoothly integrated its functionality with the primary camera, enabling real-time monitoring.Employed the openCV library to incorporate SIFT and ORB algorithms, enabling the extraction of distinctive image characteristics from secondary cameras.",
@@ -218,7 +218,6 @@ export const ProjectsData = [
     context: ["University", "top"],
     link: "https://mind-meet-front.vercel.app/",
   },
-
   {
     title: "NextFactoryIt portfolio",
     description:
@@ -281,16 +280,16 @@ export const ProjectsData = [
     github: "",
     link: "",
   },
-  {
-    title: "YounesBouchbouk portfolio",
-    description: "You are currently exploring it lol.",
-    technologies: ["ReactJS", "TailwindCss", "GatsbyJs", "FramerMotion"],
-    images: [portfolio],
-    whatfor: "",
-    context: ["Self-Learning", "top"],
-    github: "https://github.com/YounesBouchbouk/Personal-Portfolio",
-    link: "https://github.com/YounesBouchbouk/Personal-Portfolio",
-  },
+  // {
+  //   title: "YounesBouchbouk portfolio",
+  //   description: "You are currently exploring it lol.",
+  //   technologies: ["ReactJS", "TailwindCss", "GatsbyJs", "FramerMotion"],
+  //   images: [portfolio],
+  //   whatfor: "",
+  //   context: ["Self-Learning", "top"],
+  //   github: "https://github.com/YounesBouchbouk/Personal-Portfolio",
+  //   link: "https://github.com/YounesBouchbouk/Personal-Portfolio",
+  // },
   {
     title: "turnkeyisp website",
     description:
@@ -302,24 +301,24 @@ export const ProjectsData = [
     github: "https://turnkeyisp.co/",
     link: "https://turnkeyisp.co/",
   },
-  {
-    title: "AntySemsar , Full Stack Mobile Application with ReactNative",
-    description:
-      "Antysemsar is a cross-platform mobile application built using React Native and Node.js. It serves as a valuable tool for students planning to pursue their education in a new city. The app facilitates the search for suitable accommodation by connecting students with peers who have already secured local housing. Users who have already found housing can use the app to share details such as pricing, images, and additional information about their living arrangements.",
-    technologies: [
-      "React Native",
-      "CSS",
-      "Node JS",
-      "Rest Api",
-      "Express JS",
-      "MongoDb",
-    ],
-    images: [anty3, anty4, anty5, anty6, anty7, anty8],
-    whatfor: "",
-    context: ["Self-Learning", "top"],
-    github: "https://github.com/YounesBouchbouk/AntySemsara",
-    link: "",
-  },
+  // {
+  //   title: "AntySemsar , Full Stack Mobile Application with ReactNative",
+  //   description:
+  //     "Antysemsar is a cross-platform mobile application built using React Native and Node.js. It serves as a valuable tool for students planning to pursue their education in a new city. The app facilitates the search for suitable accommodation by connecting students with peers who have already secured local housing. Users who have already found housing can use the app to share details such as pricing, images, and additional information about their living arrangements.",
+  //   technologies: [
+  //     "React Native",
+  //     "CSS",
+  //     "Node JS",
+  //     "Rest Api",
+  //     "Express JS",
+  //     "MongoDb",
+  //   ],
+  //   images: [anty3, anty4, anty5, anty6, anty7, anty8],
+  //   whatfor: "",
+  //   context: ["Self-Learning", "top"],
+  //   github: "https://github.com/YounesBouchbouk/AntySemsara",
+  //   link: "",
+  // },
   {
     title: "JAYBY , mobile Application",
     description:
@@ -341,37 +340,39 @@ export const ProjectsData = [
     context: ["University", "top"],
     github: "https://github.com/YounesBouchbouk/ProjectsManager-JAVAFX",
     link: "",
-  },
-  {
-    title: "Kids School Managment System ",
-    description: "School managment System  ",
-    technologies: ["HTML", "CSS", "BOOTSTRAP", "PHP", "MYSQL"],
-    images: [houssna, houssna2, houssna3, houssna4, houssna5, houssna6],
-    whatfor: "",
-    context: ["top", "Internships", "University"],
-    github: "",
-    link: "",
-  },
-  {
-    title: "Full stack Ecommerce Website",
-    description: "Full stack ecommerce website ",
-    technologies: ["HTML", "CSS", "BOOTSTRAP", "JQuery", "PHP", "MYSQL"],
-    images: [
-      phpecom1,
-      phpecom2,
-      phpecom3,
-      phpecom4,
-      phpecom5,
-      phpecom6,
-      phpecom7,
-      phpecom9,
-      phpecom10,
-    ],
-    whatfor: "",
-    context: ["Internships", "University", "top"],
-    github: "",
-    link: "",
-  },
+  }
+  // ,
+  // {
+  //   title: "Kids School Managment System ",
+  //   description: "School managment System  ",
+  //   technologies: ["HTML", "CSS", "BOOTSTRAP", "PHP", "MYSQL"],
+  //   images: [houssna, houssna2, houssna3, houssna4, houssna5, houssna6],
+  //   whatfor: "",
+  //   context: ["top", "Internships", "University"],
+  //   github: "",
+  //   link: "",
+  // },
+  // {
+  //   title: "Full stack Ecommerce Website",
+  //   description: "Full stack ecommerce website ",
+  //   technologies: ["HTML", "CSS", "BOOTSTRAP", "JQuery", "PHP", "MYSQL"],
+  //   images: [
+  //     phpecom1,
+  //     phpecom2,
+  //     phpecom3,
+  //     phpecom4,
+  //     phpecom5,
+  //     phpecom6,
+  //     phpecom7,
+  //     phpecom9,
+  //     phpecom10,
+  //   ],
+  //   whatfor: "",
+  //   context: ["Internships", "University", "top"],
+  //   github: "",
+  //   link: "",
+  // },
+  ,
   {
     title: "Natours ReastFull APi",
     description:
@@ -384,20 +385,8 @@ export const ProjectsData = [
     link: "",
   },
   {
-    title: "ECommerce Shopping API",
-    description:
-      "Presenting our comprehensive RESTful API tailored to empower your Ecommerce website with a seamless and dynamic experience. This API encompasses fundamental components such as User management, Product catalog, Order processing, Reviews, Category organization, and employs advanced security measures including JWT (JSON Web Tokens) for secure communication. Robust security features ensure data protection, while Authentication and Authorization mechanisms guarantee secure user interactions. Seamlessly manage user accounts, curate a diverse product range, streamline order fulfillment, gather user reviews, categorize products effectively, and enhance overall security. Our API serves as the cornerstone of your Ecommerce venture, optimizing user engagement, bolstering data integrity, and fortifying your website's functionality for unparalleled performance.",
-    technologies: ["NodeJS", "ExpressJS", "MongoDb"],
-    images: [postman],
-    whatfor: "",
-    context: ["Self-Learning"],
-    github: "https://github.com/YounesBouchbouk/Ecommerce-API-NodeJs",
-    link: "https://github.com/YounesBouchbouk/Ecommerce-API-NodeJs",
-  },
-
-  {
-    title: "Informatique Club Managment System ",
-    description: "Informatique Club Managment system  ",
+    title: "IT Club Managment System ",
+    description: "IT Club Managment system  ",
     technologies: ["JEE", "CSS", "EclipceLink", "MYSQL"],
     images: [jee, jee2, jee3, jee4, jee5, jee6],
     whatfor: "",
@@ -405,29 +394,5 @@ export const ProjectsData = [
     github:
       "https://github.com/YounesBouchbouk/gestion_club_informatique_JEE_MYSQL_HIBERNATE",
     link: "",
-  },
-  // {
-  //   title: "Weather App",
-  //   description:
-  //     "My journey with React.js began with the creation of a modest weather application aimed at tracking weather conditions across numerous countries and their respective cities. This project marked my initial steps into the world of React.js development. I sourced weather data through an API graciously provided by a service, which facilitated the application's functionality.",
-  //   technologies: ["ReacJS", "Redux", "Material Ui"],
-  //   images: [weather1, wheather2, weather3],
-  //   whatfor: "",
-  //   context: ["Self-Learning"],
-  //   github:
-  //     "https://github.com/YounesBouchbouk/WeatherAPP-With-ReactJs-MUI-and-API",
-  //   link: "",
-  // },
-  // {
-  //   title: "Covid Tracker",
-  //   description:
-  //     "My journey with React.js commenced through the development of a compact COVID Tracker app, intricately linked to an external API. This API, generously , served as the cornerstone of the app, enabling real-time tracking and display of COVID-related data.",
-  //   technologies: ["ReacJS", "React Charts", "Material Ui"],
-  //   images: [covide1, covide2, covide3],
-  //   whatfor: "",
-  //   context: ["Self-Learning"],
-  //   github:
-  //     "https://github.com/YounesBouchbouk/CovidTracker-Application-With-ReactJs",
-  //   link: "",
-  // },
+  }
 ]
