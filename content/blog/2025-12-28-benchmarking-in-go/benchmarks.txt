@@ -1,0 +1,87 @@
+goos: darwin
+goarch: arm64
+pkg: challenge
+go version go1.25.1 darwin/arm64
+
+# Command used
+# go test -run '^$' -bench '.' -benchmem -count=3
+
+BenchmarkSlowSort/10-8                  	20149994	        58.63 ns/op	      80 B/op	       1 allocs/op
+BenchmarkSlowSort/10-8                  	19912054	        59.80 ns/op	      80 B/op	       1 allocs/op
+BenchmarkSlowSort/10-8                  	18252727	        58.62 ns/op	      80 B/op	       1 allocs/op
+BenchmarkSlowSort/100-8                 	  233120	      5048 ns/op	     896 B/op	       1 allocs/op
+BenchmarkSlowSort/100-8                 	  233894	      5237 ns/op	     896 B/op	       1 allocs/op
+BenchmarkSlowSort/100-8                 	  234406	      5098 ns/op	     896 B/op	       1 allocs/op
+BenchmarkSlowSort/1000-8                	    1981	    587459 ns/op	    8192 B/op	       1 allocs/op
+BenchmarkSlowSort/1000-8                	    2097	    579912 ns/op	    8192 B/op	       1 allocs/op
+BenchmarkSlowSort/1000-8                	    2072	    588772 ns/op	    8192 B/op	       1 allocs/op
+BenchmarkOptimizedSort/10-8             	40872339	        28.34 ns/op	      80 B/op	       1 allocs/op
+BenchmarkOptimizedSort/10-8             	41506990	        28.41 ns/op	      80 B/op	       1 allocs/op
+BenchmarkOptimizedSort/10-8             	41541657	        28.41 ns/op	      80 B/op	       1 allocs/op
+BenchmarkOptimizedSort/100-8            	 1855807	       651.7 ns/op	     896 B/op	       1 allocs/op
+BenchmarkOptimizedSort/100-8            	 1835344	       651.4 ns/op	     896 B/op	       1 allocs/op
+BenchmarkOptimizedSort/100-8            	 1711359	       684.2 ns/op	     896 B/op	       1 allocs/op
+BenchmarkOptimizedSort/1000-8           	  123348	      9750 ns/op	    8192 B/op	       1 allocs/op
+BenchmarkOptimizedSort/1000-8           	  122847	      9738 ns/op	    8192 B/op	       1 allocs/op
+BenchmarkOptimizedSort/1000-8           	  121683	      9742 ns/op	    8192 B/op	       1 allocs/op
+BenchmarkInefficientStringBuilder/Small-8         	 1984188	       606.0 ns/op	    1912 B/op	      29 allocs/op
+BenchmarkInefficientStringBuilder/Small-8         	 1971518	       608.0 ns/op	    1912 B/op	      29 allocs/op
+BenchmarkInefficientStringBuilder/Small-8         	 1923736	       607.0 ns/op	    1912 B/op	      29 allocs/op
+BenchmarkInefficientStringBuilder/Medium-8        	   26031	     51587 ns/op	  518168 B/op	     699 allocs/op
+BenchmarkInefficientStringBuilder/Medium-8        	   25900	     45995 ns/op	  518169 B/op	     699 allocs/op
+BenchmarkInefficientStringBuilder/Medium-8        	   26118	     45965 ns/op	  518168 B/op	     699 allocs/op
+BenchmarkInefficientStringBuilder/Large-8         	     280	   4277351 ns/op	70153813 B/op	    7004 allocs/op
+BenchmarkInefficientStringBuilder/Large-8         	     279	   4322904 ns/op	70153731 B/op	    7003 allocs/op
+BenchmarkInefficientStringBuilder/Large-8         	     282	   4382043 ns/op	70153766 B/op	    7003 allocs/op
+BenchmarkOptimizedStringBuilder/Small-8           	 7199608	       165.1 ns/op	     248 B/op	       5 allocs/op
+BenchmarkOptimizedStringBuilder/Small-8           	 7272966	       163.5 ns/op	     248 B/op	       5 allocs/op
+BenchmarkOptimizedStringBuilder/Small-8           	 7273435	       163.2 ns/op	     248 B/op	       5 allocs/op
+BenchmarkOptimizedStringBuilder/Medium-8          	  495027	      2435 ns/op	    3320 B/op	       9 allocs/op
+BenchmarkOptimizedStringBuilder/Medium-8          	  488397	      2424 ns/op	    3320 B/op	       9 allocs/op
+BenchmarkOptimizedStringBuilder/Medium-8          	  485990	      2428 ns/op	    3320 B/op	       9 allocs/op
+BenchmarkOptimizedStringBuilder/Large-8           	   44826	     27495 ns/op	   84729 B/op	      18 allocs/op
+BenchmarkOptimizedStringBuilder/Large-8           	   44702	     26671 ns/op	   84729 B/op	      18 allocs/op
+BenchmarkOptimizedStringBuilder/Large-8           	   39199	     26763 ns/op	   84729 B/op	      18 allocs/op
+BenchmarkExpensiveCalculation/Small-8             	 2992590	       399.1 ns/op	       0 B/op	       0 allocs/op
+BenchmarkExpensiveCalculation/Small-8             	 3006231	       399.0 ns/op	       0 B/op	       0 allocs/op
+BenchmarkExpensiveCalculation/Small-8             	 2999059	       398.7 ns/op	       0 B/op	       0 allocs/op
+BenchmarkExpensiveCalculation/Medium-8            	   23970	     49745 ns/op	       0 B/op	       0 allocs/op
+BenchmarkExpensiveCalculation/Medium-8            	   23942	     50167 ns/op	       0 B/op	       0 allocs/op
+BenchmarkExpensiveCalculation/Medium-8            	   24031	     49805 ns/op	       0 B/op	       0 allocs/op
+BenchmarkExpensiveCalculation/Large-8             	     189	   6147738 ns/op	       0 B/op	       0 allocs/op
+BenchmarkExpensiveCalculation/Large-8             	     195	   6142380 ns/op	       0 B/op	       0 allocs/op
+BenchmarkExpensiveCalculation/Large-8             	     195	   6140823 ns/op	       0 B/op	       0 allocs/op
+BenchmarkOptimizedCalculation/Small-8             	315824968	         3.780 ns/op	       0 B/op	       0 allocs/op
+BenchmarkOptimizedCalculation/Small-8             	325210412	         3.633 ns/op	       0 B/op	       0 allocs/op
+BenchmarkOptimizedCalculation/Small-8             	326044132	         3.675 ns/op	       0 B/op	       0 allocs/op
+BenchmarkOptimizedCalculation/Medium-8            	193047902	         6.228 ns/op	       0 B/op	       0 allocs/op
+BenchmarkOptimizedCalculation/Medium-8            	190670314	         6.307 ns/op	       0 B/op	       0 allocs/op
+BenchmarkOptimizedCalculation/Medium-8            	182657310	         6.246 ns/op	       0 B/op	       0 allocs/op
+BenchmarkOptimizedCalculation/Large-8             	133725564	         8.989 ns/op	       0 B/op	       0 allocs/op
+BenchmarkOptimizedCalculation/Large-8             	133363302	         9.011 ns/op	       0 B/op	       0 allocs/op
+BenchmarkOptimizedCalculation/Large-8             	133854634	         9.002 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHighAllocationSearch/Short_Text-8        	 5414086	       221.3 ns/op	     304 B/op	       3 allocs/op
+BenchmarkHighAllocationSearch/Short_Text-8        	 5329126	       223.1 ns/op	     304 B/op	       3 allocs/op
+BenchmarkHighAllocationSearch/Short_Text-8        	 5301422	       223.6 ns/op	     304 B/op	       3 allocs/op
+BenchmarkHighAllocationSearch/Medium_Text-8       	  643281	      1843 ns/op	    1192 B/op	       6 allocs/op
+BenchmarkHighAllocationSearch/Medium_Text-8       	  658113	      1851 ns/op	    1192 B/op	       6 allocs/op
+BenchmarkHighAllocationSearch/Medium_Text-8       	  649947	      1850 ns/op	    1192 B/op	       6 allocs/op
+BenchmarkHighAllocationSearch/Long_Text-8         	   66438	     17928 ns/op	   11816 B/op	      12 allocs/op
+BenchmarkHighAllocationSearch/Long_Text-8         	   66709	     17921 ns/op	   11816 B/op	      12 allocs/op
+BenchmarkHighAllocationSearch/Long_Text-8         	   66798	     17961 ns/op	   11816 B/op	      12 allocs/op
+BenchmarkOptimizedSearch/Short_Text-8             	 5302308	       225.3 ns/op	     304 B/op	       3 allocs/op
+BenchmarkOptimizedSearch/Short_Text-8             	 5254028	       231.8 ns/op	     304 B/op	       3 allocs/op
+BenchmarkOptimizedSearch/Short_Text-8             	 5279532	       227.3 ns/op	     304 B/op	       3 allocs/op
+BenchmarkOptimizedSearch/Medium_Text-8            	  647742	      1927 ns/op	    1192 B/op	       6 allocs/op
+BenchmarkOptimizedSearch/Medium_Text-8            	  633538	      1858 ns/op	    1192 B/op	       6 allocs/op
+BenchmarkOptimizedSearch/Medium_Text-8            	  651415	      1859 ns/op	    1192 B/op	       6 allocs/op
+BenchmarkOptimizedSearch/Long_Text-8              	   66603	     17953 ns/op	   11816 B/op	      12 allocs/op
+BenchmarkOptimizedSearch/Long_Text-8              	   67178	     18634 ns/op	   11816 B/op	      12 allocs/op
+BenchmarkOptimizedSearch/Long_Text-8              	   66506	     18025 ns/op	   11816 B/op	      12 allocs/op
+BenchmarkMemoryHighAllocationSearch-8             	   66622	     18044 ns/op	   11816 B/op	      12 allocs/op
+BenchmarkMemoryHighAllocationSearch-8             	   66315	     17995 ns/op	   11816 B/op	      12 allocs/op
+BenchmarkMemoryHighAllocationSearch-8             	   66660	     18101 ns/op	   11816 B/op	      12 allocs/op
+BenchmarkMemoryOptimizedSearch-8                  	   66621	     17999 ns/op	   11816 B/op	      12 allocs/op
+BenchmarkMemoryOptimizedSearch-8                  	   66210	     17982 ns/op	   11816 B/op	      12 allocs/op
+BenchmarkMemoryOptimizedSearch-8                  	   65829	     18012 ns/op	   11816 B/op	      12 allocs/op
+
