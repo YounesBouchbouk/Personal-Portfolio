@@ -414,5 +414,4 @@ Circuit breakers are one of the simplest (and highest ROI) resilience patterns y
 If you want, I can also refactor the implementation into a reusable package (`breaker`), add unit tests + race tests, and show a real integration example (e.g., wrapping `http.Client`).
 
 
-
-
+> _This blog was inspired by [Go Interview Challenge 20](https://app.gointerview.dev/challenge/20), which tasks you to implement and production-harden a real-world circuit breaker in Go. The concepts and code here are shaped directly by that hands-on challenge—if you're preparing for Go interviews or aiming to upgrade your system resilience, I highly recommend giving the original challenge a try!_
