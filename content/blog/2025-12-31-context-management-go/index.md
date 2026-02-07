@@ -480,7 +480,7 @@ func (s *Server) Shutdown(timeout time.Duration) error {
 
 ## Common pitfalls (and how to avoid them)
 
-### ❌ Pitfall 1: Not checking context errors
+### Pitfall 1: Not checking context errors
 
 ```go
 // BAD: Ignoring context cancellation
@@ -507,7 +507,7 @@ func Process(ctx context.Context) {
 }
 ```
 
-### ❌ Pitfall 2: Using context for optional parameters
+### Pitfall 2: Using context for optional parameters
 
 ```go
 // BAD: Using context for business logic
@@ -522,7 +522,7 @@ func CreateUser(ctx context.Context, email string) error {
 }
 ```
 
-### ❌ Pitfall 3: Not calling cancel()
+### Pitfall 3: Not calling cancel()
 
 ```go
 // BAD: Leaking resources
@@ -540,7 +540,7 @@ func GoodTimeout() {
 }
 ```
 
-### ❌ Pitfall 4: Passing nil context
+### Pitfall 4: Passing nil context
 
 ```go
 // BAD: Causes panics
