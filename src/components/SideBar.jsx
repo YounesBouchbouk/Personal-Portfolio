@@ -73,7 +73,7 @@ const SideBar = () => {
     {
       name: "My Resume",
       icon: <AiOutlineFileText className="text-2xl text-black-p hover:text-black-s dark:text-white-c" />,
-      url: "/YounesBouchboukResume.pdf",
+      url: "/YounesBouchbouk.pdf",
       download: true,
     },
   ]

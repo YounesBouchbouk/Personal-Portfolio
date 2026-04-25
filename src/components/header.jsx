@@ -6,6 +6,8 @@ import { Link as ScrollLink } from "react-scroll"
 import { Link as GatsbyLink } from "gatsby"
 import Upbutton from "./UpButton"
 
+const headerTop = "top-10" /* space for AvailabilityBar (h-10) */
+
 const Header = ({ theme, setTheme }) => {
   // Use default theme if none provided (for static display in blog pages)
   const currentTheme = theme || "dark";
@@ -33,7 +35,7 @@ const Header = ({ theme, setTheme }) => {
       transition={{ duration: 1 }}
       animate="visible"
       variants={variants}
-      className={`w-full z-[9999]  justify-between transition-all duration-500 ease-in fixed flex items-center shadow-sm border-b-2 bg-white/90 border-black-p dark:border-black-s dark:bg-black/90 backdrop-blur-sm`}
+      className={`w-full z-[10000] justify-between transition-all duration-500 ease-in fixed ${headerTop} flex items-center shadow-sm border-b-2 bg-white/90 border-black-p dark:border-black-s dark:bg-black/90 backdrop-blur-sm`}
     >
       {/* Desktop Navigation */}
       <div className={`p-2 hidden md:flex`}>
@@ -105,7 +107,7 @@ const Header = ({ theme, setTheme }) => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
-          className="fixed top-14 left-0 w-full bg-white/95 dark:bg-black/95 backdrop-blur-sm shadow-lg z-40 py-4 px-2 flex flex-col items-center md:hidden"
+          className="fixed top-24 left-0 w-full bg-white/95 dark:bg-black/95 backdrop-blur-sm shadow-lg z-40 py-4 px-2 flex flex-col items-center md:hidden"
         >
           <ScrollLink
             onClick={() => {

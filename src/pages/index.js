@@ -19,6 +19,7 @@ import GitHubCalendar from "react-github-calendar"
 import TimeLineExp from "../components/TimeLineExp"
 import Annonce from "../components/Annonce"
 import Upbutton from "../components/UpButton"
+import AvailabilityBar from "../components/AvailabilityBar"
 
 const getInitialTheme = () => {
   if (typeof window !== "undefined" && window.localStorage) {
@@ -57,6 +58,7 @@ const Themeprovider2 = ({ initialTheme, children }) => {
 
   return (
     <div className="w-full">
+      <AvailabilityBar />
       <Header setTheme={setTheme} theme={theme} />
       {children}
     </div>
@@ -77,8 +79,8 @@ const IndexPage = () => {
   return (
     <div className="bg-slate-50 dark:bg-black-p relative">
       <Seo
-        title="Younes Bouchbouk - Software Engineer (Go/React)"
-        description="Software Engineer @21Factory. I build Go microservices with DDD/Clean Architecture, gRPC, Kubernetes, and Datadog observability—plus modern React/Next.js frontends."
+        title="Younes Bouchbouk — Software Engineer (Go, React, cloud-native)"
+        description="Backend-focused engineer at OmniLab by 21Factory: event-driven Go microservices, gRPC, NATS, Kubernetes, OpenTelemetry, DataDog, and React/Next.js. Open to work and project collaborations."
         type="website"
         pathname="/"
       />
@@ -92,7 +94,6 @@ const IndexPage = () => {
           <AboutMe />
           <SectionTitle label={"Professional Experiences"} />
           <TimeLineExp Data={Professinal_experiences} />
-          <Projects setPopUp={setpopup} popUp={popup} setItem={setItem} />
           <div className="my-4 flex items-center justify-center w-full py-6 bg-slate-100 dark:bg-black-p-l">
           <div className="max-w-full overflow-x-auto px-4">
             <GitHubCalendar 
@@ -110,7 +111,7 @@ const IndexPage = () => {
           <TimeLine Data={Education.reverse()} type={"education"} />
           <SectionTitle label={"My Skills"} />
           <Skills />
-          <Contact />
+          <Projects setPopUp={setpopup} popUp={popup} setItem={setItem} />
         </div>
 
         <AnimatePresence>

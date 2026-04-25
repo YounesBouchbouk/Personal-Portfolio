@@ -5,6 +5,7 @@ import { motion, useAnimation } from "framer-motion"
 import { Link as ScrollLink } from "react-scroll"
 import { Link as GatsbyLink } from "gatsby"
 import Upbutton from "./UpButton"
+import AvailabilityBar from "./AvailabilityBar"
 
 const BlogHeader = ({ theme, setTheme }) => {
   // Use default theme if none provided (for static display in blog pages)
@@ -28,12 +29,14 @@ const BlogHeader = ({ theme, setTheme }) => {
   }
   const linkstyle = `p-4 py-4 md:p-2 md:mr-4 cursor-pointer  hover:text-black-s  uppercase text-xs  text-slate-700  dark:text-white font-Ubuntu`
   return (
-    <motion.BlogHeader
+    <>
+    <AvailabilityBar />
+    <motion.header
       initial="hidden"
       transition={{ duration: 1 }}
       animate="visible"
       variants={variants}
-      className={`w-full z-[9999]  justify-between transition-all duration-500 ease-in fixed flex items-center shadow-sm border-b-2 bg-white/90 border-black-p dark:border-black-s dark:bg-black/90 backdrop-blur-sm`}
+      className={`w-full z-[10000] justify-between transition-all duration-500 ease-in fixed top-10 flex items-center shadow-sm border-b-2 bg-white/90 border-black-p dark:border-black-s dark:bg-black/90 backdrop-blur-sm`}
     >
       {/* Desktop Navigation */}
       <div className={`p-2 hidden md:flex`}>
@@ -58,7 +61,7 @@ const BlogHeader = ({ theme, setTheme }) => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
-          className="fixed top-14 left-0 w-full bg-white/95 dark:bg-black/95 backdrop-blur-sm shadow-lg z-40 py-4 px-2 flex flex-col items-center md:hidden"
+          className="fixed top-24 left-0 w-full bg-white/95 dark:bg-black/95 backdrop-blur-sm shadow-lg z-40 py-4 px-2 flex flex-col items-center md:hidden"
         >
           <ScrollLink
             onClick={() => {
@@ -166,7 +169,8 @@ const BlogHeader = ({ theme, setTheme }) => {
           </svg>
         </button>
       </div>
-    </motion.BlogHeader>
+    </motion.header>
+    </>
   )
 }
 
