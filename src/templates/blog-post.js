@@ -94,7 +94,7 @@ const BlogPostTemplate = ({ data }) => {
       <BlogHeader theme={theme} setTheme={handleThemeChange} />
       <SideBar />
       
-      <article className="container mx-auto px-4 py-24">
+      <article className="container mx-auto px-4 pt-32 pb-16">
         <div className="max-w-3xl mx-auto">
           <Link 
             to="/blog"
@@ -120,7 +120,7 @@ const BlogPostTemplate = ({ data }) => {
         
         <div className="flex flex-col md:flex-row gap-8 max-w-6xl mx-auto">
           <div className="md:w-1/4 order-2 md:order-1">
-            <div className="sticky top-24">
+            <div className="sticky top-32">
               <TableOfContents html={html} />
             </div>
           </div>

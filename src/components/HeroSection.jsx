@@ -9,7 +9,7 @@ const HeroSection = () => {
   return (
     <div
       id="Welcome"
-      className="w-full transition-all duration-500 ease-out lg:h-screen dark:bg-black-p bg-slate-50 flex flex-col-reverse lg:flex-row items-center justify-center "
+      className="w-full pt-24 transition-all duration-500 ease-out lg:min-h-screen dark:bg-black-p bg-slate-50 flex flex-col-reverse lg:flex-row items-center justify-center "
     >
       <div className="w-full px-12   lg:px-3  lg:w-1/2 p-4  ">
         <div className=" w-1/2 lg:w-1/3 flex flex-col justify-center items-center ">
@@ -24,13 +24,13 @@ const HeroSection = () => {
 
         <div className="text-left p-2 dark:text-slate-50 text-black-p">
           <p className="md:text-base text-sm">
-            Software Engineer @21Factory | Go/React Specialist
+            Software Engineer · Go / React · Cloud-native systems
           </p>
         </div>
 
         <div className="flex flex-col md:flex-row gap-4 items-start md:items-center">
           <p className="font-Merriweather text-xs md:text-sm dark:text-slate-50 text-black-p">
-            Building cloud-native Go microservices (DDD/Clean Architecture), gRPC, Kubernetes, and production-grade observability
+            Event-driven microservices (Outbox, CDC, NATS), gRPC, Kubernetes, OpenTelemetry &amp; DataDog — plus React/Next.js where it matters.
           </p>
           <span className="hidden md:block">
             <SiGoland width={100} height={100} color="#ffff" />
@@ -38,7 +38,7 @@ const HeroSection = () => {
         </div>
 
         <p className="mt-3 font-Merriweather text-xs md:text-sm dark:text-slate-50 text-black-p">
-          I love building startups that scale — always happy to collaborate and ship impactful products.
+          Currently at OmniLab by 21Factory. Open to the right full-time role and to contributing to serious product and open-source work.
         </p>
 
         <p className="font-Merriweather text-xs font-bold text-black-s">

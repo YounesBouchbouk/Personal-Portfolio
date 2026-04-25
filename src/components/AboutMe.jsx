@@ -35,38 +35,35 @@ const AboutMe = () => {
           <span className="px-2 text-xl text-orange-300 font-Ubuntu">
             Younes Bouchbouk
           </span>
-          — a Software Engineer focused on building scalable, cloud-native systems.
+          — a software engineer who ships backend-heavy, cloud-native systems and honest UIs on top of them.
         </p>
 
         <p className="mt-4 text-black-p dark:text-gray-200">
-          I currently work at <span className="font-bold">OmniLab by 21Factory</span>, where I build Go microservices and modern web experiences. I care about clean architecture, resilience, and delivering features that perform under real production constraints.
+          I work at <span className="font-bold">OmniLab by 21Factory</span> in Casablanca, where I own features end to end: from <span className="font-bold">event-driven</span> Go services and <span className="font-bold">gRPC</span> contracts to <span className="font-bold">React/Next.js</span> when the product needs a face.
         </p>
 
         <div className="mt-5">
           <p className="font-bold text-black-s">What I do</p>
           <ul className="list-disc ml-6 mt-2 text-black-p dark:text-gray-200">
-            <li>Design and implement <span className="font-bold">Golang microservices</span> using <span className="font-bold">DDD</span> and <span className="font-bold">Hexagonal/Clean Architecture</span>.</li>
-            <li>Build efficient APIs with <span className="font-bold">gRPC</span> and production-grade observability with <span className="font-bold">Datadog</span>, <span className="font-bold">OpenTelemetry</span>, and <span className="font-bold">ClickStack</span>.</li>
-            <li>Deploy and operate services on <span className="font-bold">Kubernetes</span> with Docker and CI/CD (GitLab).</li>
-            <li>On the frontend, ship React/Next.js apps; recently I built immersive <span className="font-bold">AR experiences with Three.js</span>.</li>
+            <li>Move systems toward <span className="font-bold">EDA</span> using patterns like <span className="font-bold">outbox</span>, <span className="font-bold">Debezium CDC</span>, <span className="font-bold">NATS JetStream</span>, and async workflows — not just “a message queue.”</li>
+            <li>Model domains with <span className="font-bold">DDD</span> and <span className="font-bold">hexagonal architecture</span>; design APIs with <span className="font-bold">gRPC</span> and <span className="font-bold">Google AIP</span> where it helps.</li>
+            <li>Run <span className="font-bold">OpenTelemetry</span>, <span className="font-bold">Prometheus</span>, and <span className="font-bold">DataDog</span> so production stays observable under load.</li>
+            <li>Ship and operate on <span className="font-bold">Kubernetes</span>, <span className="font-bold">Docker</span>, and <span className="font-bold">GitLab CI</span>, with <span className="font-bold">TDD</span> and solid QA habits.</li>
           </ul>
         </div>
 
         <div className="mt-5">
-          <p className="font-bold text-black-s">Highlights</p>
+          <p className="font-bold text-black-s">Before this</p>
           <ul className="list-disc ml-6 mt-2 text-black-p dark:text-gray-200">
-            <li>Domain expert for two microservices: the <span className="font-bold">Event Booking</span> microservice and the <span className="font-bold">SmartLink</span> microservice.</li>
-            <li>Integrated <span className="font-bold">Datadog</span> for monitoring, logging, and performance insights.</li>
-            <li>Applied <span className="font-bold">TDD</span> to improve reliability and maintainability.</li>
-            <li>At <span className="font-bold">Oracle</span>, worked on a notebook-based data science platform: Jupyter integration (themes + system file access) and embedding Jupyter via iframes.</li>
-            <li>At <span className="font-bold">ISPApp</span>, built a router-management dashboard and visualized real-time metrics using <span className="font-bold">Plotly</span>.</li>
+            <li><span className="font-bold">Oracle</span> (internship): testing for Graal Cloud Native guides; backend and Jupyter integration on a notebook data-science platform.</li>
+            <li><span className="font-bold">ISPApp</span> (remote): a router-management dashboard and <span className="font-bold">Plotly</span>-driven real-time network metrics.</li>
           </ul>
         </div>
 
         <div className="mt-5">
           <p className="font-bold text-black-s">Core stack</p>
           <p className="mt-2 text-black-p dark:text-gray-200">
-            Go, gRPC, Kubernetes, Docker, Datadog, React, Next.js, TypeScript, Node.js.
+            Go, gRPC, NATS, Kubernetes, Docker, MongoDB, PostgreSQL, OpenTelemetry, DataDog, React, Next.js, TypeScript.
           </p>
         </div>
       </div>
