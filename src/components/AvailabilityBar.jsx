@@ -21,8 +21,8 @@ const AvailabilityBar = () => {
       <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
         
         <a
-          href="/YounesBouchbouk.pdf"
-          download="YounesBouchbouk.pdf"
+          href="/YounesBouchboukResume.pdf"
+          download="YounesBouchboukResume.pdf"
           className="inline-flex items-center gap-1 rounded-md border border-black-s/50 bg-white/5 px-2.5 py-1 font-Ubuntu text-xs font-semibold text-white transition hover:border-black-s hover:text-black-s sm:text-sm"
         >
           <AiOutlineDownload className="h-4 w-4" aria-hidden />
