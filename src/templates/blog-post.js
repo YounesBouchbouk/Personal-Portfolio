@@ -89,6 +89,7 @@ const BlogPostTemplate = ({ data }) => {
         type="article"
         pathname={`/blog/${frontmatter.slug}`}
         image={image ? image.images.fallback.src : ""}
+        datePublished={frontmatter.date}
       />
       
       <BlogHeader theme={theme} setTheme={handleThemeChange} />

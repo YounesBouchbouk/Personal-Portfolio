@@ -1,14 +1,6 @@
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
-  
-  // Create DSG page
-  createPage({
-    path: "/using-dsg",
-    component: require.resolve("./src/templates/using-dsg.js"),
-    context: {},
-    defer: true,
-  })
-  
+
   // Create blog post pages
   const blogPostTemplate = require.resolve("./src/templates/blog-post.js")
   

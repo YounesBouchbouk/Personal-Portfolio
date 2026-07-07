@@ -13,12 +13,55 @@ module.exports = {
     `gatsby-plugin-postcss`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
-    `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        // Exclude Gatsby starter demo pages and error pages from the sitemap
+        excludes: [`/using-*`, `/404`, `/404.html`, `/dev-404-page`],
+        query: `
+          {
+            site {
+              siteMetadata {
+                siteUrl
+              }
+            }
+            allSitePage {
+              nodes {
+                path
+              }
+            }
+            allMarkdownRemark {
+              nodes {
+                frontmatter {
+                  slug
+                  date
+                }
+              }
+            }
+          }
+        `,
+        resolvePages: ({ allSitePage: { nodes: pages }, allMarkdownRemark: { nodes: posts } }) => {
+          const normalize = p => `/${p.replace(/^\/|\/$/g, "")}`
+          const slugToDate = posts.reduce((acc, node) => {
+            if (node.frontmatter?.slug) {
+              acc[normalize(`/blog/${node.frontmatter.slug}`)] = node.frontmatter.date
+            }
+            return acc
+          }, {})
+          return pages.map(page => ({ ...page, lastmod: slugToDate[normalize(page.path)] }))
+        },
+        serialize: ({ path, lastmod }) => {
+          const entry = { url: path, changefreq: `weekly`, priority: path === `/` ? 1.0 : 0.7 }
+          if (lastmod) entry.lastmod = lastmod
+          return entry
+        },
+      },
+    },
     {
       resolve: `gatsby-plugin-robots-txt`,
       options: {
         host: `https://younesdev.com`,
-        sitemap: `https://younesdev.com/sitemap/sitemap-index.xml`,
+        sitemap: `https://younesdev.com/sitemap-index.xml`,
         policy: [{ userAgent: '*', allow: '/' }]
       }
     },
@@ -74,6 +117,57 @@ module.exports = {
         theme_color: `#3069ba`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-plugin-feed`,
+      options: {
+        query: `
+          {
+            site {
+              siteMetadata {
+                title
+                description
+                siteUrl
+                site_url: siteUrl
+              }
+            }
+          }
+        `,
+        feeds: [
+          {
+            serialize: ({ query: { site, allMarkdownRemark } }) =>
+              allMarkdownRemark.nodes.map(node => ({
+                title: node.frontmatter.title,
+                description: node.frontmatter.excerpt || node.excerpt,
+                date: node.frontmatter.date,
+                url: `${site.siteMetadata.siteUrl}/blog/${node.frontmatter.slug}`,
+                guid: `${site.siteMetadata.siteUrl}/blog/${node.frontmatter.slug}`,
+                custom_elements: [{ "content:encoded": node.html }],
+              })),
+            query: `
+              {
+                allMarkdownRemark(
+                  sort: { frontmatter: { date: DESC } }
+                  filter: { fileAbsolutePath: { regex: "/content/blog/" } }
+                ) {
+                  nodes {
+                    html
+                    excerpt
+                    frontmatter {
+                      title
+                      slug
+                      date
+                      excerpt
+                    }
+                  }
+                }
+              }
+            `,
+            output: `/rss.xml`,
+            title: `Younes Bouchbouk | Blog`,
+          },
+        ],
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
