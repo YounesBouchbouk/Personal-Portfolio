@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function Seo({ description, lang, meta, title, image, type, pathname }) {
+function Seo({ description, lang, meta, title, image, type, pathname, datePublished, dateModified, noindex }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -95,6 +95,45 @@ function Seo({ description, lang, meta, title, image, type, pathname }) {
     }
   }
 
+  const isArticle = contentType === 'article'
+
+  // Article schema (blog posts) — enables rich results with author/date
+  const articleSchema = isArticle
+    ? {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "mainEntityOfPage": { "@type": "WebPage", "@id": canonical },
+        "headline": title,
+        "description": metaDescription,
+        "image": `${site.siteMetadata.siteUrl}${metaImage}`,
+        "url": canonical,
+        ...(datePublished ? { "datePublished": new Date(datePublished).toISOString() } : {}),
+        "dateModified": new Date(dateModified || datePublished || Date.now()).toISOString(),
+        "author": {
+          "@type": "Person",
+          "name": "Younes Bouchbouk",
+          "url": site.siteMetadata.siteUrl
+        },
+        "publisher": {
+          "@type": "Person",
+          "name": "Younes Bouchbouk"
+        }
+      }
+    : null
+
+  // Breadcrumb schema for blog posts (Home › Blog › Post)
+  const breadcrumbSchema = isArticle
+    ? {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": site.siteMetadata.siteUrl },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": `${site.siteMetadata.siteUrl}/blog` },
+          { "@type": "ListItem", "position": 3, "name": title, "item": canonical }
+        ]
+      }
+    : null
+
   return (
     <Helmet
       htmlAttributes={{
@@ -108,6 +147,14 @@ function Seo({ description, lang, meta, title, image, type, pathname }) {
         { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" }
       ]}
       meta={[
+        {
+          name: `google-site-verification`,
+          content: `unhJJ2nLjlYyQVbv-85GbaTaE-aVzKak2s85Vef68Cc`,
+        },
+        {
+          name: `robots`,
+          content: noindex ? `noindex, nofollow` : `index, follow`,
+        },
         {
           name: `description`,
           content: metaDescription,
@@ -145,8 +192,16 @@ function Seo({ description, lang, meta, title, image, type, pathname }) {
           content: defaultTitle,
         },
         {
+          property: `og:locale`,
+          content: `en_US`,
+        },
+        {
           name: `twitter:card`,
           content: `summary_large_image`,
+        },
+        {
+          name: `twitter:site`,
+          content: site.siteMetadata?.twitterUsername || "",
         },
         {
           name: `twitter:creator`,
@@ -194,6 +249,16 @@ function Seo({ description, lang, meta, title, image, type, pathname }) {
       <script type="application/ld+json">
         {JSON.stringify(websiteSchema)}
       </script>
+      {articleSchema && (
+        <script type="application/ld+json">
+          {JSON.stringify(articleSchema)}
+        </script>
+      )}
+      {breadcrumbSchema && (
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbSchema)}
+        </script>
+      )}
     </Helmet>
   )
 }
@@ -205,6 +270,9 @@ Seo.defaultProps = {
   image: null,
   pathname: null,
   type: `website`,
+  datePublished: null,
+  dateModified: null,
+  noindex: false,
 }
 
 Seo.propTypes = {
@@ -215,6 +283,9 @@ Seo.propTypes = {
   image: PropTypes.string,
   pathname: PropTypes.string,
   type: PropTypes.string,
+  datePublished: PropTypes.string,
+  dateModified: PropTypes.string,
+  noindex: PropTypes.bool,
 }
 
 export default Seo
